@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+* { /* *: 문서 전체 적용 */
+	font-family: "Montserrat";
+}
+
+/* 브라우저에 따라 기본값이 있을 수 있으니 0으로 초기화 */
+body, h1, h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-width: fit-content;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.name-text {
+    font-size: 17px;
+    color: #7c7c7c;
+    font-weight: bold;
+}
+
+.main-box {
+    /* border: 1px solid black; // 선 두께, 스타일, 색상 */ 
+    width: 610px;
+    text-align: right;
+
+    padding: 20px;
+    /* text가 아닌 박스 전체를 가운데 정렬 */
+    margin-left: auto;
+    margin-right: auto; 
+
+    /* 그림자 : 가로축(-좌 +우), 세로축(-상 +하), blur, spread, color */ 
+    /* box-shadow: 0 1px 20px 0 rgba(0,0,0,1); */
+}
+
+/* 
+Q. width를 안주면 어떤 값으로 초기화 되는거지?
+A. 그냥 웹페이지 크기에 맞춰짐. 
+
+Q. HTML/CSS 에서는 camleCase 나 _ 대신 -를 쓰나?
+A. yes.
+*/
+
+section {
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #282828;
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 16px;
+    padding-bottom: 5px;
+}
+
+.about-me-text {
+    font-size: 10px;
+    line-height: 16px; /* 줄간격 */
+}
+
+
+.float-wrap {
+    overflow: hidden; /* float 쓰면 뭔가랑 겹칠 수 있어서 테두리 만들어줌 */
+}
+
+.title-text {
+    font-size: 11px;
+    font-weight: bold;
+    float: left;
+}
+
+.year-text {
+    font-size: 11px;
+    font-weight: bold;
+    float: right; /* 양 옆에 하나는 왼쪽정렬 하나는 오른쪽정렬로 넣기 위해 사용 */
+}
+
+.desc-text {
+    font-size: 11px;
+    font-weight: light;
+}
+
+.desc-subtext {
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.sns-wrap {
+    text-align: right;
+}
+
+.sns-img {
+    width: 16px;
+    height: 16px;
+}
+
+
+footer { /* 스타일을 바꾸고 싶은 대상 */
+    /* 스타일 */
+    text-align: center;
+    background-color: #2B2B2B; 
+    color: #919191; /* 컬러코드, 색상 이름 사용 가능*/
+}

@@ -7,6 +7,12 @@ https://k-digital.likelion.net/frontend-school
 
 멋쟁이사자처럼 Front-end Scool 에서 3개월 간 진행하는 tutorial, project 등을 정리.
 
+<br>
+<br>
+
 ### 1. 이력서 만들기 (HTML/CSS)
+----------------------------
+
+01.resume
 
 <img src="https://github.com/ddosang/front_school/blob/main/01.Resume/real-resume/example.png?raw=true">

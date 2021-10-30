@@ -11,8 +11,6 @@ https://k-digital.likelion.net/frontend-school
 <br>
 
 ### 1. 이력서 만들기 (HTML/CSS)
-----------------------------
 
 01.resume
-
 <img src="https://github.com/ddosang/front_school/blob/main/01.Resume/real-resume/example.png?raw=true">

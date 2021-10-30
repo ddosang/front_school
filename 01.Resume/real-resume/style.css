@@ -1,0 +1,85 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-box {
+    padding: 25px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.name-text {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h2 {
+    padding-bottom: 8px;
+    border-bottom: 1px solid lightgray;
+}
+
+.about-me-text {
+    font-size: 15px;
+    font-weight: lighter;
+    padding-left: 5px;
+}
+
+
+.skill-box {
+    padding-left: 5px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.lang-text {
+    font-size: 18px;
+}
+
+.framework-text {
+    font-size: 15px;
+}
+
+.proj-box {
+    overflow: hidden;
+}
+
+.proj-name-text {
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+}
+
+.proj-time-text {
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+}
+
+
+.sns-wrap {
+    text-align: right;
+}
+
+.sns-img {
+    width: 16px;
+    height: 16px;
+}

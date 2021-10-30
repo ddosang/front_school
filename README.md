@@ -9,4 +9,4 @@ https://k-digital.likelion.net/frontend-school
 
 ### 1. 이력서 만들기 (HTML/CSS)
 
-![img] ("/01.resume/real-resume/example.png")
+![img-resume]("/01.resume/real-resume/example.png")

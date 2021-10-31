@@ -8,9 +8,10 @@ https://k-digital.likelion.net/frontend-school
 멋쟁이사자처럼 Front-end Scool 에서 3개월 간 진행하는 tutorial, project 등을 정리.
 
 <br>
+<br>
 
 ### 0. 인프런 강의 수강 (HTML/CSS)
-
+________________________________
 00.inflearn
 
 <a href="https://www.inflearn.com/course/html-css-강좌">인프런 강의</a>
@@ -18,6 +19,6 @@ https://k-digital.likelion.net/frontend-school
 <br>
 
 ### 1. 이력서 만들기 (HTML/CSS)
-
+_____________________________
 01.resume
 <img src="https://github.com/ddosang/front_school/blob/main/01.Resume/real-resume/example.png?raw=true">

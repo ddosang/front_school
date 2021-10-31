@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 선택자</title>
+    <style>
+
+        /* 8-1. 반응 선택자 */
+        ul > li {
+            font-size: 20px;
+            color: orange;
+        }
+
+        li:hover {
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* 8-2. 상태 선택자 */
+        input:focus {
+            padding: 10px;
+        }
+        input:disabled {
+            background-color: lightgray;
+            color: red;
+        }
+
+        /* 8-3. 구조 선택자 */
+        ul li {
+            list-style: none;
+            border: 1px solid #cccccc;
+            padding: 10px;
+            font-weight: bold;
+            color: black;
+        }
+
+        ul li:nth-child(2n+1) {
+            background-color: gray;
+        }
+
+        ul li:first-child {
+            background-color: yellow;
+            border-radius: 10px 10px 0 0;
+        }
+
+        ul li:last-child {
+            background-color: yellow;
+            border-radius: 0 0 10px 10px;
+        }
+
+        /* 9-1. 문자 선택자 */
+        .main-box {
+            margin: 0 auto;
+            width: 500px;
+        }
+
+        h1 {
+            background-color: paleturquoise;
+            text-align: center;
+        }
+
+        p::first-letter {
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        p::selection {
+            background-color: chartreuse;
+        }
+
+        /* 9-2. 링크 선택자 */
+        
+        a::after {
+            content: ' - ' attr(href);
+            /* a 태그 뒤에 해당 링크를 '- 주소' 형태로 붙여라. */
+        }
+
+        /* 9-3. 부정 선택자 */
+        ul li:not(.menu) {
+            background-color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <ul>
+            <li class="menu">menu1</li>
+            <li>menu2</li>
+            <li class="menu">menu3</li>
+            <li class="menu">menu4</li>
+            <li>menu5</li>
+        </ul>
+    </div>
+
+    <!-- 8-2 상태 선택자 -->
+    <form action="#">
+        이름 <input type="text">
+        아이디 <input type="text">
+        비밀번호 <input type="password" disabled="disabled" value="12345">
+    </form>
+
+    <!-- 9-1. 문자 선택자 -->
+    <div class="main-box">
+        <h1>Savage</h1>
+        <p>Oh my gosh!
+            Don't you know I’m a Savage?
+            I’m a Killa 너를 깰 ae
+            아직도 가리고 환각을 펼친 너
+            팰라 We Holler
+            두렵지 않아 너 너 Hit you harder </p>
+            
+        <p>날 밀어 넣어 Deep fake on me
+            준비가 안된 무대로
+            몰아넣어 Fake on me
+            Got everybody mock up to me
+            수치를 느끼게 멘탈을 흔들어놔
+            싸늘한 관중 무너져 ae
+            더는 널 못 참아 Say No! </p>
+            
+        <p>두고 봐 난 좀 Savage
+            너의 Dirty 한 Play
+            더는 두고 볼 수 없어
+            나를 무너뜨리고 싶은
+            네 환각들이 점점
+            너를 구축할 이유가 돼
+            I’m a Savage
+            널 부셔 깨 줄게 Oh
+            I’m a Savage
+            널 짓밟아 줄게 Oh </p>
+    </div>
+
+    <!-- 9-2. 링크 선택자 -->
+    <a href="http://naver.com">네이버</a><br />
+    <a href="http://kakao.com">카카오</a><br />
+    <a href="http://google.com">구글</a><br />
+</body>
+</html>

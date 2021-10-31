@@ -9,6 +9,14 @@ https://k-digital.likelion.net/frontend-school
 
 <br>
 
+### 0. 인프런 강의 수강 (HTML/CSS)
+
+00.inflearn
+
+<a href="https://www.inflearn.com/course/html-css-강좌">인프런 강의</a>
+
+<br>
+
 ### 1. 이력서 만들기 (HTML/CSS)
 
 01.resume

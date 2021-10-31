@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- 4~5강 -->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+    <!-- 4-1. video -->
+    <video src="Why.mp4" type="video/mp4" controls="controls" width=500></video>
+
+
+    <!-- 4-2. form -->
+    <form action="#" method="get">
+        이름 : <input type="text" name="uname"><br />
+        아이디 : <input type="text" name="uid"><br />
+        비밀번호 : <input type="password" name="upw"><br />
+        연락처 : <input type="text" name="uphone1" size="5"> - 
+        <input type="text" name="uphone2" size="5"> - 
+        <input type="text" name="uphone3" size="5"><br />
+        사진 : <input type="file" name="upic"><br />
+        성별 : <input type="radio" name="gender" value="m">male,
+        <input type="radio" name="gender" value="f">female<br />
+        언어 : <input type="checkbox" name="lang" value="kor">한국어,
+        <input type="checkbox" name="lang" value="eng">영어,
+        <input type="checkbox" name="lang" value="jap">일어<br />
+        자기소개 : <textarea cols="30" rows="10">10자 이상 입력하세요.</textarea><br />
+        국적 : <select>
+            <option>한국</option>
+            <option>중국</option>
+            <option>일본</option>
+            <option>미국</option>
+        </select>
+        선호음식 : <select multiple="multiple">
+            <option>한식</option>
+            <option>중식</option>
+            <option>일식</option>
+            <option>양식</option>
+        </select>
+        <input type="submit"> <!-- submit이 없으면 화면에 아무것도 안나옴!!-->
+    </form>
+
+
+    <!-- 4-3. div, span -->
+    <p>block</p>
+
+    <div>1111</div>
+    <div>2222</div>
+    <div>3333</div>
+    <div>4444</div>
+
+    <br />
+    
+    <span>111</span>
+    <span>222</span>
+    <span>333</span>
+
+
+    <!-- 5-1. div layout -->
+    <div>
+        <h1>MY HOMEPAGE</h1>
+        <hr>
+    </div>
+
+    <div>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+    </div>
+
+    <div>
+        <h1>HTML5</h1>
+        <p>HTML~~~~~</p>
+        <hr>
+    </div>
+
+    <div>
+        <p>practice</p>
+    </div>
+
+    <!-- 5-2. sementic layout -->
+    <header>
+        <h1>MY HOMEPAGE</h1>
+        <hr>
+    </header>
+
+    <nav>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>HTML5</h1>
+        <p>HTML~~~~~</p>
+        <hr>
+    </section>
+
+    <footer>
+        <p>practice</p>
+    </footer>
+        
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 속성</title>
+
+    <style>
+        /* 10-3 display 속성 */
+        body div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            border: 2px solid yellowgreen;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        body div:nth-child(5) {
+            width: 100px;
+            height: 100px;
+            border: 1px solid lightpink;
+            font-weight: bold;
+            display: inline;
+            text-align: center;
+            margin: 10px 10px 10px 10px; 
+            /* inline은 상하 margin은 주어지지 않는다. 높이 없음. */
+        }
+        
+        body div:nth-child(5), div:nth-child(6), div:nth-child(7) {
+            width: 100px;
+            height: 100px;
+            border: 1px solid purple;
+            font-weight: bold;
+            display: inline;
+            text-align: center;
+        }
+
+        body div:nth-child(8) {
+            width: 100px;
+            height: 100px;
+            border: 1px solid lightpink;
+            font-weight: bold;
+            display: none;
+            text-align: center;
+            /* none : 아예 사라져버림. -> 메뉴가 어느 상황엔 보이고 언제는 안보일때 */
+        }
+
+        body div:nth-child(9) {
+            width: 100px;
+            height: 100px;
+            border: 1px solid lightpink;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+            /* inline-block은 옆으로 붙는데 높이 가짐 */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- 10-3 display 속성 -->
+
+    <div>content1</div>
+    <div>content2</div>
+    <div>content3</div>
+    <div>content4</div>
+    <div>content5</div>
+    <div>content6</div>
+    <div>content7</div>
+    <div>content8</div>
+    <div>content9</div>
+
+
+
+</body>
+</html>

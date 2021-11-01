@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 속성 3</title>
+
+    <style>
+
+        /* 12-2 font-style, font-weight, line-height */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+        }
+
+        #nav {
+            overflow: hidden;
+            width: 800px;
+            height: 200px;
+            margin: 0 auto;
+            border: 1px solid #333333;
+        }
+
+        #nav div {
+            float: left;
+            width: 150px;
+            height: 180px;
+            line-height: 180px;
+            text-align: center;
+            border: 1px solid skyblue;
+        }
+
+        /* 12-4 position */
+
+        #red {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        #yellow {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            top: 100px;
+            left: 100px;
+        }
+
+        #green {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            top: 0;
+            left: 0;
+        }
+
+        #blue {
+            /* position: absolute; */
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            top: 100px;
+            left: 300px;
+        }
+
+        #violet {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            top: 300px;
+            left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 12-2 font-style, font-weight, line-height -->
+    <div id="nav">
+        <div><a href="#none">menu1</a></div>
+        <div><a href="#none">menu2</a></div>
+        <div><a href="#none">menu3</a></div>
+        <div><a href="#none">menu4</a></div>
+        <div><a href="#none">menu5</a></div>
+    </div>
+
+    <!-- 12-4 position -->
+    <div id="red"></div>
+    <div id="yellow">
+        <div id="green"></div>
+        <div id="blue"></div>
+        <div id="violet"></div>
+    </div>
+</body>
+</html>

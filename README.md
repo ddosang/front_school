@@ -34,6 +34,6 @@
 
 008.html : 1102 수업 시간 실습
 
-HW02.html : 1102 수업 과제 - <a href="https://kstartupforum.org">paullab HomPage</a> HTML 클론 코딩
+HW02.html : 1102 수업 과제 - <a href="https://kstartupforum.org">Korea Startup Forum HomePage</a> HTML 클론 코딩
 
 <br>

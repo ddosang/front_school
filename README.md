@@ -22,10 +22,13 @@
 01.resume
 <img src="https://github.com/ddosang/front_school/blob/main/01.Resume/real-resume/example.png?raw=true">
 
+<br>
 
 ## 2. HTML 실습 (HTML)
 
 02.Front-end_school_HTML
 
-001~006.html : 1101 수업 시간 실습
+001~006.html : 1101 수업 시간 실습<br>
 007.html : 1101 수업 과제 - <a href="http://www.paullab.co.kr/about.html">paullab HomPage</a> HTML 클론 코딩
+
+<br>

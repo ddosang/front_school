@@ -30,6 +30,10 @@
 
 001~006.html : 1101 수업 시간 실습
 
-007.html : 1101 수업 과제 - <a href="http://www.paullab.co.kr/about.html">paullab HomPage</a> HTML 클론 코딩
+007.html, HW01.html : 1101 수업 과제 - <a href="http://www.paullab.co.kr/about.html">paullab HomPage</a> HTML 클론 코딩
+
+008.html : 1102 수업 시간 실습
+
+HW02.html : 1102 수업 과제 - <a href="https://kstartupforum.org">paullab HomPage</a> HTML 클론 코딩
 
 <br>

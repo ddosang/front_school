@@ -28,7 +28,8 @@
 
 02.Front-end_school_HTML
 
-001~006.html : 1101 수업 시간 실습<br>
+001~006.html : 1101 수업 시간 실습
+
 007.html : 1101 수업 과제 - <a href="http://www.paullab.co.kr/about.html">paullab HomPage</a> HTML 클론 코딩
 
 <br>

@@ -34,7 +34,7 @@
 
 - 008.html : 1102 수업 시간 실습
 
-- HW02.html : 1102 수업 과제 - <a href="https://kstartupforum.org">Korea Startup Forum</a> HTML 클론 코딩 (1103 code review 완료)
+- HW02.html : 1102 수업 과제 - [Korea Startup Forum](https://kstartupforum.org) HTML 클론 코딩 (1103 code review 완료)
 
 - 009.html : 1103 form tag 복습
 

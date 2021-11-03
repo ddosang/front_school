@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        li:not(.one) {
+            color:red
+        }
+
+        p::before {
+            content: "약 ";
+        }
+        p::after {
+            content: "cm";
+        }
+    </style>
+</head>
+<body>
+ <ul>
+     <li class="one">hello</li>
+     <li class="one">hello</li>
+     <li class="two">hello</li>
+     <li class="one">hello</li>
+     <li class="one">hello</li>
+
+     <p>10</p>
+ </ul>
+</body>
+</html>

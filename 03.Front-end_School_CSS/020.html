@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고정크기 단위</title>
+    <style>
+        html, body {
+            font-size: 20px; 
+            /* 부모가 바뀌므로 em, rem 쓰는 단위도 같이 바뀜. */
+        }
+        h1 {
+            font-size: 20px; 
+        }
+        p  { 
+            font-size: 2em; 
+            font-weight: 700;
+        }
+        div{ 
+            font-size: 2em; 
+        }
+
+        .one {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>[ch5_ex1]CSS 크기단위에 대한 실습입니다.</h1>
+    <p>CSS 크기단위 첫번째 px에 대한 실습 예제입니다.</p>
+    <div>첫번째 실습은 px의 크기를 알아봅니다.</div>
+
+    <div>
+        <div>
+            <div>hello world</div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div class="one">hello world</div>
+        </div>
+    </div>
+</body>
+</html>

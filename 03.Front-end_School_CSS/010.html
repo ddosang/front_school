@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그</title>
+
+    <style>
+        table {
+            width: 100%;
+        }
+
+        table, tr, th, td{
+            border: solid 1px black;
+            /* border만 주면 두줄로 나옴. 겹치는 부분이 있어서. 그걸 없애주자 */
+            border-collapse: collapse; 
+        }
+        .구분 {
+            width: 10%;
+        }
+        .이름 {
+            width: 30%
+        }
+        .가격 {
+            width: 30%;
+        }
+        .판매량 {
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 8. table -->
+    <table>
+        <caption>
+            hello 책 판매량 표
+        </caption>
+        <colgroup>
+            <col class="구분">
+            <col class="이름">
+            <col class="가격">
+            <col class="판매량">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>이름</th>
+                <th>가격</th>
+                <th>판매량</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>hello</td>
+                <td>1000</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>hello2</td>
+                <td>2000</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>hello3</td>
+                <td>3000</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">총 판매량</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

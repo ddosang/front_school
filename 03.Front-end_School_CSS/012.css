@@ -1,0 +1,6 @@
+/* css 에는 style 태그를 넣지 않는다. */
+
+h1 {
+    /* important 를 절대.. 쓰지말자... 그치만 이런 기능도 있다. */
+    color: red !important;
+}

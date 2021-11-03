@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헷갈리는 선택자</title>
+
+    <style>
+        /* 헷갈리는 선택자 */
+        .one .two {
+            color: blue;
+        }
+        .one.two {
+            color: red;
+        }
+
+        /* 속성 선택자 */
+        a[href] {
+            font-size: 32px;
+        }
+        a[href="http://www.paullab.co.kr"] {
+            font-size: 48px;
+        }
+        a[href~="paullab"] {
+            font-weight: bold;
+        }
+        a[href*="http"] {
+            color: rebeccapurple;
+        }
+        a[href$="co.kr"] {
+            color: rgb(67, 228, 134);
+        }
+    </style>
+</head>
+<body>
+    <!-- 헷갈리는 선택자 -->
+    <div class="one">hello world</div>
+    <div class="one two">hello world</div>
+    <div class="one">
+        <div class="two">hello world</div>
+    </div>
+
+    <!-- 속성 선택자 -->
+    <a href="http://www.paullab.co.kr">클릭혀</a>
+    <a href="http://www.naver.com">클릭혀</a>
+    <a href="#">클릭혀</a>
+    <a>클릭해</a>
+</body>
+</html>

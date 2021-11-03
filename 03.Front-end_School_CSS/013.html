@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 활용</title>
+
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="013.css"> 
+
+    <style>
+
+        /* 
+        * { 
+            color: blue;
+        } */
+
+        /* tag selector */
+        p {
+            color: red;
+        }
+
+        /* class selector */
+        .one {
+            color: aqua;
+        }
+
+        .two {
+            border: solid 1px black;
+        }
+
+        .three {
+            font-size: 32px;
+        }
+
+        #two {
+            border: solid 1px black;
+        }
+
+        #three {
+            font-size: 32px;
+        }
+
+        ul p {
+            color: green;
+        }
+
+        li > p {
+            color: blueviolet;
+        }
+
+        h1 + ul + ul {
+            color: red;
+        }
+
+        h1 ~ ul {
+            font-style: italic;
+        }
+     </style>
+
+</head>
+<body>
+    <h1>hello world</h1>
+    <p>hello</p>
+    <p class="one">hello</p>
+    <!-- 
+        1. class 는 중첩해서 사용할 수 있다. id는 불가능
+        2. page 내 class 는 여러개 존재 가능. (one 여러개 태그에 들어가기 가능) id는 단 하나만 가능. (four는 하나에만 들어가기 가능)
+
+        이렇게 쓴다고 에러가 발생하진 않지만... 의도한 바와 다르게 됨.
+    -->
+    <p class="two three">hello</p>
+    <p class="two">hello</p>
+    <p class="three">hello</p>
+    <p id="two three">hello</p> <!-- two만 적용됨.-->
+    <p id="four">hello</p>
+
+    <br>
+    
+    <ul>
+        <li>
+            <p>hello world</p>
+        </li>
+        <li>
+            <div>
+                <div>
+                    <div>
+                        <p>hello world</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <p>hello world</p>
+        </li>
+        <li>
+            hello world
+        </li>
+    </ul>
+
+    <br>
+
+    <h1>hello world</h1>
+    <ul>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+    <ul>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+
+</body>
+</html>

@@ -14,10 +14,16 @@
     <header>
 
         <section class="search-box">
-            <h1>yahoo</h1>
+            <!-- 원래 로고를 눌러도 메인 페이지로 이동하니까 a태그로 수정. -->
+            <h1><a href="#">yahoo</a></h1>
 
-            <input type="text" id="search-bar">
-            <button class="search-btn">검색</button>
+            <!-- input은 form tag 안에 넣는걸로 수정. -->
+
+            <form action="#none">
+                <input type="text" class="search-bar">
+                <button class="search-btn" type="submit">검색</button>
+            </form>
+            
 
             <ul class="info">
                 <li>
@@ -153,7 +159,7 @@
                 <label for="Ads">Ads</label>
             </section>
 
-            <section class="timeline">
+            <section class="real-timeline">
                 <ul>
                     <li>
                         <img src="#" alt="img">

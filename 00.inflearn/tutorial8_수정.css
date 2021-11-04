@@ -1,0 +1,259 @@
+
+/* reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* style */
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.search-box {
+    overflow: hidden;
+    width: 99%;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    padding-right: 10px;
+    float: left;
+}
+
+.search-bar {
+    float: left;
+    width: 55%;
+    height: 20px;
+}
+
+.search-btn {
+    float: left;
+    width: 5%;
+    padding: 3px;
+}
+
+.info {
+    padding-left: 10px;
+    margin-top: 6px;
+    float: left;
+}
+
+.info > li {
+    padding-right: 10px;
+    float: left;
+}
+
+nav {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav > ul > li {
+    padding: 5px;
+    margin: 1px 5px 1px 5px;
+    float: left;
+}
+
+main {
+    overflow: hidden;
+}
+
+.timeline {
+    float: left;
+    width: 65%;
+    border: 1px solid lightgray;
+}
+
+aside {
+    float: right;
+    width: 34%;
+    border: 1px solid lightgray;
+}
+
+.main-timeline article  {
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+.first-article {
+    padding : 100px;
+    height: 150px;
+}
+
+.main-timeline ul {
+    overflow: hidden;
+}
+
+.main-timeline li:not(.first-article) {
+    float: left;
+    width: 90px;
+    padding: 10px 13px 10px 13px;
+    margin: 10px 5px 10px 5px;
+}
+
+.trend-subject {
+    width: 99%;
+    border: 1px solid purple;
+}
+
+.real-timeline > ul > li {
+    position: relative;
+    overflow: hidden;
+    width: 95%;
+    padding: 20px 10px 20px 10px;
+    border: 1px solid lightgray;
+}
+
+.real-timeline > ul > li li:first-of-type {
+    float: left;
+    width: 95%;
+    padding: 20px 10px 20px 10px;
+    border: 1px solid lightgray;
+}
+
+.real-timeline > ul > li li:nth-of-type(2) {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.real-timeline > ul > li li:nth-of-type(3) {
+    position: absolute;
+    top: 25%;
+    left: 63%;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+
+.timeline img {
+    float: left;
+}
+
+.timeline-text {
+    float: left
+}
+
+
+h3 {
+    font-size: 20px;
+}
+
+.trend {
+    overflow: hidden;
+    margin: 20px;
+}
+
+.trend {
+    border: 1px solid lightgray;
+}
+
+/* 안타깝게도 ol을 두 갈래로 나눌 방법을 못 찾아서 ol 2개로 만들었는데 이거 어떻게 나눌 수 있을지 */
+.trend ol {
+    float: left;
+}
+
+.weather, .sports {
+    border: 1px solid lightgray;
+    margin: 20px;
+}
+
+.weather ol {
+    overflow: hidden;
+}
+.weather li {
+    float: left;
+}
+
+.daily {
+    border: 1px solid lightgray;
+    margin: 0 20px 0 20px;
+}
+
+.daily article {
+    overflow: hidden;
+}
+
+.daily article img {
+    float: left;
+}
+
+.daily article p {
+    float: left;
+}
+
+footer {
+    margin: 20px;
+    border: 1px solid lightgray;
+}
+
+footer ul {
+    overflow: hidden;
+}
+
+footer li {
+    float: left;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}

@@ -8,6 +8,10 @@
 
 [velog #0](https://velog.io/@ddosang/Front-end-0)
 
+- tutorial1~7.html : 1~13강 HTML, CSS 강의 실습
+
+- tutorial8.html, tutorial8_class.html : 14강 야후 클론코딩 [velog #5.5](https://velog.io/@ddosang/Front-end-5.5)
+
 <br>
 <br>
 

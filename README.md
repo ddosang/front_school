@@ -18,7 +18,7 @@
 [인프런 강의](https://www.inflearn.com/course/html-css-강좌)
 
 
-- tutorial1~7.html : 1~13강 HTML, CSS 강의 실습 [velog #1.5](https://velog.io/@ddosang/Front-end-1.5), [#1.5-2](https://velog.io/@ddosang/Front-end-1.5-2), [#2.5](https://velog.io/@ddosang/Front-end-2.5)
+- tutorial~7.html : 1-13강 HTML, CSS 강의 실습 [velog #1.5](https://velog.io/@ddosang/Front-end-1.5), [#1.5-2](https://velog.io/@ddosang/Front-end-1.5-2), [#2.5](https://velog.io/@ddosang/Front-end-2.5)
 
 - tutorial8.html, tutorial8_class.html : 14강 야후 클론코딩 [velog #5.5](https://velog.io/@ddosang/Front-end-5.5)
 

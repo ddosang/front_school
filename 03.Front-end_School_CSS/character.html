@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캐릭터 만들기</title>
+
+    <style>
+        body, div {
+            padding: 0;
+            margin: 0;
+        }
+
+        .moniter {
+            position: relative;
+            top: 200px;
+            left: 100px;
+        }
+
+        .display {
+            position: absolute;
+            width: 100px;
+            height: 70px;
+            background-color: gray;
+            border: 10px solid black;
+            border-radius: 10px;
+        }
+
+        .support1 {
+            position: absolute;
+            left: 50px;
+            top: 88px;
+            width: 20px;
+            height: 20px;
+            background-color: black;
+        }
+
+        .support2 {
+            position: absolute;
+            left: 35px;
+            top: 108px;
+            width: 50px;
+            height: 10px;
+            background-color: black;
+        }
+
+        .head {
+            position: relative;
+            top: 230px;
+            left: 300px;
+            width: 80px;
+            height: 60px;
+            background-color: yellowgreen;
+            border: 8px solid black;
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .eye {
+            position: absolute;
+            top: 30px;
+            left: 15px;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: black;
+        }
+        .mouth {
+            position:absolute;
+            top: 47px;
+
+            width: 26px;
+            height: 8px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: black;
+        }
+
+        .body {
+            position: relative;
+            top: 95px;
+            left: 370px;
+
+        }
+
+        .back {
+            position: relative;
+
+        }
+        
+        .house {
+            position: absolute;
+            width: 215px;
+            height: 110px;
+            border: 8px solid black;
+            border-top-left-radius: 90px;
+            border-top-right-radius: 90px;
+            background-color: darkslategray;
+        }
+
+        .bottom {
+            position: absolute;
+            top: 113px;
+            left: -10px;
+            width: 240px;
+            height: 11px;
+            border: 8px solid black;
+            border-top-left-radius: 80px;
+            border-top-right-radius: 80px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color: white;
+        }
+
+        .tail {
+            position: absolute;
+            top: 100px;
+            left: 215px;
+            width: 30px;
+            height: 15px;
+            border: 8px solid black;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: yellowgreen;
+            z-index: -1;
+        }
+
+        .legs {
+            position: relative;
+            top: 124px;
+            left: -10px;
+        }
+
+        .foot1 {
+            position: absolute;
+            width: 40px;
+            height: 30px;
+            top: 0;
+            left: 0;
+            background-color: yellowgreen;
+            border: 8px solid black;
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .foot2 {
+            position: absolute;
+            width: 40px;
+            height: 30px;
+            top: -4px;
+            left: 15px;
+            background-color: yellowgreen;
+            border: 8px solid black;
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            z-index: -1;
+        }
+
+        .foot1 {
+            position: absolute;
+            width: 40px;
+            height: 30px;
+            top: 0;
+            left: 0;
+            background-color: yellowgreen;
+            border: 8px solid black;
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .foot3 {
+            position: absolute;
+            width: 40px;
+            height: 30px;
+            top: -4px;
+            left: 165px;
+            background-color: yellowgreen;
+            border: 8px solid black;
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            z-index: -1;
+        }
+
+        .foot4 {
+            position: absolute;
+            width: 40px;
+            height: 30px;
+            top: 0px;
+            left: 180px;
+            background-color: yellowgreen;
+            border: 8px solid black;
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="moniter">
+        <div class="display"></div>
+        <div class="support1"></div>
+        <div class="support2"></div>
+    </div>
+
+    <div class="head">
+        <div class="eye"></div>
+        <div class="mouth"></div>
+    </div>
+
+    <div class="body">
+        <div class="back">
+            <div class="house"></div>
+            <div class="bottom"></div>
+            <div class="tail"></div>
+        </div>
+
+        <div class="legs">
+            <div class="foot1"></div>
+            <div class="foot2"></div>
+            <div class="foot3"></div>
+            <div class="foot4"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

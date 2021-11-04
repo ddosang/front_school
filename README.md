@@ -54,3 +54,9 @@
 03. Front-end_School_CSS
 
 - 010~021.html, css : 1103 수업 시간 실습 [velog #4-2](https://velog.io/@ddosang/Front-end-4-2)
+
+- 022~024.html : 1104 selector 복습
+
+- 025~035.html : 1104 수업 시간 실습 [velog #5](https://velog.io/@ddosang/Front-end-5)
+
+- character.html : 1104 수업 시간 과제 [velog #5](https://velog.io/@ddosang/Front-end-5)

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background: pink;
+        }
+
+        .box-opacity1 {
+            position: absolute;
+            top: 0;
+            opacity: 0.8;
+        }
+
+        .box-opacity2 {
+            position: absolute;
+            top: 100px;
+            opacity: 0.5;
+        }
+
+        .box-opacity3 {
+            position: absolute;
+            top: 200px;
+            opacity: 0.2;
+        }
+
+        .one {
+            width: 200px;
+            height: 200px;
+            /* color name */
+            background: red;
+        }
+        .two {
+            width: 200px;
+            height: 200px;
+            /* color name */
+            background: #222222;
+        }
+        .three {
+            width: 200px;
+            height: 200px;
+            background: #999999;
+        }
+        .four {
+            width: 200px;
+            height: 200px;
+            background: rgba(234,21,212,1);    
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 투명도 따라 얼마 달라보이는지  -->
+    <h1>h<br>e<br>l<br>l<br>o</h1>
+    <!-- <div class="box"></div> -->
+    <div class="box box-opacity1"></div>
+    <div class="box box-opacity2"></div>
+    <div class="box box-opacity3"></div>\
+
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+</body>
+</html>

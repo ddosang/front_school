@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+
+    <style>
+        .box1 {
+            position: static;
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+
+        .기준 {
+            /* position: relative; */
+        }
+
+        .기준2 {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            width: 100px;
+            height: 100px;
+            background: orange;
+        }
+
+        .box2 {
+            position: absolute;
+            left: 40px;
+            top: 30px;
+            background: red;
+            width: 100px;
+            height: 100px;
+        }
+        .box3 {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            background-color: pink;
+            color: white;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    
+    <!-- 여러개 찍어본 결과, absolute 는 상위 어딘가에 absolute, relative, fixed가 있으면 그것을 기준으로 작동. 부모가 전부 static이면 body 기준 -->
+    <div class="기준">
+        <div class="기준2">
+            <div class="box2">box2</div>
+            <div class="box3">box3</div>
+
+        </div>
+    </div>
+</body>
+</html>

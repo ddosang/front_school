@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 개행에 의한 자체 띄어쓰기를 없애기 위해서 body font-size를 0으로 조정한다. */
+        body {
+            font-size: 0;
+        }
+
+        /* 수평 정렬 */
+        div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 개행을 띄어쓰기로 인식한다.
+    inline-block을 사용하면 자동적으로 공백이 생김. -->
+    <div>안녕하세요</div>
+    <div>안녕하세요</div>
+    <div>안녕하세요</div>
+</body>
+</html>

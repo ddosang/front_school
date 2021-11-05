@@ -40,6 +40,7 @@
 02.Front-end_school_HTML
 
 - 001~006.html : 1101 수업 시간 실습 [velog #2](https://velog.io/@ddosang/Front-end-2)
+
 - 007.html, HW01.html : 1101 수업 과제 - [paullab](http://www.paullab.co.kr/about.html) HTML 클론 코딩
 
 - 008.html : 1102 수업 시간 실습 [velog #3](https://velog.io/@ddosang/Front-end-3)

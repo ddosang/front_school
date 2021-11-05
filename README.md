@@ -63,4 +63,8 @@
 
 - 025~035.html : 1104 수업 시간 실습 [velog #5](https://velog.io/@ddosang/Front-end-5)
 
-- character.html : 1104 수업 시간 과제 [velog #5](https://velog.io/@ddosang/Front-end-5)
+- 1104_character.html : 1104 수업 시간 과제 [velog #5](https://velog.io/@ddosang/Front-end-5)
+
+- 036~042.html : 1106 수업 시간 실습 + float 복습 [velog #6](https://velog.io/@ddosang/Front-end-6-1)
+
+- 1105_naver.html : 1106 수업 네이버 로그인 창 클론 코딩 [velog #6](https://velog.io/@ddosang/Front-end-6-1)

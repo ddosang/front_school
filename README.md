@@ -20,6 +20,8 @@
 
 - tutorial1~7.html : 1-13강 HTML, CSS 강의 실습 [velog #1.5](https://velog.io/@ddosang/Front-end-1.5), [#1.5-2](https://velog.io/@ddosang/Front-end-1.5-2), [#2.5](https://velog.io/@ddosang/Front-end-2.5)
 - tutorial8.html, tutorial8_class.html : 14강 야후 클론코딩 [velog #5.5](https://velog.io/@ddosang/Front-end-5.5)
+- tutorial9~12.html : 15강 쇼핑몰(9), 16강 웹폰트 적용(10), 17~19강 스마트폰 레이아웃(11~12) 클론코딩 [velog #6.5-1](https://velog.io/@ddosang/Front-end-6.5-1)
+- tutorial13~14.html : 20~23강 태블릿 레이아웃 클론코딩 [velog #6.5-2](https://velog.io/@ddosang/Front-end-6.5-2)
 
 
 

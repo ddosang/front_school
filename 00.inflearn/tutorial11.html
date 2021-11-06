@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smartphone</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        
+        .header-btn {
+            color: black;
+            background-color: #CCF6FF;
+            display: inline-block;
+            padding: 8px;
+            margin: 5px 10px;
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+
+            justify-content: space-between;
+            background-color: #0089BA;
+        }
+
+        h1 {
+            margin: 10px auto;
+        }
+
+        /* 토글은 숨김 상태 */
+        #toggle { 
+            display: none;
+        }
+
+        /* label을 눌러서 toggle이 check 되면, 
+        toggle과 같은 레벨에 있는 모든 .mobile (모든 이래봤자 1개) 의 
+        바로 아래 레벨에 있는 .gnb-wrap이 block이 되어 나타나게 된다. */
+        #toggle:checked ~ .mobile > .gnb-wrap {
+            display: block;
+        }
+
+        .gnb-wrap { /* navigation도 기본적으로 숨김상태 */
+            display: none;
+            border:10px solid #333333;
+        }
+
+        .lnb {
+            background-color: #5FBEF2;
+        }
+
+        nav ul {
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+            width: 20%;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 20px 5%;
+            border: 1px solid white;
+        }
+
+        .gnb li {
+            width: 25%;
+        }
+
+        main {
+            margin: 15px;
+            background-image: url(IMG_0966.JPG);
+            background-color: rgba(256, 256, 256, 0.7);
+            background-repeat: no-repeat;
+            background-blend-mode: lighten;
+        }
+
+        .small-heading {
+            font-size: 20px;
+            color: #EB9929;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        footer {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        footer span {
+            width: 100%;
+            display: block;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            margin: auto;
+            padding: 5px;
+        }
+
+        footer address p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <input id="toggle" type="checkbox">
+        <section class="mobile">
+
+
+            <div class="container">
+                <div class="header-btn category">
+                    <a href="#">Category</a>
+                </div>
+
+                <h1>Mobile</h1>
+
+                <label class ="header-btn" for="toggle" onclick="">
+                    Menu
+                </label>
+
+            </div>
+
+            <div class="gnb-wrap">
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#none">gnb1</a></li>
+                        <li><a href="#none">gnb2</a></li>
+                        <li><a href="#none">gnb3</a></li>
+                        <li><a href="#none">gnb4</a></li>
+                        <li><a href="#none">gnb5</a></li>
+                        <li><a href="#none">gnb6</a></li>
+                        <li><a href="#none">gnb7</a></li>
+                        <li><a href="#none">gnb8</a></li>
+                    </ul>
+    
+                </nav>
+            </div>
+            
+
+
+            <nav class="lnb">
+                <ul>
+                    <li><a href="#none">Inb1</a></li>
+                    <li><a href="#none">Inb2</a></li>
+                    <li><a href="#none">Inb3</a></li>
+                    <li><a href="#none">Inb4</a></li>
+                    <li><a href="#none">Inb5</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <h2>Lorem, ipsum.</h2>
+        
+        <p class="small-heading">
+            Lorem ipsum dolor sit amet. <br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing.
+        </p>
+
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, temporibus iste repellendus sed eius ipsa
+            facere libero provident blanditiis alias accusantium! Cum consequatur praesentium fugiat incidunt dolores
+            sint reprehenderit rerum. Quam nihil sequi amet at accusamus accusantium eligendi pariatur, quidem
+            voluptatibus quis suscipit maxime velit adipisci repudiandae corrupti, facilis illo blanditiis
+            exercitationem dolor aspernatur aliquid numquam ab libero laboriosam! Unde quae doloribus commodi ipsa
+            voluptates, voluptas dolores veritatis? Ullam natus explicabo corporis deserunt velit laboriosam, voluptatum
+            magni eligendi ex porro. Minima iste deserunt optio in, facilis aliquam neque! Soluta illum ratione fugit
+            possimus dolorem ipsa vel est sint, facilis laborum odio ducimus saepe vitae quasi cupiditate velit maxime
+            eaque. Voluptatibus nesciunt suscipit repellendus officiis id, mollitia quo ad sequi amet rem molestiae
+            vitae corrupti asperiores aliquam autem dolorum voluptate ut soluta, ducimus rerum odit eveniet! Enim odit
+            odio incidunt voluptates voluptate cupiditate dignissimos aperiam. Commodi odio voluptatibus exercitationem?
+            Voluptates, adipisci rem voluptas praesentium nemo ea est magnam laboriosam voluptate sint tenetur
+            consequuntur ab quam maxime quisquam similique earum enim labore impedit libero. Quaerat id ullam doloribus
+            praesentium in laudantium. Fugit officia unde molestiae cum, dolor dolore dolores. Distinctio saepe tempora
+            ipsum itaque? Eos recusandae nostrum veniam debitis asperiores sint labore voluptatibus quae odio tenetur,
+            dolorum qui eveniet, laborum ipsa ipsam laudantium facere saepe placeat numquam. Commodi, temporibus
+            voluptates nulla earum natus repellendus facere id impedit debitis eius at qui esse delectus eos odio
+            nostrum? Vel ut obcaecati sapiente? Corrupti necessitatibus fugit consequuntur tempora voluptas! Quidem
+            nulla architecto unde quod a.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea cupiditate, et libero laborum eius quas ad architecto aperiam mollitia perspiciatis expedita omnis qui, quasi explicabo nemo non facilis accusamus molestias.
+            Maiores tempora, odit debitis nam dolor, nihil ratione adipisci aperiam vero, optio voluptates! Nostrum porro excepturi tempore quas temporibus sequi ipsa. Ipsum, nisi. Architecto rem et eius eligendi vitae in!
+            Nobis possimus quam quasi mollitia soluta aut labore quas rerum ipsum ab. Saepe repudiandae perspiciatis optio exercitationem nostrum atque magnam incidunt ad sunt voluptatum, harum nemo, vel voluptates qui recusandae!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a, nihil natus sint labore cumque optio eos amet quae deserunt ex sit ducimus aliquid minus, beatae ipsum atque eaque quam?
+        </p>
+    </main>
+
+    <footer>
+        <span class="material-icons-outlined">
+            anchor
+        </span>
+        
+        <address>
+            <p>Lorem, ipsum.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </address>
+    </footer>
+
+</body>
+
+</html>

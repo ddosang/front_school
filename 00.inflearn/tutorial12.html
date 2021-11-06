@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>smartphone2</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <style>
+        /* reset */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        /* style */
+
+        header {
+            background-color: #FF9671;
+            overflow: hidden;
+        }
+
+        #toggle {
+            display: none;
+        }
+
+        #toggle:checked ~ .gnb {
+            display: block;
+        }
+
+        .head-bar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .head-bar a, .head-bar span {
+            position: relative;
+            color: white;
+        }
+
+        .head-bar h1 {
+            margin-top: 10px;
+        }
+
+        .header-btn {
+            display: inline-block;
+            padding: 8px;
+            margin: 5px 10px;
+            height: 20px;
+            border-radius: 5px;
+        }
+
+
+        .menu {
+            float: left;
+        }
+
+        h1 {
+            float: left;
+        }
+
+        .user {
+            float: right;
+        }
+
+        nav ul {
+            overflow: hidden;
+        }
+        nav li {
+            float: left;
+            width: 20%;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 10px 10px;
+        }
+
+        .gnb {
+            display: none;
+            background-color: white;
+            border: 5px solid skyblue;
+        }
+
+        .gnb li {
+            width: 25%;
+        }
+
+        .search {
+            clear: both;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .search-bar {
+            width: 85%;
+            height: 25px;
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            vertical-align: -6.5px;
+        }
+
+        .introduce {
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .introduce img {
+            float: left;
+            width: 50%;
+            height: 200px;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+        }
+
+        /* border 가 가운데, 위아래가 겹쳐서 넓어지는 것이 싫어서
+        겹치지 않는 부분은 2px 겹치는 부분은 1px로 조정. */
+        .left {
+            border-left: 2px solid lightgray;
+        }
+
+        .right {
+            border-right: 2px solid lightgray;
+        }
+
+        .first {
+            border-top: 2px solid lightgray;
+        }
+
+        .last {
+            border-bottom: 2px solid lightgray;
+        }
+
+        .post {
+            clear: both;
+        }
+
+        .post li {
+            border-bottom: 1px solid lightgray;
+            padding: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .ad-wrap li {
+            border: 1px solid lightgray;
+            margin: 6px 5px;
+        }
+
+        .ad {
+            overflow: hidden;
+            margin: 8px;
+        }
+
+        .image-wrap {
+            display: inline-block;
+            background-color: lightgray;
+            width: 80px;
+            height: 80px;
+            float: left;
+        }
+
+        .text-wrap {
+            float: left;
+            margin: 0 10px 0 10px;
+            width: 400px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .text-wrap a {
+            font-size: 18px;
+            display: block;
+        }
+
+        footer {
+            width: 100%;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        footer span {
+            width: 100%;
+            display: block;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            margin: 10px 0 ;
+            padding: 5px;
+        }
+
+        footer address p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="toggle">
+        <section class="head-bar">
+            <label for="toggle">
+                <span class="material-icons-outlined header-btn menu">
+                    menu
+                </span>
+            </label>
+
+            <h1>mobile logo</h1>
+            
+            <span class="material-icons-outlined header-btn user">
+                <a href="#none">account_circle</a>
+            </span>
+                
+            </label>
+        </section>
+
+        <nav class="gnb">
+            <ul>
+                <li><a herf="#none">gnb1</a></li>
+                <li><a herf="#none">gnb2</a></li>
+                <li><a herf="#none">gnb3</a></li>
+                <li><a herf="#none">gnb4</a></li>
+                <li><a herf="#none">gnb5</a></li>
+                <li><a herf="#none">gnb6</a></li>
+                <li><a herf="#none">gnb7</a></li>
+                <li><a herf="#none">gnb8</a></li>
+            </ul>
+        </nav>
+
+        <section class="search">
+            <form action="#" method="get">
+                <input class="search-bar" type="text">
+                <button type="submit">
+                    <span class="material-icons-outlined">
+                        search
+                    </span>
+                </button>
+            </form>
+        </section>
+
+        <nav class="lnb">
+            <ul>
+                <li><a herf="#none">lnb1</a></li>
+                <li><a herf="#none">lnb2</a></li>
+                <li><a herf="#none">lnb3</a></li>
+                <li><a herf="#none">lnb4</a></li>
+                <li><a herf="#none">lnb5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduce">
+            <ul>
+                <li class="first">
+                    <img class="left" src="./IMG_0966.JPG" alt="">
+                    <img class="right" src="./IMG_0966.JPG" alt="">
+                </li>
+                <li>
+                    <img class="left" src="./IMG_0966.JPG" alt="">
+                    <img class="right" src="./IMG_0966.JPG" alt="">
+                </li>
+                <li class="last">
+                    <img class="left" src="./IMG_0966.JPG" alt="">
+                    <img class="right" src="./IMG_0966.JPG" alt="">
+                </li>
+                
+            </ul>
+        </section>
+
+        <section class="post">
+            <ul>
+                <li>
+                    <a href="#none">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</a>
+                </li>
+                <li>
+                    <a href="#none">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</a>
+                </li>
+                <li>
+                    <a href="#none">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, illo?
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, illo?
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, illo?
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="ad-wrap">
+            <ul>
+                <li>
+                    <div class="ad">
+                        <div class="image-wrap"></div>
+                        <div class="text-wrap">
+                            <a href="https://blog.naver.com/218926">광고1</a>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, laboriosam?</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ad">
+                        <div class="image-wrap"></div>
+                        <div class="text-wrap">
+                            <a href="https://blog.naver.com/218926">광고2</a>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, laboriosam? Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ad">
+                        <div class="image-wrap"></div>
+                        <div class="text-wrap">
+                            <a href="https://blog.naver.com/218926">광고3</a>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, laboriosam?</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <span class="material-icons-outlined">
+            anchor
+        </span>
+        
+        <address>
+            <p>Lorem, ipsum.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </address>
+    </footer>
+
+
+</body>
+</html>

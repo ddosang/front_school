@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablet layout 2</title>
+    
+    <link rel="stylesheet" href="tutorial14.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+
+    <style>
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* style */
+
+        body {
+            min-width: 1000px;
+            height: 100%;
+        }
+
+        header {
+            min-width: 1000px;
+            background-color: #00737A;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+        }
+
+        .gnb ul {
+            overflow: hidden;
+        }
+
+        .gnb li {
+            float: left;
+            width: 100px;
+            padding: 15px 30px;
+            text-align: center;
+        }
+
+        .gnb li:not(li:last-child) {
+            border-right: 3px dotted #55C6AE;
+        }
+
+
+        .lnb {
+            background-color: #007EC3;
+            position: fixed;
+            top: 50px;
+            left: 0;
+            bottom: 60px;
+            width: 150px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .lnb li {
+            padding: 10px 30px;
+            border-bottom: 1px solid #C5FCEE;
+        }
+
+        main {
+            margin: 50px 150px 60px 150px; 
+            overflow: hidden;
+        }
+
+        .content {
+            background-color: white;
+            box-sizing: border-box;
+            float: left;
+            padding: 20px;
+        }
+
+        .content img {
+            width: 500px;
+            margin-bottom: 30px;
+        }
+
+        .content p {
+            line-height: 160%;
+        }
+
+        .content p::first-line {
+            color: #008F7A;
+        }
+
+        .content p::first-letter {
+            font-size: 400%;
+        }
+
+        aside {
+            position: fixed;
+            top: 50px;
+            right: 0;
+            bottom: 60px;
+            width: 150px;
+            float: left;
+            box-sizing: border-box;
+            background-color: #4E6FC3;
+        }
+
+        aside li {
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: #55C6AE;
+            height: 60px;
+            text-align: center;
+        }
+
+        footer address {
+            line-height: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#none">gnb_01</a></li>
+                <li><a href="#none">gnb_02</a></li>
+                <li><a href="#none">gnb_03</a></li>
+                <li><a href="#none">gnb_04</a></li>
+                <li><a href="#none">gnb_05</a></li>
+                <li><a href="#none">gnb_06</a></li>
+            </u>
+        </nav>
+    </header>
+
+    <nav class="lnb">
+        <ul>
+            <li><a href="">lnb_01</a></li>
+            <li><a href="">lnb_02</a></li>
+            <li><a href="">lnb_03</a></li>
+            <li><a href="">lnb_04</a></li>
+            <li><a href="">lnb_05</a></li>
+            <li><a href="">lnb_06</a></li>
+            <li><a href="">lnb_07</a></li>
+            <li><a href="">lnb_08</a></li>
+            <li><a href="">lnb_09</a></li>
+            <li><a href="">lnb_10</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content">
+            <img src="https://pbs.twimg.com/profile_banners/1277453652924366848/1631545203/1500x500" alt="aespa">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet numquam ipsa vitae doloremque vero sequi, repudiandae provident, obcaecati itaque quibusdam, nam rerum incidunt eligendi cumque amet hic eaque necessitatibus voluptatum. Doloribus optio eum adipisci amet ad ducimus! Voluptate iste doloribus animi expedita eaque libero dolore cum aut assumenda sint eius at deleniti velit deserunt dolor sed corporis, repudiandae quaerat pariatur. Dolorem, molestiae? Ab rem sunt quia accusamus deserunt at repudiandae reiciendis officiis distinctio libero esse optio illum fugiat commodi ex quae minima exercitationem doloremque adipisci nisi necessitatibus, placeat ea unde dolorum. Incidunt fugit mollitia dolores, sequi repellendus nobis, cumque accusantium recusandae quas rem temporibus consequuntur obcaecati soluta minus totam ut nam iusto. Maiores perspiciatis tempore vero, velit nemo odit, commodi soluta, aut mollitia maxime error? Soluta placeat sunt magnam, corrupti cum sequi autem natus odit iure libero nam quod dolores. Eaque, atque suscipit natus impedit quidem numquam totam expedita pariatur quas dolore quibusdam nisi. Saepe magnam dolor earum laboriosam id, omnis eum quasi quaerat quidem voluptates, minima nam sit ipsum consequuntur. Blanditiis, repellendus doloribus nostrum commodi recusandae aliquam sint consequatur odit voluptatem unde eius, iusto ducimus porro. Voluptates sed illo deserunt sequi facilis fugiat veniam quos eaque cumque! Maxime, voluptatibus.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae earum rerum molestiae quia doloremque in! Ut distinctio voluptatum esse delectus nesciunt, vitae quo dolor excepturi nihil atque asperiores, error voluptatibus optio eligendi tempore amet porro numquam? Voluptates, commodi, delectus cupiditate porro suscipit assumenda illo accusantium sint sit atque corporis, voluptate ipsam deleniti accusamus odit voluptatibus. Nulla, numquam? Suscipit repellendus distinctio ut, officia dolor vitae voluptas, dolorem blanditiis dolores quam dolorum maiores modi quos porro atque ipsa doloribus ad consectetur laudantium possimus in, nihil aliquam. Est facere voluptatibus similique itaque! Iure earum odit corporis quae expedita fuga quibusdam assumenda perspiciatis at!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, inventore eaque animi itaque autem ut in architecto dolor quos, hic dolorem, asperiores perspiciatis magni minima fuga molestias officia labore quaerat neque aspernatur? Debitis soluta ipsa dignissimos libero recusandae corrupti incidunt deleniti pariatur harum illo aliquid id adipisci quaerat assumenda obcaecati maxime aut voluptates, magnam distinctio, quisquam voluptatibus quis blanditiis. Quae incidunt hic explicabo minima necessitatibus maxime atque dolores nemo quas ut? Recusandae provident quibusdam a veritatis deserunt nulla nihil perferendis vero dignissimos molestiae nostrum amet exercitationem accusamus asperiores cupiditate quae, illo officiis quasi officia laborum iste sit quis aspernatur praesentium.
+            </p>
+        </section>
+    </main>
+
+    <aside>
+        <ul>
+            <li><a href="https://google.co.kr"><span class="material-icons-outlined">
+                language
+            </span></li>
+            <li><a href="https://yahoo.com"><span class="material-icons-outlined">
+                language
+            </span></li>
+            <li><a href="htts://daum.net"><span class="material-icons-outlined">
+                language
+            </span></li>
+            <li><a href="https://naver.com"><span class="material-icons-outlined">
+                language
+            </span></li>
+            <li><a href="httsp://nate.com"><span class="material-icons-outlined">
+                language
+            </span></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <address>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, ipsum.</address>
+    </footer>
+</body>
+</html>

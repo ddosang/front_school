@@ -65,6 +65,68 @@
             to { top: 500px; left: 500px;}
         }
 
+        .wrap2 {
+            position: relative;
+            top: 600px;
+            width: 200px;
+            background-color: wheat;
+        }
+
+        .wrap2 ul {
+            list-style: none;
+            width: 100px;
+        }
+        
+        .wrap2 li {
+            background-color: yellowgreen;
+            height: 50px;
+            border-radius: 5px;
+            margin: 1px;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+        }
+
+        .wrap2 li:hover {
+            animation-name: ani3;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes ani3 {
+            from {width: 100px;}
+            to { width: 170px; background-color: tomato;}
+        }
+
+        .wrap2 a {
+            color: white;
+            padding: 20px 30px;
+        }
+
+        .rec {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: cadetblue;
+            left: 0;
+
+            animation-name: ani4;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes ani4 {
+            from {width:100px; height: 100px; transform:rotate(0deg);}
+            to {width:200px; height: 200px; border-radius: 100px; line-height: 200px; font-size: 4em;
+                 background-color: cornflowerblue; left: 500px; transform:rotate(360deg);}
+        }
+
+        .rec:hover {
+            animation-play-state: paused;
+        }
+
     </style>
 </head>
 <body>
@@ -75,6 +137,19 @@
     <div class="wrap">
         <div class="rectangle"></div>
         <div class="circle"></div>
+    </div>
+
+    <!-- animation2 -->
+    <div class="wrap2">
+        <ul>
+            <li><a href="">box1</a></li>
+            <li><a href="">box2</a></li>
+            <li><a href="">box3</a></li>
+            <li><a href="">box4</a></li>
+            <li><a href="">box5</a></li>
+        </ul>
+
+        <div class="rec">rec</div>
     </div>
 
 </body>

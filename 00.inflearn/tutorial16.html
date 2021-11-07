@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    
+    <style>
+        .wrap1 {
+            width: 200px;
+            height: 200px;
+            border: 5px solid tomato;
+        }
+        .wrap1 .content {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background-color: yellowgreen;
+            opacity: 0.5;
+            transform: rotate(45deg) skewX(20deg) scale(2);
+        }
+
+        .wrap2 {
+            width: 200px;
+            height: 200px;
+            border: 5px solid tomato;
+        }
+        .wrap2 .content {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background-color: yellowgreen;
+            opacity: 0.5;
+            transform: rotate(270deg) scale(1.5);
+            transform-origin: top right;
+        }
+
+
+        .wrap {
+            width: 900px;
+            height: 500px;
+            margin: 0 auto;
+        }
+
+        .wrap ul {
+            /* overflow: hidden; */
+            list-style: none;
+        }
+
+        .wrap li {
+            float: left;
+        }
+
+        .wrap a {
+            display: block;
+            padding: 5px 64px;
+            background-color: yellowgreen;
+        }
+
+        .wrap li:first-child a:hover {
+            background-color: green;
+            transform: scale(2);
+            transform-origin: 50% 0;
+            z-index: 9999;
+        }
+
+        .wrap li:nth-child(2) a:hover {
+            background-color: green;
+            transform: rotate(5deg);
+            z-index: 9999;
+        }
+
+
+        .wrap li:nth-child(3) a:hover {
+            background-color: green;
+            transform: skewX(-15deg);
+            z-index: 9999;
+        }
+
+
+        .wrap li:nth-child(4) a:hover {
+            background-color: green;
+            transform: scale(2) rotate(5deg) skewX(-15deg);
+            transform-origin: 50% 0;
+            z-index: 9999;
+        }
+
+
+        .wrap li:last-child a:hover {
+            background-color: green;
+            animation: ani;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            z-index: 9999;
+        }
+
+        @keyframes ani {
+            from { }
+
+            to { 
+                background-color: yellow; 
+                transform: scale(2) rotate(5deg) skewX(-15deg);
+                transform-origin: 50% 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap1">
+        <div class="content">content</div>
+    </div>
+
+    <div class="wrap2">
+        <div class="content">content</div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="wrap">
+        <ul>
+            <li><a href="">lnb1</a></li>
+            <li><a href="">lnb2</a></li>
+            <li><a href="">lnb3</a></li>
+            <li><a href="">lnb4</a></li>
+            <li><a href="">lnb5</a></li>
+        </ul>
+    </div>
+</body>
+</html>

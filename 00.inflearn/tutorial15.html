@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    
+    <style>
+
+        .one {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 1px solid black;
+            transition-duration: 1s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in;
+        }
+
+        .one:hover {
+            width: 100px;
+            height: 300px;
+            background-color: blue;
+        }
+
+        .wrap {
+            position: relative;
+        }
+
+        .rectangle {
+            background-color: aquamarine;
+            width: 100px; 
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+
+            animation-name: ani1;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes ani1 {
+            from { width: 100px; }
+            to { width: 500px; }
+        }
+
+        .circle {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            line-height: 100px;
+            text-align: center;
+            border-radius: 50px;
+            animation-name: ani2;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes ani2 {
+            from { top:110px; left:0px; }
+            to { top: 500px; left: 500px;}
+        }
+
+    </style>
+</head>
+<body>
+    <!-- transition -->
+    <div class="one"></div>
+
+    <!-- animation1 -->
+    <div class="wrap">
+        <div class="rectangle"></div>
+        <div class="circle"></div>
+    </div>
+
+</body>
+</html>

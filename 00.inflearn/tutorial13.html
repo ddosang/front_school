@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablet1</title>
+
+    <link rel="stylesheet" href="tutorial13.css">
+
+    <style>
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* style */
+
+        body {
+            min-width: 1000px;
+        }
+
+        header {
+            background-color: #6967A9;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            padding: 40px;
+        }
+
+        .gnb {
+            background-color: #1B6299;
+        }
+
+        .gnb ul {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gnb li {
+            float: left;
+            width: 120px;
+            text-align: center;
+            border: 1px solid #A1ACBD;
+            padding: 15px 0 ;
+        }
+
+        .gnb li:last-child {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .gnb li:nth-child(6) {
+            position: absolute;
+            top: 0;
+            right: 120px;
+        }
+
+
+        .gnb a {
+            color: white;
+        }
+
+        main {
+            overflow: hidden;
+            background-color: #A36AAA;
+        }
+
+        .lnb {
+            width: 200px;
+            float: left;
+            
+            box-sizing: border-box;
+        }
+
+        .lnb li {
+            /* width: 12.5%; */
+            text-align: center;
+            border-bottom: 1px dashed #A1ACBD;
+            padding: 15px 0;
+        }
+
+        .content {
+            width: 100%;
+            margin-right: -200px;
+            float: left;
+            background-color: #DAF3FF;
+        }
+
+        .content article {
+            overflow: hidden;
+            margin: 30px 15px;
+            padding-right: 215px;
+        }
+
+        .content article h2 {
+            font-size: 30px;
+            margin: 15px 0;
+        }
+
+        .content article img {
+            width: 150px;
+            margin: 0 10px;
+        }
+
+        .content li:first-child img {
+            float: left;
+        }
+
+        .content li:nth-child(2) img {
+            float: right;
+        }
+
+
+        .content li:last-child img {
+            float: left;
+        }
+
+
+        .content article p:first-line {
+            font-size: 20px;
+        }
+
+        .content article p:first-letter {
+            font-size: 30px;
+        }
+
+        .content article p {
+            line-height: 160%;
+        }
+
+
+        footer {
+            background-color: #A1ACBD;
+            text-align: center;
+            height: 60px;
+        }
+
+        address {
+            line-height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Web Site for Tablet-PC</h1>
+
+        <nav class="gnb">
+            <ul>
+                <li><a href="">Btn1</a></li>
+                <li><a href="">Btn2</a></li>
+                <li><a href="">Btn3</a></li>
+                <li><a href="">Btn4</a></li>
+                <li><a href="">Btn5</a></li>
+                <li><a href="">Btn6</a></li>
+                <li><a href="">Btn7</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <nav class="lnb">
+            <ul>
+                <li><a href="">Btn1</a></li>
+                <li><a href="">Btn2</a></li>
+                <li><a href="">Btn3</a></li>
+                <li><a href="">Btn4</a></li>
+                <li><a href="">Btn5</a></li>
+                <li><a href="">Btn6</a></li>
+                <li><a href="">Btn7</a></li>
+            </ul>
+        </nav>
+
+
+        <section class="content">
+
+            <ul>
+                <li>
+                    <article>
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <img src="IMG_0966.JPG" alt="asdf">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis accusantium placeat, veniam
+                            quam adipisci autem veritatis animi ut quia? Qui officiis similique, id harum quis impedit
+                            dolorum, distinctio numquam sit, iure nihil adipisci itaque blanditiis dolore? Iste aliquid
+                            provident, aspernatur aperiam excepturi harum sed odit dicta ea incidunt sit sunt fugiat
+                            voluptatum quos quidem, ex praesentium minus cupiditate suscipit? Saepe minima repellat
+                            nihil aspernatur eum sed provident praesentium, fugit vel ullam dolorem impedit molestiae
+                            voluptatem totam blanditiis, ex nostrum iusto voluptate hic. Facere quae repellendus
+                            reiciendis fugit facilis autem perspiciatis velit vero veritatis, obcaecati dolore, sequi
+                            adipisci doloribus aperiam quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis obcaecati architecto illo eaque esse minima dolores nobis vero placeat alias?
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <img src="" alt="asdf">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis accusantium placeat, veniam
+                            quam adipisci autem veritatis animi ut quia? Qui officiis similique, id harum quis impedit
+                            dolorum, distinctio numquam sit, iure nihil adipisci itaque blanditiis dolore? Iste aliquid
+                            provident, aspernatur aperiam excepturi harum sed odit dicta ea incidunt sit sunt fugiat
+                            voluptatum quos quidem, ex praesentium minus cupiditate suscipit? Saepe minima repellat
+                            nihil aspernatur eum sed provident praesentium, fugit vel ullam dolorem impedit molestiae
+                            voluptatem totam blanditiis, ex nostrum iusto voluptate hic. Facere quae repellendus
+                            reiciendis fugit facilis autem perspiciatis velit vero veritatis, obcaecati dolore, sequi
+                            adipisci doloribus aperiam quis.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <img src="" alt="asdf">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis accusantium placeat, veniam
+                            quam adipisci autem veritatis animi ut quia? Qui officiis similique, id harum quis impedit
+                            dolorum, distinctio numquam sit, iure nihil adipisci itaque blanditiis dolore? Iste aliquid
+                            provident, aspernatur aperiam excepturi harum sed odit dicta ea incidunt sit sunt fugiat
+                            voluptatum quos quidem, ex praesentium minus cupiditate suscipit? Saepe minima repellat
+                            nihil aspernatur eum sed provident praesentium, fugit vel ullam dolorem impedit molestiae
+                            voluptatem totam blanditiis, ex nostrum iusto voluptate hic. Facere quae repellendus
+                            reiciendis fugit facilis autem perspiciatis velit vero veritatis, obcaecati dolore, sequi
+                            adipisci doloribus aperiam quis.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <img src="" alt="asdf">
+                        <img src="" alt="asdf">
+                        <img src="" alt="asdf">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis accusantium placeat, veniam
+                            quam adipisci autem veritatis animi ut quia? Qui officiis similique, id harum quis impedit
+                            dolorum, distinctio numquam sit, iure nihil adipisci itaque blanditiis dolore? Iste aliquid
+                            provident, aspernatur aperiam excepturi harum sed odit dicta ea incidunt sit sunt fugiat
+                            voluptatum quos quidem, ex praesentium minus cupiditate suscipit? Saepe minima repellat
+                            nihil aspernatur eum sed provident praesentium, fugit vel ullam dolorem impedit molestiae
+                            voluptatem totam blanditiis, ex nostrum iusto voluptate hic. Facere quae repellendus
+                            reiciendis fugit facilis autem perspiciatis velit vero veritatis, obcaecati dolore, sequi
+                            adipisci doloribus aperiam quis.</p>
+                    </article>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+    <footer>
+        <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque repellendus quos.
+        </address>
+    </footer>
+</body>
+
+</html>

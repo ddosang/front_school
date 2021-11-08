@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        ul {
+            display: grid;
+            width: 500px;
+            height: 500px;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        li {
+            background-color: pink;
+        }
+
+        li img {
+            width: 100%;
+        }
+
+        .first {
+            grid-row: 1 / span 2;
+            grid-column: 1 / span 3;
+        }
+        .second {
+            grid-row: 1 / span 3;
+            grid-column: 4 / span 2;
+        }
+        .third {
+            grid-column: 1 / span 2;
+        }
+        .fourth {
+            
+        }
+        .fifth {
+            grid-row: 4 / span 2;
+            grid-column: 1 / span 2;
+        }
+        .sixth {
+            grid-row: 4 / span 2;
+            grid-column: 3 / span 3;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="first"><img src="./image/1.jpg" alt=""></li>
+        <li class="second"><img src="./image/6.jpg" alt=""></li>
+        <li class="third"><img src="./image/2.jpg" alt=""></li>
+        <li class="fourth"><img src="./image/5.webp" alt=""></li>
+        <li class="fifth"><img src="./image/3.webp" alt=""></li>
+        <li class="sixth"><img src="./image/4.jpg" alt=""></li>
+    </ul>
+</body>
+</html>

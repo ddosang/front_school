@@ -20,8 +20,10 @@
 
 - tutorial1~7.html : 1-13강 HTML, CSS 강의 실습 [velog #1.5](https://velog.io/@ddosang/Front-end-1.5), [#1.5-2](https://velog.io/@ddosang/Front-end-1.5-2), [#2.5](https://velog.io/@ddosang/Front-end-2.5)
 - tutorial8.html, tutorial8_class.html : 14강 야후 클론코딩 [velog #5.5](https://velog.io/@ddosang/Front-end-5.5)
-- tutorial9~12.html : 15강 쇼핑몰(9), 16강 웹폰트 적용(10), 17~19강 스마트폰 레이아웃(11~12) 클론코딩 [velog #6.5-1](https://velog.io/@ddosang/Front-end-6.5-1)
-- tutorial13~14.html : 20~23강 태블릿 레이아웃 클론코딩 [velog #6.5-2](https://velog.io/@ddosang/Front-end-6.5-2)
+- tutorial9~12.html : 15강 쇼핑몰(9), 16강 웹폰트 적용(10), 17~19강 스마트폰 레이아웃(11~12) 클론코딩 [velog #6.5](https://velog.io/@ddosang/Front-end-6.5)
+- tutorial13~14.html : 20~23강 태블릿 레이아웃 클론코딩 [velog #7.5](https://velog.io/@ddosang/Front-end-7.5)
+- tutorial15~16.html : 24~26강 transition, transform, animation 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-1)
+- tutorial17.html : 27강 반응형 웹 [velog #7.5](ttps://velog.io/@ddosang/Front-end-7.5)
 
 
 
@@ -34,11 +36,12 @@
 
 [velog #1-1](https://velog.io/@ddosang/Front-end-1-1), [#1-2](https://velog.io/@ddosang/Front-end-1-2)
 
+<hr>
 <br>
 
 ## 2. HTML 실습
 
-02.Front-end_school_HTML
+02.HTML
 
 - 001~006.html : 1101 수업 시간 실습 [velog #2](https://velog.io/@ddosang/Front-end-2)
 
@@ -56,7 +59,7 @@
 
 ## 3. CSS 실습
 
-03. Front-end_School_CSS
+03.CSS
 
 - 010~021.html, css : 1103 수업 시간 실습 [velog #4-2](https://velog.io/@ddosang/Front-end-4-2)
 
@@ -66,6 +69,28 @@
 
 - 1104_character.html : 1104 수업 시간 과제 [velog #5](https://velog.io/@ddosang/Front-end-5)
 
-- 036~042.html : 1106 수업 시간 실습 + float 복습 [velog #6](https://velog.io/@ddosang/Front-end-6-1)
+- 036~042.html : 1105 수업 시간 실습 + float 복습 [velog #6-1](https://velog.io/@ddosang/Front-end-6-1)
 
-- 1105_naver.html : 1106 수업 네이버 로그인 창 클론 코딩 [velog #6](https://velog.io/@ddosang/Front-end-6-1)
+- 1105_n2ver.html : 1105 수업 네이버 로그인 창 클론 코딩 [velog #6-1](https://velog.io/@ddosang/Front-end-6-1)
+
+- 043~049.html, 1105_n2ver_flex.html : 1108 수업 (flex, grid) 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-2)
+
+<hr>
+<br>
+
+## 4. JS 실습
+
+04.javascript
+
+
+<br>
+
+## 5. 웹 구현 프로젝트 (HW)
+
+05.HW
+
+- HW01 : 1108~ 수업 실습
+
+
+
+

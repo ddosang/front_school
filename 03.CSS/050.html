@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자 슬라이드</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Fruktur&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* animation */
+
+        @keyframes ani {
+            0% {
+                transform: translateY(0px);
+            }
+            12.5% {
+                transform: translateY(-11.11%);
+            }
+            25% {
+                transform: translateY(-22.22%);
+            }
+            37.5% {
+                transform: translateY(-33.33%);
+            }
+            50% {
+                transform: translateY(-44.44%);
+            }
+            62.5% {
+                transform: translateY(-55.55%);
+            }
+            75% {
+                transform: translateY(-66.66%);
+            }
+            87.5% {
+                transform: translateY(-77.77%);
+            }
+            100% {
+                transform: translateY(-88.88%);
+            }
+        }
+
+
+        body, h1, h2, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            background-color: #000;
+            font-family: 'Noto Sans KR', cursive;
+        }
+
+        .snsd {
+            margin: 100px auto;
+            font-size: 50px;
+            text-align: center;
+            color: hotpink;
+        }
+
+        .snsd-member {
+            position: relative;
+            height: 100px;
+            line-height: 100px;
+            overflow: hidden; 
+            /* 100px 밖으로 흘러 넘치는걸 안보이게 */
+        }
+
+        .snsd-member::after {
+            content: '';
+            position: absolute;
+            display: block;
+
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: inset 0 0 10px 10px #111;
+
+            z-index: -1;
+        }
+
+
+        .snsd-member-list {
+            animation: ani 5s infinite;
+        }
+
+        .snsd-member-list:hover {
+            animation-play-state: paused;
+        }
+
+        div {
+            width: 500px;
+            height: 500px;
+            /* border: 1px white solid; */
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="snsd">
+        소녀시대
+        <div class="snsd-member">
+            <ul class="snsd-member-list">
+                <li>태연</li>
+                <li>써니</li>
+                <li>티파니</li>
+                <li>효연</li>
+                <li>유리</li>
+                <li>수영</li>
+                <li>윤아</li>
+                <li>서현</li>
+                <li>태연</li>
+            </ul>
+        </div>
+        <h2 class="name-title">Holiday Night</h2>
+    </div>
+
+    
+</body>
+</html>

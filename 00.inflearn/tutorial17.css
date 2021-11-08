@@ -1,0 +1,105 @@
+
+/* computer screen */
+@media screen and (min-width: 960px) {
+    body {
+        width: 1000px;
+        margin: 10px auto;
+    }
+    main p {
+        font-size: 16px;
+        line-height: 160%;
+    }
+    .nav-menu .list-menuNav .link-nav {
+        padding: 20px 70px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 767px) and (max-width: 959px) {
+    body {
+        width: 100%;
+    }
+    main p {
+        font-size: 17px;
+        line-height: 160%;
+    }
+    .nav-menu .list-menuNav .link-nav {
+        padding: 20px;
+    }
+}
+
+/* smart phone */
+
+@media screen and (max-width: 766px) {
+    body {
+        width: 100%;
+    }
+    main p {
+        font-size: 18px;
+        line-height: 120%;
+    }
+    .nav-menu .list-menuNav .link-nav {
+        padding: 20px 10px;
+    }
+}
+
+
+/* body, header는 추가되거나 할 일이 없으므로 class를 굳이 주지 않았다. */
+
+
+header {
+    text-align: center;
+    border: 1px solid lightgray;
+}
+header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px auto 60px;
+}
+
+/*  nav menu 같은 경우 메뉴가 추가될 가능성도 있고,
+js로 여러 처리를 줄 수 있으므로 on 같은 class를 구현하며
+최대한 자세하게 쓰려고 노력했다.*/
+.nav-menu .list-menuNav {
+    overflow: hidden;
+}
+.nav-menu .list-menuNav li {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid lightgray;
+}
+
+.nav-menu .list-menuNav .on .link-nav {
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* main과 footer의 경우, 원래는 안쪽 내용이 바뀔 가능성이 있는 부분이나, 해당 페이지는 연습용 단순한 구조라 바뀌거나 뭔가 추가될 가능성이 없다고 판단하여 class 이름은 주지 않았다. */
+main {
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+main h2 {
+    font-size: 25px; 
+}
+main h2::after {
+    content: "";
+    display: block;
+    overflow: hidden;
+    height: 1px;
+    margin: 5px 0 10px;
+    background-color: lightgray;
+}
+
+
+
+footer {
+    text-align: center;
+    border: 1px solid lightgray;
+    height: 100px;
+    line-height: 100px;
+}

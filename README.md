@@ -23,7 +23,7 @@
 - tutorial9~12.html : 15강 쇼핑몰(9), 16강 웹폰트 적용(10), 17~19강 스마트폰 레이아웃(11~12) 클론코딩 [velog #6.5](https://velog.io/@ddosang/Front-end-6.5)
 - tutorial13~14.html : 20~23강 태블릿 레이아웃 클론코딩 [velog #7.5](https://velog.io/@ddosang/Front-end-7.5)
 - tutorial15~16.html : 24~26강 transition, transform, animation 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-1)
-- tutorial17.html : 27강 반응형 웹 [velog #7.5](ttps://velog.io/@ddosang/Front-end-7.5)
+- tutorial17.html : 27강 반응형 웹 [velog #7.5](https://velog.io/@ddosang/Front-end-7.5)
 
 
 

@@ -73,9 +73,11 @@
 
 - 1105_n2ver.html : 1105 수업 네이버 로그인 창 클론 코딩 [velog #6-1](https://velog.io/@ddosang/Front-end-6-1)
 
-- 043~049.html, 1105_n2ver_flex.html : 1108 수업 (flex, grid) 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-2)
+- 043~049.html, 1105_n2ver_flex.html : 1108 수업 (flex, grid) 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-2#1-2-flex)
 
-<hr>
+- 051~061.html : 1108 수업 transition, transform, animation (keyframes) 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-2#2-move)
+
+
 <br>
 
 ## 4. JS 실습

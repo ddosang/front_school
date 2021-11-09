@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;   
+        }
+        
+        .card {
+            width: 500px;
+            height: 500px;
+            perspective: 400px;
+        }
+        
+        .item {
+            width: 500px;
+            height: 500px;
+            backface-visibility: hidden;
+            /* transition을 item에 줘야한다는 사실. */
+            transition: all 1.2s; 
+        }
+
+        .front {
+            position: absolute;
+            transform: rotateY(0deg);
+            background-color: pink;
+        }
+        .card:hover .front {
+            transform: rotateY(720deg);
+        }
+
+        .back {
+            transform: rotateY(-180deg);
+            background-color: skyblue;
+        }
+        .card:hover .back {
+            transform: rotateY(540deg);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="item front">앞면</div>
+        <div class="item back">뒷면</div>
+    </div>
+</body>
+</html>

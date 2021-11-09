@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @keyframes build {
+      from {
+        background-position: 0px, 0px;
+      }
+
+      to {
+        background-position: -3730px, 0;
+      }
+    }
+
+    @keyframes build6 {
+      from {
+        background-position: 0px, 0px;
+      }
+
+      to {
+        background-position: -4807px, 0;
+      }
+    }
+
+    .building1 {
+      width: 110px;
+      height: 180px;
+      background: url(./images/building/building1.png) no-repeat;
+      animation: build 5s steps(33);
+      animation-fill-mode: forwards;
+    }
+
+    .building6 {
+      width: 209px;
+      height: 180px;
+      background: url(./images/building/building6.png) no-repeat;
+      animation: build6 5s steps(23);
+      animation-fill-mode: forwards;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="building1"></div>
+  <div class="building6"></div>
+</body>
+
+</html>

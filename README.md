@@ -87,11 +87,21 @@
 
 <br>
 
-## 5. 웹 구현 프로젝트 (HW)
+## 5. 과제 (HW)
 
 05.HW
 
-- HW01 : 1108~ 수업 실습
+- HW01.html : 1101 수업 과제 - [paullab](http://www.paullab.co.kr/about.html) HTML 클론 코딩
+
+- HW02.html : 1102 수업 과제 - [Korea Startup Forum](https://kstartupforum.org) HTML 클론 코딩 (1103 code review 완료) [velog #4-1](https://velog.io/@ddosang/Front-end-4-1)
+
+<br>
+
+## 6. Project
+
+- Jungle Cinema : 
+
+- 10000 hours :
 
 
 

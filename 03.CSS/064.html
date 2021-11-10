@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    
+    <style>
+
+        @keyframes dd {
+            0% {
+                /* transform: rotateZ(0deg); */
+                opacity: 1;
+            }
+            33.33% {
+                /* transform: rotateZ(5deg); */
+            }
+            66.66% {
+                /* transform: rotateZ(0deg); */
+            }
+            100% {
+                /* transform: rotateZ(-5deg); */
+                opacity: 0;
+            }
+        }
+
+        button {
+            border: 5px solid pink;
+            border-radius: 3px;
+            padding: 30px 50px;
+            width: 250px;
+            height: 100px;
+            background: none;
+            color: pink;
+            font-size: 32px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all .5s;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            border-radius: 50%;
+            background: aquamarine;
+            transform: translateY(100px);
+            transition: all .5s;
+            z-index: -1;
+        }
+
+
+        button:hover::before {
+            transform: translateY(0);
+        }
+
+        button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            border-radius: 50%;
+            background: gold;
+            transform: translateY(-180px);
+            transition: all .5s;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        button:hover::after {
+            transform: translateY(-90px);
+        }
+
+        button:hover {
+            animation: dd .2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <button>
+        Click Me!
+    </button>
+</body>
+</html>

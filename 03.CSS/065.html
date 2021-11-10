@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button 정리</title>
+    
+    <style>
+        div {
+            position: relative;
+            color: white;
+            text-align:  center;
+            font-size: 32px;
+            line-height: 50px;
+            font-weight: 500;
+            width: 200px;
+            height: 50px;
+            background: cornflowerblue;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 50px;
+            transition: all 2s;
+            overflow: hidden;
+        }
+
+
+        /* translate */
+        .c1:hover {
+            transform: translateX(100px);
+            transition-timing-function: ease;
+        }
+
+        .c2:hover {
+            transform: translateX(100px);
+            transition-timing-function: linear;
+        }
+
+        .c3:hover {
+            background: skyblue;
+        }
+        .c4:hover {
+            background: black;
+            color: orange;
+        }
+        .c5:hover {
+            transform: scale(1.2);
+            background: gold;
+        }
+        .c6:hover {
+            width: 1000px;
+            height: 55px;
+        }
+        .c7:hover {
+            width: 250px;
+            letter-spacing: 20px;
+        }
+        .c8:hover {
+            line-height: 60px;
+        }
+        .c9:hover {
+            opacity: 0.2;
+        }
+        .c10:hover {
+            border-color: hotpink;
+            border-width: 20px;
+        }
+
+        .c11:hover {
+            transform: rotate(20deg);
+        }
+        .c12:hover {
+            transform-origin: top;
+            transform: rotate(20deg);
+        }
+        .c13:hover {
+            transform-origin: right;
+            transform: rotate(20deg);
+        }
+        .c14:hover {
+            transform-origin: left;
+            transform: rotate(20deg);
+        }
+        .c15:hover {
+            transform-origin: bottom;
+            transform: rotate(20deg);
+        }
+
+        .c16::before {
+            content: '';
+            position: absolute;
+            background: white;
+            height: 5px;
+            
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transform: translateX(-300px);
+            transition: all 1s;
+        }
+
+        .c16:hover::before {
+            transform: translateX(0);
+        }
+
+        .c17::before {
+            content: '';
+            position: absolute;
+            background-color: white;
+            width: 200px;
+            height: 10px;
+            left: 0;
+            bottom: 0;
+            transform: translateX(-300px);
+            transition: all 1s;
+        }
+
+        .c17:hover::before {
+            transform: translateX(0);
+        }
+
+        .c17::after {
+            content: '';
+            position: absolute;
+            background-color: white;
+            width: 200px;
+            height: 10px;
+            top: 0;
+            right: 0;
+            transform: translateX(300px);
+            transition: all 1s;
+        }
+        .c17:hover::after {
+            transform: translateX(0);
+        }
+
+        .c18::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: greenyellow;
+            transition: all 5s;
+            transform: rotateX(90deg);
+        }
+        .c18:hover::before {
+            transform: rotateX(0);
+            z-index: -1;
+        }
+        .c18::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: greenyellow;
+            transition: all 5s;
+            transform: rotateY(90deg);
+        }
+        .c18:hover::after{
+            background-color: blue;
+            transform: rotateY(0);
+            z-index: -1;
+        }
+        .c18:hover {
+            /* background: blue; */
+            color: tomato;
+            z-index: 1;
+        }
+
+        .c19::after {
+            content: 'a';
+        } 
+        /* 여러개의 가상요소는 불가능. */
+        .c19::after::after {
+            content: 'b';
+        }
+        .c19::after::after::after {
+            content: 'c';
+        }
+        
+        .c20::before {
+            position: absolute;
+            content: 'Hello World';
+            color: white;
+            background: tomato;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: translateY(-100%);
+            transition: all .5s;
+        }
+
+        .c20:hover::before {
+            transform: translateY(0);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="c1">ease</div>
+    <div class="c2">linear</div>
+    <div class="c3">back-color</div>
+    <div class="c4">color</div>
+    <div class="c5">scale</div>
+    <div class="c6">size</div>
+    <div class="c7">space</div>
+    <div class="c8">line-height</div>
+    <div class="c9">opacity</div>
+    <div class="c10">border</div>
+    <div class="c11">rotate</div>
+    <div class="c12">rotate top</div>
+    <div class="c13">rotate right</div>
+    <div class="c14">rotate left</div>
+    <div class="c15">rotate bottom</div>
+    <div class="c16">가상요소</div>
+    <div class="c17">가상요소</div>
+    <div class="c18">가상요소</div>
+    <div class="c19">hello</div>
+    <div class="c20">UP</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title>
+    
+    <style>
+        body {
+            /* 그라데이션 */
+            background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            box-sizing: border-box;
+            border: 1px solid red;
+            height: 500px;
+            width: 100%;
+            background: yellowgreen;
+        }
+
+        .item {
+            margin: 50px;
+            width: 400px;
+            background: azure;
+        }
+
+        @media screen and (max-width: 1000px) {
+            body {
+                background: pink;
+            }
+
+            .container {
+                height: 800px;
+                width: 100%;
+            }
+
+            .item {
+                width: 800px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background: skyblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <div class="container">
+        <div class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis asperiores omnis eaque adipisci accusantium dolorum neque illo maxime, iusto vitae quia ducimus voluptate laborum illum fuga debitis earum nesciunt.
+            Quibusdam assumenda aliquid aut repudiandae accusantium, non odit accusamus reiciendis possimus pariatur est ipsam fugiat animi laborum corporis eum doloribus iusto architecto? Expedita asperiores maxime voluptate distinctio velit repudiandae. Consequuntur!
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque, similique quam placeat unde velit magnam, eligendi optio fugiat quibusdam culpa ut illo ea blanditiis sequi laudantium. Cupiditate, perferendis libero.
+            Tempora quas impedit culpa officia, provident nulla porro ipsam quos asperiores totam recusandae aliquid cupiditate quam exercitationem enim similique saepe dolorum ea beatae adipisci quia eveniet nesciunt, dignissimos excepturi. Corporis?
+        </div>
+    </div>
+</body>
+</html>

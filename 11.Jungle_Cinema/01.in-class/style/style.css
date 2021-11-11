@@ -1,0 +1,357 @@
+/* 한글 주석이 개지지 않도록. */
+@charset "utf-8";
+
+/* 대체로 CSS layout 위의 4개는 순서가 조금씩 바뀌기도 함. */
+
+
+
+/* util */
+/* 회사에서는 직접 작성하는게 아니라 이미 되어 있는 걸 가져다 쓴다. */
+
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    /* 0px로 주면 screen-reader 가 아예 없어지는 경우가 있다. */
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* 
+웹 접근성을 고려하여 글자를 숨기는 방법
+.sr-only {
+    text-indent: 1000px;
+}
+
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.a11y-hidden {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0,0,0,0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+}
+
+display: none으로 숨기면 screen reader에 안읽힌다.
+*/
+
+/* 한줄 말줄임(single line) */
+.sl-ellipsis { 
+    /* 말줄임 : 우리의 경우는 제목, 출연에 */
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 두 줄 말줄임 */
+.multi-ellipsis { 
+    /* 말줄임 : 우리의 경우는 제목, 출연에 */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-bottom: 3px;
+}
+
+/* skip navigation */
+/* 웹 접근성을 위해 넣는거기 때문에 안보이게 날려주기. */
+.nav-skip a {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 160px;
+    line-height: 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: #333;
+    text-align: center;
+}
+
+.nav-skip a:active, .nav-skip a:focus {
+    top: 0;
+}
+
+/* style */
+.cont-movie {
+    width: 1006px;
+    margin: 86px auto 0;
+    padding: 0 27px 29px;
+    border: 2px solid #bdbdbd;
+    border-radius: 15px;
+    background: #e5e5e5;
+}
+
+.cont-movie .tit-cont {
+    font-size: 24px;
+    text-align: center;
+    line-height: 28px;
+    padding: 38px 0;
+}
+/* 선 같은 것은 가상 요소로 주는 것이 깔끔하다. */
+.cont-movie .nav-movie::before {
+    display: block;
+    content: "";
+    width: 650px;
+    height: 2px;
+    background: #bdbdbd;
+    margin: 0 auto;
+}
+
+.cont-movie .nav-movie {
+    text-align: center;
+}
+
+.cont-movie .list-movieNav {
+    display: inline-block;
+    margin: 27px 0;
+    overflow: hidden;
+}
+
+.cont-movie .list-movieNav li {
+    float: left;
+}
+
+/* 첫번째 자식은 줄 필요가 없으니까! */
+.cont-movie .list-movieNav li + li {
+    margin-left: 60px;
+}
+
+.cont-movie .list-movieNav .link-nav {
+    color: #828282;
+}
+/* 부모는 적어도 2개 정도는 명시하자. */
+.cont-movie .list-movieNav .on .link-nav {
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* content style */
+.cont-movie .list-movieInfo {
+    /* border-radius 위로 이미지가 올라갈 수도 있으니, overflow: hidden을 줘서 넘치는걸 빼자.*/
+    overflow: hidden; 
+    padding: 0 12px 24px 0;
+    border: 2px solid #bdbdbd;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.cont-movie .list-movieInfo img {
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.cont-movie .list-movieInfo .tit-movie {
+    font-weight: bold;
+    line-height: 23px;
+}
+
+/* content style */
+.cont-movie .list-movieInfo li {
+    /* border-radius 위로 이미지가 올라갈 수도 있으니, overflow: hidden을 줘서 넘치는걸 빼자.*/
+    float: left;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin: 24px 0 0 23px;
+}
+
+.cont-movie .list-movieInfo li:nth-child(4n+1) {
+    margin: 24px 0 0 27px;
+}
+
+
+.cont-movie .list-movieInfo li > a[class^="link"] {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    height: 41px;
+    line-height: 41px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #bdbdbd;
+}
+
+/* 가운데 줄 */
+.cont-movie .list-movieInfo li .link-reserv::after {
+    /* display: inline-block; */
+    float: right;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #bdbdbd;
+}
+
+.cont-movie .list-movieInfo li .link-teaser::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../images/btn_play.png");
+    vertical-align: top;
+    margin: 11px 2px 0 0;
+}
+
+.cont-movie .list-movieInfo .link-movie {
+    display: block;
+    margin-bottom: 11px;
+}
+
+.list-movieInfo .list-info {
+    margin-top: 12px;
+}
+
+.list-movieInfo article {
+    width: 180px;
+    padding: 19px 19px 0 19px;
+}
+
+.list-movieInfo .list-info dt, .list-movieInfo .list-info dd {
+    display: inline-block;
+    font-size: 13px;
+    vertical-align: top;
+    line-height: 1.2;
+}
+.list-movieInfo .list-info dt {
+    font-weight: lighter;
+    color: #828282;
+}
+.list-movieInfo .list-info .multi-ellipsis {
+    width: 140px;
+    height: 28px;
+    float: right;
+    /* vendor prefix - webkit 기반 브라우저 */
+    display: -webkit-box;
+    /* margin-left: 5px; */
+}
+
+.list-movieInfo .list-info .item-star {
+    float: right;
+}
+.list-movieInfo .list-info .item-star dt::after {
+    /* float: right; */
+    display: inline-block;
+    content: "";
+    width: 14px;
+    height: 13px;
+    margin-left: 5px;
+    vertical-align: top;
+    background: url("../images/별점이미지.png")
+}
+.list-movieInfo .list-info div {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* footer style */
+.cont-company {
+    background: #f2f2f2;
+    margin-top: 135px;
+}
+
+.cont-company .cont-coInfo {
+    position: relative;
+    overflow: hidden;
+    width: 1189px;
+    margin: 0 auto;
+}
+
+.cont-company .tit-company {
+    display: block;
+    height: 118px;
+    line-height: 118px;
+    border-bottom: 2px solid #c4c4c4;
+    font-weight: bold;
+}
+
+.cont-coInfo .list-coInfo {
+    float: left;
+    margin: 38px 0;
+}
+
+.cont-coInfo .list-coInfo dt, .cont-coInfo .list-coInfo dd {
+    display: inline-block;
+    float: left;
+}
+
+.cont-company .list-coInfo dt {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.cont-company .list-coInfo dd {
+    font-weight: 400;
+}
+
+.cont-company .list-coInfo dd:after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    margin: 0 12px;
+    background: #000;
+}
+
+
+.cont-company .list-coInfo dd:last-child::after {
+    /* sns list */
+    display: none;
+}
+
+.cont-company .list-sns {
+    /* 끌어올리기 위해 .cont-coInfo 에 position relative로 줌. */
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+.cont-company .list-sns li {
+    float: left;
+    margin-left: 22px;
+}
+
+/* 웹 접근성을 위해 글자를 만들고 날리자. */
+.cont-company .list-sns a[class^="link"] {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 1px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.cont-company .list-sns .link-twitter {
+    background: url("../images/SNS/twitter.png");
+}
+.cont-company .list-sns .link-insta {
+    background: url("../images/SNS/instagram.png");
+}
+.cont-company .list-sns .link-facebook {
+    background: url("../images/SNS/facebook.png");
+}
+
+.cont-company .txt-copy {
+    float: right;
+    font-size: 14px;
+    margin-top: 38px;
+}

@@ -20,9 +20,9 @@
 
 - tutorial1~7.html : 1-13강 HTML, CSS 강의 실습 [velog #1.5](https://velog.io/@ddosang/Front-end-1.5), [#1.5-2](https://velog.io/@ddosang/Front-end-1.5-2), [#2.5](https://velog.io/@ddosang/Front-end-2.5)
 - tutorial8.html, tutorial8_class.html : 14강 야후 클론코딩 [velog #5.5](https://velog.io/@ddosang/Front-end-5.5)
-- tutorial9~12.html : 15강 쇼핑몰(9), 16강 웹폰트 적용(10), 17~19강 스마트폰 레이아웃(11~12) 클론코딩 [velog #6.5](https://velog.io/@ddosang/Front-end-6.5)
-- tutorial13~14.html : 20~23강 태블릿 레이아웃 클론코딩 [velog #7.5](https://velog.io/@ddosang/Front-end-7.5)
-- tutorial15~16.html : 24~26강 transition, transform, animation 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-1)
+- tutorial9~12.html : 15강 쇼핑몰(9), 16강 웹폰트 적용(10), 17-19강 스마트폰 레이아웃(11-12) 클론코딩 [velog #6.5](https://velog.io/@ddosang/Front-end-6.5)
+- tutorial13~14.html : 20-23강 태블릿 레이아웃 클론코딩 [velog #7.5](https://velog.io/@ddosang/Front-end-7.5)
+- tutorial15~16.html : 24-26강 transition, transform, animation 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-1)
 - tutorial17.html : 27강 반응형 웹 [velog #7.5](https://velog.io/@ddosang/Front-end-7.5)
 
 
@@ -61,22 +61,23 @@
 
 03.CSS
 
-- 010~021.html, css : 1103 수업 시간 실습 [velog #4-2](https://velog.io/@ddosang/Front-end-4-2)
+- 010~021.html, css : 1103 수업  CSS 기초 실습 [velog #4-2](https://velog.io/@ddosang/Front-end-4-2)
 
 - 022~024.html : 1104 selector 복습
 
-- 025~035.html : 1104 수업 시간 실습 [velog #5](https://velog.io/@ddosang/Front-end-5)
+- 025~035.html : 1104 수업 시간 CSS 실습  [velog #5](https://velog.io/@ddosang/Front-end-5)
 
-- 1104_character.html : 1104 수업 시간 과제 [velog #5](https://velog.io/@ddosang/Front-end-5)
+- 1104_character.html : 1104 캐릭터 그리기 과제  [velog #5](https://velog.io/@ddosang/Front-end-5)
 
 - 036~042.html : 1105 수업 시간 실습 + float 복습 [velog #6-1](https://velog.io/@ddosang/Front-end-6-1)
 
-- 1105_n2ver.html : 1105 수업 네이버 로그인 창 클론 코딩 [velog #6-1](https://velog.io/@ddosang/Front-end-6-1)
+- 1105_n2ver.html : 1105 네이버 로그인 창 클론 코딩 [velog #6-1](https://velog.io/@ddosang/Front-end-6-1)
 
 - 043~049.html, 1105_n2ver_flex.html : 1108 수업 (flex, grid) 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-2#1-2-flex)
 
 - 051~061.html : 1108 수업 transition, transform, animation (keyframes) 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-2#2-move)
 
+- 062~068.html: 1109-1110 수업 transition, transform, animation 실습 [velog #9](https://velog.io/@ddosang/Front-end-9)
 
 <br>
 
@@ -87,9 +88,9 @@
 
 <br>
 
-## 5. 과제 (HW)
+## 5. 과제 (Clone Coding)
 
-05.HW
+05.Clone
 
 - HW01.html : 1101 수업 과제 - [paullab](http://www.paullab.co.kr/about.html) HTML 클론 코딩
 
@@ -99,9 +100,17 @@
 
 ## 6. Project
 
-- Jungle Cinema : 
+< 폴더 구조 >
 
-- 10000 hours :
+- myself : 직접 구현해본 것
+- folder in-class : 수업 하면서 학습한 것
+- develop : 수업 후에 복습하고 myself나 in-class를 발전시킨 것
+
+===============================================================
+
+- 11.Jungle_Cinema : 1108~1109 실습 [velog #8](https://velog.io/@ddosang/Front-end-8)
+
+- 12.10000hours : 1109 과제~1111 실습 [velog #10](https://velog.io/@ddosang/Front-end-10)
 
 
 

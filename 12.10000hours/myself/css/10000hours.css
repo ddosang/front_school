@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+
+/* setting */
+
+@media screen and (min-width: 1000px) {
+    body {
+        width: 1000px;
+        margin: auto;
+    }
+    header {
+        height: 26.5vw;
+    }
+    .img-title {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
+    body {
+        width: 100%;
+        margin: auto;
+    }
+    header {
+        height: 30vw;
+    }
+    .img-title {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        width: 100%;
+    }
+    header {
+        height: 40vw;
+    }
+    .img-title {
+        width: 80%;
+    }
+}
+
+/* Setting */
+.sr-only {
+    text-indent: -9999px;
+}
+
+/* style */
+
+body {
+    background-color: #5B2386;
+    color: #FFF;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    background: url('../img/clock.png') no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    /* height: 26.5vw; */
+}
+
+.img-title {
+    /* width: 50%; */
+    margin: 0 auto;
+}
+
+h1 {
+    overflow: hidden;
+
+}
+
+main {
+    margin-top: 40px;
+    text-align: center;
+}
+main q {
+    color: #F5DF4D;
+    font-family: 'OTEnjoystoriesBA';
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 40px auto;
+}
+main p {
+    font-family: 'GmarketSansMedium';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+strong {
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+
+article[class^="cont"] {
+    margin-top: 62px;
+}
+
+.cont {
+    background: url(../img/quotes.png) no-repeat center center;
+    /* width: 100%; */
+}
+
+.cont p {
+    line-height: 24px;
+    text-align: center;
+}
+
+form {
+    font-family: 'GmarketSansMedium';
+    font-size: 14px;
+}
+.cont-input {
+    margin: 0 22px 0 22px;
+}
+
+
+.cont-input input[class^="input"] {
+    width: 157px;
+    height: 37px;
+    background: white;
+    border-radius: 7px;
+    border: none;
+    text-align: center;
+    color: #BABCBE;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'GmarketSansMedium';
+}
+
+.cont-input span {
+    line-height: 50px;
+}
+
+.cont-input .sentence-end::after {
+    content: '';
+    display: block;
+}
+
+[class^="btn"] {
+    color: #5B2386;
+    border: none;
+    font-family: 'GmarketSansBold';
+    font-size: 14px;
+}
+
+.cont-input .btn-calculate {
+    background-color: #FCEE21;
+    width: 241px;
+    height: 68px;
+    border-radius: 13px;
+    padding: 18px 36.5px; 
+    line-height: 16px;
+    margin-top: 55px;
+    position: relative;
+}
+
+.cont-input .btn-calculate::after {
+    content: '';
+    background: url(../img/click.png) no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 20px;
+    margin-left: 80px;
+    width: 55px;
+    height: 55px;
+}
+
+.cont-output {
+    margin: 0 27px 0 27px;
+}
+
+.cont-output strong {
+    font-size: 24px;
+}
+
+.cont-output p {
+    line-height: 24px;
+}
+
+.cont-output .btn-practice {
+    display: inline-block;
+    background-color: #FCEE21;
+    width: 186px;
+    height: 40px;
+    border-radius: 56px;
+    margin-top: 55px;
+    line-height: 40px;
+}
+
+.cont-output .btn-share {
+    display: inline-block;
+    background-color: #FFF;
+    width: 92px;
+    height: 40px;
+    border-radius: 56px;
+    margin: 55px 0 0 13px;
+    line-height: 40px;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer .txt-copy {
+    font-family: 'Noto Sans KR';
+    font-size: 9px;
+    line-height: 13px;
+}

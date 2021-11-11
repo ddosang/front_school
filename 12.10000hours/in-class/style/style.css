@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+#app {
+    font-family: GmarketSansMedium;
+    background-color: #5B2386;
+    color: white;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.tit-law {
+    display: inline-block;
+    position: relative;
+    margin-top: 194px;
+}
+
+.tit-law::after {
+    display: block;
+    content: '';
+    position: absolute;
+    /* 중심을 50% 이동시키고 이미지 크기 반만큼 margin - 를 줘서 이동. */
+    top: 50%;
+    left: 50%;
+    width: 225px;
+    height: 225px;
+    margin: -112.5px 0 0 -112.5px;
+    background-image: url(../images-law/title_bg.png);
+    background-size: 225px;
+}
+
+.tit-law .img-tit {
+    position: relative;
+    z-index: 10;
+}
+
+.img-txt {
+    max-width: 486px;
+    margin: 125px auto 78px;
+}
+
+.txt-desc {
+    position: relative;
+    line-height: 24px;
+    font-size: 18px;
+    width: 475px;
+    margin:0 auto 102px;
+}
+
+.txt-desc .tit-desc {
+    line-height: 24px;
+    font-weight: bold;
+}
+
+ /* 각각 코딩해보고 공통되는 속성은 묶어서 주자. */
+.txt-desc::before, .txt-desc::after {
+    position: absolute;
+    top: 0;
+    display: block;
+    content: '';
+    width: 37px;
+    height: 32px;
+    margin-top: 16px;
+}
+
+.txt-desc::before {
+    left: 0;
+    background-image: url('../images-law/txt-left.png');
+}
+
+.txt-desc::after {
+    right: 0;
+    background-image: url('../images-law/txt-right.png');
+}
+
+.cont-inp, .cont-result {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.cont-inp .txt-wannabe input, .cont-inp .txt-time input {
+    width: 228px;
+    height: 57px;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.cont-inp .txt-wannabe {
+    margin-bottom: 27px;
+}
+
+.cont-inp .txt-time{
+    margin-bottom: 115px;
+}
+
+.cont-inp .btn-exc, .cont-result .btn-go, .cont-result .btn-share {
+    /* margin, padding 처럼 layout 에 영향을 미치는 속성은 위로 빼자 */
+    padding: 21px 49px;
+    margin-bottom: 147px;
+    font-family: GmarketSansBold;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: #5B2386;
+    background-color: #FCEE21;
+    border-radius: 56px;
+    cursor: pointer;
+    border: none;
+}
+
+.cont-inp .btn-exc {
+    position: relative;
+}
+
+.cont-inp .btn-exc::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 64px;
+    height: 72px;
+    background-image: url(../images-law/hand.png);
+}
+
+.cont-result .txt-wannabe, .cont-result .txt-time {
+    line-height: 72px;
+}
+.cont-result .txt-wannabe {
+    margin-bottom: 17px;
+}
+.cont-result .txt-time {
+    margin-bottom: 127px;
+}
+
+.cont-result .txt-wannabe strong, .cont-result .txt-time strong {
+    font-size: 72px;
+    vertical-align: top;
+    font-family: GmarketSansBold;
+}
+
+.btn-share {
+    margin-left: 18px;
+    background-color: #FFF;
+}
+
+.cont-footer{
+    font-family: Noto Sans KR;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.cont-footer .img-footer{
+    width:125px;
+    height:25px;
+    margin:0 auto 20px;
+}

@@ -171,12 +171,11 @@
     background-color: #fff;
 }
 
-
-
 .cont-footer{
     font-family: Noto Sans KR;
     font-size: 12px;
     line-height: 17px;
+    margin-top: 85px;
 }
 
 .cont-footer .img-footer{
@@ -284,4 +283,4 @@
     .cont-footer{
         font-size:9px;
     }
-}
+}

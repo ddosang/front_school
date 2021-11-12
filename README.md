@@ -104,14 +104,12 @@
 
 - myself : 직접 구현해본 것
 - in-class : 수업 하면서 학습한 것
-- develop : 수업 후에 복습하고 myself나 in-class를 발전시킨 것
+- develop : 수업 후에 myself나 in-class를 발전시킨 것
 
-===============================================================
+==============================================================
 
 - 11.Jungle_Cinema : 1108~1109 실습 [velog #8](https://velog.io/@ddosang/Front-end-8)
 
-- 12.10000hours : 1109 과제~1111 실습 [velog #10](https://velog.io/@ddosang/Front-end-10)
+- 12.10000hours : 1109 과제~1112 실습 [velog #10](https://velog.io/@ddosang/Front-end-10)
 
-
-
-
+- 13.Login_Modal : 1112 과제~

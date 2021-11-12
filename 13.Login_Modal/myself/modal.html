@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In & Sign Up</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title-sign">로그인 또는 회원가입</h1>
+        <button class="header__btn-close"><img src="res/close.png" alt="닫기"></button>
+    </header>
+
+    <main class="main">
+        <section class="sign-in">
+            <p class="sign-in__info">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
+
+            <form action="" class="sign-in__form">
+                <input type="text" placeholder="아이디" class="sign-in__id">
+                <p class="sign-in__warning-id">아이디를 입력해주세요.</p>
+
+                <input type="password" placeholder="비밀번호" class="sign-in__password">
+                <p class="sign-in__warning-password">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
+
+                
+                <div class="sign-in__stay">
+                    <input type="checkbox" id="stay-logged-in" class="sign-in__check-stay">
+                    <label for="stay-logged-in" class="sign-in__img-stay"></label><label for="stay-logged-in" class="sign-in__label-stay">로그인 상태 유지</label>
+                </div>
+                <button class="sign-in__btn-log-in">로그인</button>
+            </form>
+
+            <div class="sign-in__rel">
+                <a href="" class="sign-in__join">회원가입</a><a href="" class="sign-in__look">아이디/비밀번호 찾기</a>
+            </div>
+        
+            
+
+            <section class="sign-in__sns-login">
+                <p class="sign-in__divider">또는</p>
+        
+                <button class="sign-in__google">구글 계정으로 로그인</button>
+                <button class="sign-in__facebook">페이스북 계정으로 로그인</button>
+                <button class="sign-in__naver">네이버 계정으로 로그인</button>
+                <button class="sign-in__kakaotalk">카카오톡 계정으로 로그인</button>
+            </section>
+            
+        </section>
+        
+    </main>
+</body>
+</html>

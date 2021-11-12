@@ -1,0 +1,424 @@
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+#app {
+    text-align: center;
+    font-family: GmarketSansMedium;
+    background-color: #5B2386;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 70px;
+}
+
+
+.title-law {
+    position: relative;
+    margin-top: 194px;
+    display: inline-block;
+}
+
+.title-law::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -112.5px 0 0 -112.5px;
+    display: block;
+    content: '';
+    background-image: url(../../in-class/images-law/title_bg.png);
+    width: 225px;
+    height: 225px;
+    background-size: 215px;
+}
+
+.title-law img {
+    position: relative;
+    z-index: 10;
+}
+
+.img-subtitle {
+    width: 486px;
+    margin: 125px auto 0;
+}
+
+.txt-desc {
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+    width: 475px;
+    margin: 78px auto 0;
+}
+
+.txt-desc::before, .txt-desc::after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    width: 37px;
+    height: 32px;
+    background-size: 37px 32px;
+}
+
+.txt-desc::before {
+    left: 0;
+    background-image: url(../../in-class/images-law/txt-left.png);
+}
+
+.txt-desc::after {
+    right: 0;
+    background-image: url(../../in-class/images-law/txt-right.png);
+}
+
+
+.txt-desc .title-desc {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: GmarketSansBold;
+}
+
+.cont-input {
+    margin-top: 120px;
+}
+
+.cont-input, .cont-output {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.cont-input .txt-expert input, .cont-input .txt-time input {
+    margin: 0 4px;
+    width: 228px;
+    height: 57px;
+    background-color: #FFF;
+    border-radius: 7px;
+    border: none;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #BABCBE;
+}
+
+.cont-input .txt-time input {
+    margin-top: 27px;
+}
+
+.cont-input .btn-calculate, .btn-go, .btn-share {
+    margin-top: 115px;
+    padding: 21px 49px;
+    background-color: #FCEE21;
+    color: #5B2386;
+    font-family: GmarketSansBold;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 56px;
+    border: none;
+}
+
+.cont-input .btn-calculate {
+    position: relative;
+}
+
+.cont-input .btn-calculate::after {
+    position: absolute;
+    top: 15px;
+    right: -70px;
+    width: 64px;
+    height: 72px;
+    display: block;
+    content: '';
+    background-size: 64px 72px;
+    background-image: url(../../in-class/images-law/hand.png);
+}
+
+.cont-output {
+    margin-top: 147px;
+}
+
+.cont-output .txt-expert, .cont-output .txt-time {
+    line-height: 72px;
+}
+
+.cont-output .txt-time{
+    margin-top: 17px;
+}
+
+.cont-output .txt-expert strong, .cont-output .txt-time strong {
+    font-size: 72px;
+    vertical-align: top;
+    font-family: GmarketSansBold;
+}
+
+.cont-output .btn-share {
+    background-color: #FFF;
+}
+
+.cont-footer {
+    margin-top: 136px;
+    font-family: Noto Sans KR;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.cont-footer .img-footer {
+    margin: 0 auto 20px;
+    width: 125px;
+    height: 25px;
+}
+
+
+
+@media screen and (max-width: 360px) {
+    #app {
+        padding: 0 20px 32px;
+    }
+
+    .title-law {
+        max-width: 267px;
+        height: 56px;
+        margin-top: 76px;
+    }
+
+    .title-law::after {
+        width: 106px;
+        height: 106px;
+        background-size: 106px;
+        margin: -53px 0 0 -53px;
+    }
+
+    .img-subtitle {
+        width: 297px;
+        margin-top: 40px;
+    }
+
+    .txt-desc {
+        width: 290px;
+        margin-top: 62px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .txt-desc .title-desc {
+        font-size: 16px;
+    }
+
+    .txt-desc::before, .txt-desc::after {
+        width: 18px;
+        height: 15px;
+        background-size: 18px 15px;
+    }
+
+    .cont-input {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .cont-input .txt-expert input, .cont-input .txt-time input {
+        width: 156px;
+        height: 37px;
+        font-size: 14px;
+        margin: 0 1px;
+    }
+
+    .cont-input .txt-expert{
+        margin-bottom: 17px;
+        
+    }
+
+    .cont-input .txt-time input {
+        margin-top: 19px;
+    }
+
+    .cont-input .btn-calculate {
+        width: 241px;
+        height: 68px;
+        padding: 19px 36.5px 17px;
+        font-size: 14px;
+        line-height: 14px;
+        border-radius: 13px;
+        margin-top: 49px;
+    }
+    .cont-input .btn-calculate::after {
+        width:43px;
+        height:48px;
+        background-size: 43px 48px;
+        right:-42px;
+        top:30px;
+    }
+
+    .cont-output {
+        margin-top: 64px;
+    }
+
+    .cont-output .txt-expert, .cont-output .txt-time {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .cont-output .txt-expert strong, .cont-output .txt-time strong {
+        font-size: 24px;
+        vertical-align: -4px;
+    }
+
+    .cont-output .btn-go, .cont-output .btn-share {
+        margin-top: 55px;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 0;
+    }
+
+    .cont-output .btn-go {
+        width: 186px;
+        height: 40px;
+    }
+
+    .cont-output .btn-share {
+        width: 92px;
+        height: 40px;
+    }
+
+    .cont-footer {
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+    .cont-footer .img-footer {
+        margin-top: 83px;
+        width: 91px;
+        height: 18px;
+    }
+
+    .cont-footer small {
+        margin-top: 17px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .title-law {
+        max-width: 267px;
+        height: 56px;
+        margin-top: 76px;
+    }
+}
+
+@media screen and (max-width:360px){
+    #app{
+        padding:0 24px 32px;
+    }
+    .title-law{
+        width: 267px;
+        height: 57px;
+        margin-top:76px;
+    }
+    .title-law::after{
+        width:106px;
+        height:106px;
+        margin: -53px 0 0 -53px;
+        background-size:106px;
+    }
+    .img-subtitle{
+        max-width:297px
+    }
+    .txt-desc{
+        margin-bottom:62px;
+        font-size:14px;
+    }
+    .txt-desc .title-desc{
+        font-size:16px;
+    }
+    .txt-desc::before, .txt-desc::after{
+        width:18px;
+        height:15px;
+        background-size: 18px 15px;
+    }
+    .cont-input, .cont-output{
+        font-size: 14px;
+        line-height:14px;
+    }
+    .cont-input .txt-expert input, .cont-input .txt-time input{
+        width:156px;
+        height:37px;
+        font-size:14px;
+        margin:0 1px;
+        padding:0;
+    }
+    .cont-input .txt-expert {
+        margin-bottom:17px;
+    }
+    .cont-input .txt-time input{
+        margin-top:17px;
+    }
+    .cont-input .btn-calculate{
+        width:280px;
+        padding: 19px 36px;
+        font-size:17px;
+        line-height: 17px;
+        border-radius: 13px;
+    }
+    .cont-input .btn-calculate::after{
+        width:43px;
+        height:48px;
+        background-size: 43px 48px;
+        right:-40px;
+        top:30px;
+    }
+    .cont-output .txt-expert strong, .cont-output .txt-time strong{
+        font-size:24px;
+        line-height:24px;
+        vertical-align: -4px;
+    }
+    .cont-output .txt-expert, .cont-output .txt-time{
+        line-height:14px;
+    }
+    .cont-input .btn-calculate, .btn-go, .btn-share{
+        font-size:14px;
+        padding:12px 17px;
+    }
+    .btn-share{
+        margin-left:14px;
+    }
+    .img-txt{
+        margin: 69px auto 62px;
+    }
+    .cont-input .txt-time{
+        margin-bottom:49px;
+    }
+    .cont-input .btn-calculate{
+        margin-bottom:64px;
+        padding: 12px 54px;
+    }
+    .cont-output .txt-time{
+        margin-bottom:55px;
+    }
+    .cont-output{
+        margin-bottom:83px;
+    }
+    .cont-footer .img-footer{
+        width:91px;
+        height:18px;
+    }
+    .cont-footer{
+        font-size:9px;
+    }
+}
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOCSS</title>
+    
+    <style>
+        /* 1. 구조와 스킨 분리 */
+        /* .btn {
+            width: 200px;
+            height: 80px;
+            font-size: 30px;
+        }
+        .btn-close {
+            background: black;
+            color: #000;
+            border: 3px dashed black;
+        } */
+
+        /* 2. container와 content 분리 */
+        #main .btn {
+            width: 300px;
+            padding: 20px 10px;
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        #main .general {
+            background-color: aquamarine;
+            color: black;
+        }
+        
+        #main .warning {
+            background-color: azure;
+            color: blue;
+        }
+
+        /* SMACSS 모듈 - subclass */
+        .btn {
+            display: inline-block;
+            width :300px;
+            padding: 20px 10px;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+            background-color: burlywood;
+            color: #fff;
+        }
+
+        .btn.btn-small {
+            width: 80px;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .btn.btn-long {
+            width: 160px;
+        }
+
+        /* SMACSS 스테이트 */
+        ul {
+            list-style: none;
+        }
+        .tabnav {
+            display: flex;
+        }
+        .tabnav li {
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-right: 1px solid black;
+        }
+        .tabnav li:first-child {
+            border-leftt: 1px solid black;
+        }
+        .tabnav li a {
+            display: block;
+            padding: 10px 30px;
+            text-decoration: none;
+        }
+        .is-active {
+            background-color: bisque;
+        }
+        .is-active a {
+            /* 이미 활성화 된 탭을 또 클릭하지 않게 */
+            pointer-events: none;
+            color: tomato;
+        }
+
+        /* SMACSS theme */
+        .mod {
+            border: blue;
+        }
+        /* module */
+        .mod {
+            border: solid 1px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button type="button" class="btn"></button>
+    <button type="button" class="btn btn-close"></button>
+
+    <main id="main">
+        <button type="button" class="btn general">기본 버튼</button>
+        <button type="button" class="btn warning">취소 버튼</button>
+    </main>
+    <footer id="footer">
+
+    </footer>
+    
+    <a href="" class="btn btn-long">아이디/비밀번호 찾기</a>
+    <a href="" class="btn btn-small">로그인</a>
+
+    
+    <ul class="tabnav">
+        <!-- SMACSS -->
+        <li class="is-active"><a href="#none">1</a></li>
+        <!-- BEM -->
+        <li class="tabnav__item"><a href="#none" class="tabnav__link">3</a></li>
+        <li><a href="#none">4</a></li>
+        <li><a href="#none">5</a></li>
+    </ul>
+    
+    <button class="btn mod"></button>
+
+
+    <!-- BEM naming convention -->
+    <section class="chapter-baseball">
+        <button class="chapter-baseball__btn chapter-baseball__active-false"></button>
+    </section>
+</body>
+</html>

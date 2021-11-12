@@ -99,6 +99,10 @@ header::after {
     display: block;
 }
 
+.sign-in__form .sign-in__id:active + .sign-in__warning-id  {
+    display: none;
+}
+
 .sign-in__form .sign-in__password {
     margin-top: 10px;
     font-weight: 500;

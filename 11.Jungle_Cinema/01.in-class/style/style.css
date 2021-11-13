@@ -73,6 +73,7 @@ display: none으로 숨기면 screen reader에 안읽힌다.
     padding-bottom: 3px;
 }
 
+
 /* skip navigation */
 /* 웹 접근성을 위해 넣는거기 때문에 안보이게 날려주기. */
 .nav-skip a {
@@ -80,7 +81,6 @@ display: none으로 숨기면 screen reader에 안읽힌다.
     top: -200px;
     left: 0;
     width: 160px;
-    line-height: 30px;
     border: 1px solid #fff;
     color: #fff;
     background: #333;
@@ -129,6 +129,7 @@ display: none으로 숨기면 screen reader에 안읽힌다.
 
 .cont-movie .list-movieNav li {
     float: left;
+    line-height: 19px;
 }
 
 /* 첫번째 자식은 줄 필요가 없으니까! */
@@ -165,6 +166,7 @@ display: none으로 숨기면 screen reader에 안읽힌다.
 .cont-movie .list-movieInfo .tit-movie {
     font-weight: bold;
     line-height: 23px;
+    margin-top: 11px;
 }
 
 /* content style */
@@ -242,7 +244,7 @@ display: none으로 숨기면 screen reader에 안읽힌다.
     float: right;
     /* vendor prefix - webkit 기반 브라우저 */
     display: -webkit-box;
-    /* margin-left: 5px; */
+    margin-left: 5px;
 }
 
 .list-movieInfo .list-info .item-star {

@@ -151,10 +151,19 @@ display: none으로 숨기면 screen reader에 안읽힌다.
 .cont-movie .list-movieInfo {
     /* border-radius 위로 이미지가 올라갈 수도 있으니, overflow: hidden을 줘서 넘치는걸 빼자.*/
     overflow: hidden; 
-    padding: 0 12px 24px 0;
-    border: 2px solid #bdbdbd;
+    padding: 0 12px 24px 12px;
+    border: 2px solid #4b2e2e;
     border-radius: 15px;
     background: #fff;
+}
+
+.cont-movie .list-movieInfo li {
+    /* border-radius 위로 이미지가 올라갈 수도 있으니, overflow: hidden을 줘서 넘치는걸 빼자.*/
+    float: left;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin: 24px 12px 0;
 }
 
 .cont-movie .list-movieInfo img {
@@ -168,21 +177,6 @@ display: none으로 숨기면 screen reader에 안읽힌다.
     line-height: 23px;
     margin-top: 11px;
 }
-
-/* content style */
-.cont-movie .list-movieInfo li {
-    /* border-radius 위로 이미지가 올라갈 수도 있으니, overflow: hidden을 줘서 넘치는걸 빼자.*/
-    float: left;
-    border: 1px solid #bdbdbd;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
-    margin: 24px 0 0 23px;
-}
-
-.cont-movie .list-movieInfo li:nth-child(4n+1) {
-    margin: 24px 0 0 27px;
-}
-
 
 .cont-movie .list-movieInfo li > a[class^="link"] {
     display: inline-block;
@@ -293,7 +287,7 @@ display: none으로 숨기면 screen reader에 안읽힌다.
 
 .cont-coInfo .list-coInfo dt, .cont-coInfo .list-coInfo dd {
     display: inline-block;
-    float: left;
+    /* float: left; */
 }
 
 .cont-company .list-coInfo dt {

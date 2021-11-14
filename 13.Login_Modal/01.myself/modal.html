@@ -14,16 +14,24 @@
     </style>
 </head>
 <body>
+    <nav class="nav-skip">
+        <ul>
+            <li><a href="#sign-in-id">아이디로 로그인으로 이동하기</a></li>
+            <li><a href="#sign-in-sns">SNS 로그인으로 이동하기</a></li>
+        </ul>
+    </nav>
+
     <header class="header">
         <h1 class="header__title-sign">로그인 또는 회원가입</h1>
         <button class="header__btn-close"><img src="res/close.png" alt="닫기"></button>
     </header>
 
     <main class="main">
-        <section class="sign-in">
+        <section id="sign-in-id" class="sign-in">
             <p class="sign-in__info">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
 
             <form action="" class="sign-in__form">
+                <h3 class="blind">아이디, 비밀번호 입력 창</h3>
                 <input type="text" placeholder="아이디" required class="sign-in__id">
                 <p class="sign-in__warning-id">아이디를 입력해주세요.</p>
 
@@ -41,18 +49,20 @@
             <div class="sign-in__rel">
                 <a href="" class="sign-in__join">회원가입</a><a href="" class="sign-in__look">아이디/비밀번호 찾기</a>
             </div>
-        
-            
 
-            <section class="sign-in__sns-login">
-                <p class="sign-in__divider">또는</p>
-        
+            
+            <section class="sign-in__divider">
+                <p class="sign-in__divider-txt">또는</p>
+            </section>
+            
+            <section id="sign-in-sns" class="sign-in__sns-login">
+                <h3 class="blind">SNS 계정으로 로그인</h3>
+                
                 <button class="sign-in__google">구글 계정으로 로그인</button>
                 <button class="sign-in__facebook">페이스북 계정으로 로그인</button>
                 <button class="sign-in__naver">네이버 계정으로 로그인</button>
                 <button class="sign-in__kakaotalk">카카오톡 계정으로 로그인</button>
             </section>
-            
         </section>
         
     </main>

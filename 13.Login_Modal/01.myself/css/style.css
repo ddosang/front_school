@@ -13,6 +13,18 @@ body {
     border: 1px solid lightblue;
 }
 
+/* skip navigation */
+
+.nav-skip a {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 160px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: #333;
+    text-align: center;
+}
 
 /* style */
 
@@ -172,24 +184,24 @@ header::after {
     margin: 0 12px;
 }
 
-/* sns 로그인 */
-
-.sign-in__sns-login {
-    margin-top: 30px;
-    text-align: center;  
-}
+/* divider */
 
 .sign-in__divider {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sign-in__divider-txt {
+
     position: relative;
     color: #767676;
     font-size: 14px;
     line-height: 16px;
 }
 
-.sign-in__divider::before, .sign-in__divider::after {
+.sign-in__divider-txt::before, .sign-in__divider-txt::after {
     position: absolute;
     top: 7px;
-    
     display: block;
     content: '';
     width: 210px;
@@ -197,13 +209,20 @@ header::after {
     height: 1px;
 }
 
-.sign-in__divider::before {
+.sign-in__divider-txt::before {
     left: 0;
 }
 
-.sign-in__divider::after {
+.sign-in__divider-txt::after {
     right: 0;
 }
+/* sns 로그인 */
+
+.sign-in__sns-login {
+    margin-top: 10px;
+    text-align: center;  
+}
+
 
 .sign-in__sns-login .sign-in__google, .sign-in__sns-login .sign-in__facebook, .sign-in__sns-login .sign-in__naver, .sign-in__sns-login .sign-in__kakaotalk {
     position: relative;
@@ -220,7 +239,6 @@ header::after {
 }
 
 .sign-in__sns-login .sign-in__google {
-    margin-top: 20px;
     border: 1px solid #767676;
 }
 .sign-in__sns-login .sign-in__facebook {

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-1</title>
+    
+    <style>
+        .container-color {
+            background-color: cornsilk;
+            border: 3px solid black;
+            border-radius: 10px;
+            height: 300px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .item-color {
+            background-color: darkcyan;
+            border: solid 3px black;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            /* flex-direction: row; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+        }
+
+
+        .container1 .item2 {
+            /* width: 300px; */
+            flex-basis: 400px;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container2 .item {
+            flex-grow: 1;
+        }
+        .container2 .item:nth-child(1) {
+            flex-basis: 500px;
+            flex-shrink: 0;
+        }
+        
+        .container2 .item:nth-child(2) {
+            flex-basis: 500px;
+            /* flex-grow: 5; */
+            flex-shrink: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    flex-direction, flex-basis
+    <div class="container-color container1">
+        <div class="item-color item1">Lorem.</div>
+        <div class="item-color item2">Lorem, ipsum.</div>
+        <div class="item-color item3">Lorem, ipsum dolor.</div>
+        <div class="item-color item4">Lorem ipsum dolor sit.</div>
+    </div>
+
+    flex-grow
+    <div class="container-color container2">
+        <div class="item-color item"></div>
+        <div class="item-color item"></div>
+        <div class="item-color item"></div>
+        <div class="item-color item"></div>
+    </div>
+
+    flex-shrink
+    <div class="container-color container3">
+        <div class="item-color item1">Lorem.</div>
+        <div class="item-color item2">Lorem, ipsum.</div>
+        <div class="item-color item3">Lorem, ipsum dolor.</div>
+        <div class="item-color item4">Lorem ipsum dolor sit.</div>
+    </div>
+
+    <pre>
+        /* Keyword values */
+        flex: auto;
+        flex: initial;
+        flex: none;
+
+        /* One value, unitless number: flex-grow */
+        flex: 2;
+
+        /* One value, length or percentage: flex-basis */
+        flex: 10em;
+        flex: 30%;
+
+        /* Two values: flex-grow | flex-basis */
+        flex: 1 30px;
+
+        /* Two values: flex-grow | flex-shrink */
+        flex: 2 2;
+
+        /* Three values: flex-grow | flex-shrink | flex-basis */
+        flex: 2 2 10%;
+
+        /* Global values */
+        flex: inherit;
+        flex: initial;
+        flex: unset;
+    </pre>
+
+</body>
+</html>

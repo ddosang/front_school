@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>holy grail layout</title>
+
+    <link rel="stylesheet" href="../reset.css">
+
+    <style>
+
+        .container {
+            width: 1000px;
+            margin: 50px auto;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        header {
+            border: 1px solid black;
+            border-radius: 15px 15px 0 0;
+            height: 100px;
+            line-height: 50px;
+            background: pink;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: space-around;
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        .wrap {
+            display: flex;
+        }
+
+        .content {
+            border: 1px solid black;
+            background: cornflowerblue;
+            flex: 3;
+            height: 450px;
+            line-height: 450px;
+        }
+
+        .side {
+            border: 1px solid black;
+            background: lemonchiffon;
+            flex: 1;
+            height: 450px;
+            line-height: 450px;
+        }
+
+        footer {
+            border: 1px solid black;
+            border-radius: 0 0 15px 15px;
+            height: 70px;
+            line-height: 70px;
+            background: lightgreen;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .container {
+                width: 100%;
+                margin: 50px auto;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .container {
+                width: 100%;
+                margin: 50px auto;
+            }
+
+            .wrap {
+                flex-direction: column;
+            }
+
+            .side {
+                flex-basis: 200px;
+                line-height: 200px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            header
+
+            <nav>
+                <ul>
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="wrap">
+
+            <section class="content">
+                <article>
+                    <article>
+                        section > article
+                    </article>
+                </article>
+            </section>
+
+            <aside class="side">
+                aside
+            </aside>
+        </section>
+
+        <footer>
+            footer
+        </footer>
+    </section>
+    
+
+
+</body>
+
+</html>

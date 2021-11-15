@@ -80,7 +80,7 @@ header::after {
     margin-top: 24px;
 }
 
-.sign-in__form .sign-in__id, .sign-in__form .sign-in__password {
+.sign-in__form .sign-in__input {
     width: 472px;
     height: 50px;
     padding: 15px 16px;
@@ -94,7 +94,7 @@ header::after {
 /* 아이디, 비밀번호 창 누르면 경고 뜨도록 
 원래 서버에서 값 받아와서 검증하고 해야하는데,
 지금은 모르니까 스타일이라도 적용해보았다.  */
-.sign-in__form .sign-in__warning-id, .sign-in__form .sign-in__warning-password {
+.sign-in__form .sign-in__warning {
     display: none;
     font-size: 14px;
     line-height: 17.5px;
@@ -102,20 +102,20 @@ header::after {
     color: #F4492E;
 }
 
-.sign-in__form .sign-in__id:focus, .sign-in__form .sign-in__password:focus {
+.sign-in__form .sign-in__input:focus {
     outline-width: 0;
     border: 2px solid #F4492E;
 }
 
-.sign-in__form .sign-in__id:focus + .sign-in__warning-id, .sign-in__form .sign-in__password:focus + .sign-in__warning-password {
+.sign-in__form .sign-in__input:focus + .sign-in__warning {
     display: block;
 }
 
-.sign-in__form .sign-in__id:active + .sign-in__warning-id  {
+.sign-in__form .sign-in__input--id:active + .sign-in__warning--id  {
     display: none;
 }
 
-.sign-in__form .sign-in__password {
+.sign-in__form .sign-in__input--password {
     margin-top: 10px;
     font-weight: 500;
 }
@@ -126,13 +126,14 @@ header::after {
 .sign-in__form .sign-in__stay {
     margin-top: 16px;
     margin-left: 4px;
+    height: 22px;
 }
 
-.sign-in__form .sign-in__check-stay {
+.sign-in__form .stay__checkbox {
     display: none;
 }
 
-.sign-in__form .sign-in__img-stay {
+.sign-in__form .stay__label--img {
     display: inline-block;
     width: 22px;
     height: 22px;
@@ -140,43 +141,46 @@ header::after {
     background-image: url(../res/check-box.png);
 }
 
-.sign-in__form .sign-in__label-stay {
+.sign-in__form .stay__label--txt {
     color: #767676;
     margin-left: 8px;
     vertical-align: top;
     font-weight: 500;
 }
 
-.sign-in__form .sign-in__check-stay:checked + .sign-in__img-stay {
+.sign-in__form .stay__checkbox:checked + .stay__label--img {
     background-image: url(../res/check-box-2.png);
 }
 
-.sign-in__form .sign-in__btn-log-in {
-    margin-top: 20px;
+.button {
     display: block;
-    background-color: #2F80ED;
-    color: white;
     width: 100%;
     height: 50px;
-    border: none;
     border-radius: 5px;
     font-size: 18px;
+}
+
+.button--sign-in {
+    margin-top: 20px;
+    background-color: #2F80ED;
+    color: white;
+    border: none;
     font-weight: 700;
     line-height: 22px;
 }
 
-.sign-in__rel {
+.sign-in__look {
     margin-top: 20px;
     text-align: center;
     font-size: 14px;
 }
 
-.sign-in__rel a {
+.sign-in__look .look__link {
     line-height: 18px;
     color: #767676;
 }
 
-.sign-in__join::after {
+.look__link--join::after {
     display: inline-block;
     content: '|';
     width: 4px;
@@ -191,7 +195,7 @@ header::after {
     text-align: center;
 }
 
-.sign-in__divider-txt {
+.sign-in__divider .divider__txt {
 
     position: relative;
     color: #767676;
@@ -199,7 +203,7 @@ header::after {
     line-height: 16px;
 }
 
-.sign-in__divider-txt::before, .sign-in__divider-txt::after {
+.divider__txt::before, .divider__txt::after {
     position: absolute;
     top: 7px;
     display: block;
@@ -209,49 +213,46 @@ header::after {
     height: 1px;
 }
 
-.sign-in__divider-txt::before {
+.divider__txt::before {
     left: 0;
 }
 
-.sign-in__divider-txt::after {
+.divider__txt::after {
     right: 0;
 }
 /* sns 로그인 */
 
-.sign-in__sns-login {
+.sign-in__sns {
     margin-top: 10px;
     text-align: center;  
 }
 
 
-.sign-in__sns-login .sign-in__google, .sign-in__sns-login .sign-in__facebook, .sign-in__sns-login .sign-in__naver, .sign-in__sns-login .sign-in__kakaotalk {
+.button--sns {
     position: relative;
-    width: 100%;
-    height: 50px;
     margin-top: 10px;
     padding-left: 40px;
     box-sizing: border-box;
     background-color: #FFF;
-    border-radius: 5px;
     font-size: 16px;
     line-height: 20px;
     color: #767676;
 }
 
-.sign-in__sns-login .sign-in__google {
+.button--sns--google {
     border: 1px solid #767676;
 }
-.sign-in__sns-login .sign-in__facebook {
+.button--sns--facebook {
     border: 1px solid #2D9CDB;
 }
-.sign-in__sns-login .sign-in__naver {
+.button--sns--naver {
     border: 1px solid #00BF18;
 }
-.sign-in__sns-login .sign-in__kakaotalk {
+.button--sns--kakaotalk {
     border: 1px solid #F2C94C;
 }
 
-.sign-in__sns-login .sign-in__google::before, .sign-in__sns-login .sign-in__facebook::before, .sign-in__sns-login .sign-in__naver::before, .sign-in__sns-login .sign-in__kakaotalk::before {
+.button--sns::before {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -264,15 +265,15 @@ header::after {
     margin: 11px 12px;
 }
 
-.sign-in__sns-login .sign-in__google::before {
+.button--sns--google::before {
     background-image: url(../res/google.png);
 }
-.sign-in__sns-login .sign-in__facebook::before {
+.button--sns--facebook::before {
     background-image: url(../res/facebook.png);
 }
-.sign-in__sns-login .sign-in__naver::before {
+.button--sns--naver::before {
     background-image: url(../res/naver.png);
 }
-.sign-in__sns-login .sign-in__kakaotalk::before {
+.button--sns--kakaotalk::before {
     background-image: url(../res/kakaotalk.png);
 }

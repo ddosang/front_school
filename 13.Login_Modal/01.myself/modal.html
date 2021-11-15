@@ -32,36 +32,37 @@
 
             <form action="" class="sign-in__form">
                 <h3 class="blind">아이디, 비밀번호 입력 창</h3>
-                <input type="text" placeholder="아이디" required class="sign-in__id">
-                <p class="sign-in__warning-id">아이디를 입력해주세요.</p>
+                <input type="text" placeholder="아이디" required class="sign-in__input sign-in__input--id">
+                <p class="sign-in__warning sign-in__warning--id">아이디를 입력해주세요.</p>
 
-                <input type="password" placeholder="비밀번호" required class="sign-in__password">
-                <p class="sign-in__warning-password">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
+                <input type="password" placeholder="비밀번호" required class="sign-in__input sign-in__input--password">
+                <p class="sign-in__warning sign-in__warning--password">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
 
                 
                 <div class="sign-in__stay">
-                    <input type="checkbox" id="stay-logged-in" class="sign-in__check-stay">
-                    <label for="stay-logged-in" class="sign-in__img-stay"></label><label for="stay-logged-in" class="sign-in__label-stay">로그인 상태 유지</label>
+                    <input type="checkbox" id="stay-logged-in" class="stay__checkbox">
+                    <label for="stay-logged-in" class="stay__label stay__label--img"></label><label for="stay-logged-in" class="stay__label stay__label--txt">로그인 상태 유지</label>
                 </div>
-                <button class="sign-in__btn-log-in">로그인</button>
+                
+                <button class="button button--sign-in">로그인</button>
             </form>
 
-            <div class="sign-in__rel">
-                <a href="" class="sign-in__join">회원가입</a><a href="" class="sign-in__look">아이디/비밀번호 찾기</a>
+            <div class="sign-in__look">
+                <a href="" class="look__link look__link--join">회원가입</a><a href="" class="look__link look__link--look">아이디/비밀번호 찾기</a>
             </div>
 
             
             <section class="sign-in__divider">
-                <p class="sign-in__divider-txt">또는</p>
+                <p class="divider__txt">또는</p>
             </section>
             
-            <section id="sign-in-sns" class="sign-in__sns-login">
+            <section id="sign-in-sns" class="sign-in__sns">
                 <h3 class="blind">SNS 계정으로 로그인</h3>
                 
-                <button class="sign-in__google">구글 계정으로 로그인</button>
-                <button class="sign-in__facebook">페이스북 계정으로 로그인</button>
-                <button class="sign-in__naver">네이버 계정으로 로그인</button>
-                <button class="sign-in__kakaotalk">카카오톡 계정으로 로그인</button>
+                <button class="button button--sns button--sns--google">구글 계정으로 로그인</button>
+                <button class="button button--sns button--sns--facebook">페이스북 계정으로 로그인</button>
+                <button class="button button--sns button--sns--naver">네이버 계정으로 로그인</button>
+                <button class="button button--sns button--sns--kakaotalk">카카오톡 계정으로 로그인</button>
             </section>
         </section>
         

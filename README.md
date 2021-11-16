@@ -2,6 +2,8 @@
 # 멋쟁이사자처럼 Front-end School
 ### 2021-10-29 ~ 2022-01-27
 
+https://ddosang.github.io/front_school/
+
 멋쟁이사자처럼 Front-end Scool 에서 3개월 간 진행하는 tutorial, project를 정리한다. 해당 섹션에 대한 velog 글 링크도 같이 첨부한다.
 
 [멋쟁이사자처럼 Front-end School](https://k-digital.likelion.net/frontend-school)

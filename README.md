@@ -77,7 +77,11 @@
 
 - 051~061.html : 1108 수업 transition, transform, animation (keyframes) 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-2#2-move)
 
-- 062~068.html: 1109-1110 수업 transition, transform, animation 실습 [velog #9](https://velog.io/@ddosang/Front-end-9)
+- 062~068.html : 1109-1110 수업 transition, transform, animation 실습 [velog #9](https://velog.io/@ddosang/Front-end-9)
+
+- 000.font, 001.flex : 1115 수업 [velog #12](https://velog.io/@ddosang/Front-end-12)
+
+- 002.grid : 1116 수업 grid, transition, 넓이 자동 계산 [velog #13](https://velog.io/@ddosang/Front-end-13)
 
 <br>
 
@@ -112,4 +116,4 @@
 
 - 12.10000hours : 1109 과제~1112 실습 [velog #10](https://velog.io/@ddosang/Front-end-10)
 
-- 13.Login_Modal : 1112 과제~
+- 13.Login_Modal : 1112 과제~1116 실습 [velog #12](https://velog.io/@ddosang/Front-end-12)

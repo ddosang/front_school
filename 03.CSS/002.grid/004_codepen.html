@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <style>
+        body {
+            display: flex;
+        }
+        header {
+            flex: 1;
+        }
+
+        .section-board {
+            flex: 1;
+            display: grid;
+            /* grid-template-rows: repeat(4, 1fr); */
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            transform: rotateX(60deg) rotateY(-10deg) rotateZ(50deg);
+        }
+
+        .board-item {
+            /* relative를 넣어서 Stacking order 배치 */
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            transition: all .3s;
+            /* box-shadow: -10px 10px 0 0 rgba(0,0,0,0.3); */
+        }
+
+        .board-item:nth-child(3n) {
+            background-color: crimson;
+        }
+
+        .board-item:nth-child(3n+1) {
+            background-color: pink;
+        }
+
+        .board-item:nth-child(3n+2) {
+            background-color: gold;
+        }
+
+        .board-item:hover {
+            cursor: pointer;
+            /* transform: translate(-10px, -10px); */
+            top: -15px;
+            left: -15px;
+        }
+
+        .board-item::after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #999;
+            width: 100px;
+            height: 100px;
+            transition: all .3s;
+        }
+
+        .board-item:hover::after {
+            top: 25px;
+            left: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>codepen 실습</h1>
+    </header>
+
+    <section class="section-board">
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+        <div class="board-item"></div>
+    </section>
+</body>
+</html>

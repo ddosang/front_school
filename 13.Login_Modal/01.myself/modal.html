@@ -32,10 +32,12 @@
 
             <form action="" class="sign-in__form">
                 <h3 class="blind">아이디, 비밀번호 입력 창</h3>
-                <input type="text" placeholder="아이디" required class="sign-in__input sign-in__input--id">
+                <label for="input-id" class="blind">아이디</label>
+                <input type="text" placeholder="아이디" id="input-id" required class="sign-in__input sign-in__input--id">
                 <p class="sign-in__warning sign-in__warning--id">아이디를 입력해주세요.</p>
 
-                <input type="password" placeholder="비밀번호" required class="sign-in__input sign-in__input--password">
+                <label for="input-pw" class="blind">비밀번호</label>
+                <input type="password" placeholder="비밀번호" id="input-pw" required class="sign-in__input sign-in__input--password">
                 <p class="sign-in__warning sign-in__warning--password">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
 
                 

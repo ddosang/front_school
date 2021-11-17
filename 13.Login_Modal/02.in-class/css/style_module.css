@@ -1,0 +1,112 @@
+
+.txt-hide {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 17px 0 15px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    background-color: #2F80ED;
+    border-radius: 5px;
+    color: #FFF;
+    border: none;
+}
+
+.btn-close {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.module-inp .inp-login {
+    display: block;
+    width: 100%;
+    padding: 15px 0 15px 16px;
+    border: 1px solid #4c4c4c;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.module-inp.module-inp-id-error .inp-login {
+    border: 2px solid #F4492E;
+}
+
+.module-inp .inp-error {
+    display: none;
+    margin: 6px 0 0 4px;
+    color: #F4492E;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/* class error 를 js로 넣었다 뺐다 하기 위해서
+error class가 있을땜나 스타일이 보여지도록!!! */
+
+.module-inp.error .inp-error {
+    display: block;
+}
+
+.module-inp + .module-inp {
+    margin-top: 10px;
+}
+
+.link-sns-login {
+    display: block;
+    padding: 15px 0 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #767676;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #767676;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* padding 대신 가상요소의 margin left 와 부모의 text-indent를 사용해서 해결 */
+    text-indent: -38px;
+}
+
+.link-sns-login::before {
+    display: block;
+    content: '';
+    float: left;
+    width: 22px;
+    height: 22px;
+    background-size: 22px;
+    margin-left: 16px;
+    background-image: url(../../01.myself/res/google.png);
+}
+
+.link-sns-login.icon-naver {
+    border-color: #00BF18;
+}
+.link-sns-login.icon-naver::before {
+    background-image: url(../../01.myself/res/naver.png);
+}
+.link-sns-login.icon-facebook {
+    border-color: #2D9CDB;
+}
+.link-sns-login.icon-facebook::before {
+    background-position: center;
+    background-image: url(../../01.myself/res/facebook.png);
+}
+.link-sns-login.icon-kakao {
+    border-color: #F2C94C;
+}
+.link-sns-login.icon-kakao::before {
+    background-image: url(../../01.myself/res/kakaotalk.png);
+}
+

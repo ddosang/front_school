@@ -1,0 +1,24 @@
+#appLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cont-login {
+    width: 440px;
+    height: 240px;
+    padding: 38px 30px 30px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cont-login .tit-weniv img {
+    width: 122px;
+    margin: 0 auto;
+}
+
+.cont-login .txt-login {
+    margin: 32px 0 36px;
+}

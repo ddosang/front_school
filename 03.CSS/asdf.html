@@ -4,27 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>z-index 이해</title>
     
     <style>
-        div {
-            width: 100px; height: 100px;
-            background: green;
-            opacity: 0.5;
+        .parent1 {
+            /* position: relative; */
+            width: 500px; height: 300px;
+            background: rgb(255, 0, 0, 0.5);
+            border: 2px solid black;
+            z-index: 2;
         }
 
-        div:hover {
-            width: 100px;
-            height: 150px;
-            /* background: blue; */
-            opacity: 0.3;
+
+        [class^="child"] {
+            width:100px; height: 100px;
         }
+
+        .child1 {
+            position: absolute;
+            top: 30px;
+            left: 10px;
+            background: cadetblue;
+        }
+        .child2 {
+            position: absolute;
+            top: 50px;
+            left: 30px;
+            background: lightseagreen;
+            z-index: 1;
+        }
+        .child3 {
+            position: absolute;
+            top: 70px;
+            left: 50px;
+            background: skyblue;
+            z-index: -1;
+        }
+        .child4 {
+            position: absolute;
+            top: 90px;
+            left: 70px;
+            background: gold;
+        }
+
+        .isolate1 {
+            position: absolute;
+            top: 100px;
+            left: 300px;
+
+            width: 200px;
+            height: 300px;
+
+            background: orange;
+            z-index: 1;
+        }
+
+        .isolate2 {
+            position: absolute;
+            top: 125px;
+            left: 325px;
+
+            width: 200px;
+            height: 300px;
+
+            background: skyblue;
+        }
+
+        .isolate3 {
+            position: absolute;
+            top: 150px;
+            left: 350px;
+
+            width: 200px;
+            height: 300px;
+
+            background: gray;
+
+            z-index: -1;
+        }
+
 
 
     </style>
 </head>
 <body>
     <!-- <div class="black"></div> -->
-    <div></div>
+    <!-- <div></div> -->
+    으악
+    으아악
+
+    <div class="parent1">
+        parent1 z-index 1
+        <div class="child1">child1</div>
+        <div class="child2">child2 z-index 1</div>
+        <div class="child3">child3 z-index -1 blue</div>
+        <div class="child4">child4</div>
+    </div>
+
+    <div class="isolate0">isolate0 z-index 1</div>
+    <div class="isolate1">isolate1 z-index 1</div>
+    <div class="isolate2">isolate2</div>
+    <div class="isolate3">isolate3 z-index -1</div>
 </body>
 </html>

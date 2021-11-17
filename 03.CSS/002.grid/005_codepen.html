@@ -20,7 +20,7 @@
             /* grid-template-rows: repeat(4, 1fr); */
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 20px;
-            transform: rotateX(60deg) rotateY(-10deg) rotateZ(50deg);
+            transform: rotateX(50deg) rotateY(0deg) rotateZ(30deg);
         }
 
         .board-item {
@@ -32,8 +32,6 @@
             height: 100px;
             transition: all .3s;
             /* box-shadow: -10px 10px 0 0 rgba(0,0,0,0.3); */
-
-            
         }
 
         .board-item input {
@@ -46,6 +44,7 @@
             align-items: center;
             width: 100%;
             height: 100%;
+            
         }
 
         .board-item input:checked + label {
@@ -88,6 +87,12 @@
             left: 25px;
         }
 
+        .character {
+            width: 70px;
+            position: absolute;
+            
+        }
+
     </style>
 </head>
 <body>
@@ -119,5 +124,9 @@
         <div class="board-item"></div>
         <div class="board-item"></div>
     </section>
+
+    <div class="character">
+        <img src="../image/taeyeon1.png" alt="">
+    </div>
 </body>
 </html>

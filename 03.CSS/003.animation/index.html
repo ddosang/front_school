@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes object-rotate {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            100% {
+                /* turn이라는 단위는 정확히 한 바퀴를 돌리라는 의미입니다. */
+                transform: rotateY(1turn);
+            }
+        }
+
+        @keyframes scene-rotate {
+            0% {
+                transform: rotateX(0) rotateZ(0);
+            }
+
+            100% {
+                transform: rotateX(10deg) rotateZ(-20deg);
+            }
+        }
+
+        body {
+            width: 100vw;
+        }
+
+        h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .planet {
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+            border-radius: 100px;
+            background-color: rgba(248, 142, 43, 1);
+            transform-style: preserve-3d;
+            box-shadow: 0 0 60px -20px rgba(236, 141, 32, 0.877), -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
+            overflow: hidden;
+        }
+
+        .planet .mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            box-shadow: inset -10px -10px 40px #251303, inset 10px 10px 30px -10px rgba(255, 204, 159, 0.6);
+            border-radius: 50%;
+        }
+
+        .planet p {
+            font-size: 100px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .scene {
+            transform-style: preserve-3d;
+            /* 나중에 회전 */
+            animation: scene-rotate 20s linear infinite alternate;
+        }
+
+        .circle {
+            font-size: 50px;
+            font-weight: bold;
+            /* 나중에 작성 */
+            animation: object-rotate 50s linear;
+            transform-style: preserve-3d;
+        }
+
+        .circle .word {
+            transform-style: preserve-3d;
+        }
+
+        .circle span {
+            /* background-color: goldenrod; */
+            position: absolute;
+            transform: rotateY(calc(var(--char-index) * 3deg)) translateZ(1000px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://youtu.be/yfwD-AKRCcA 코드를 참고하였습니다. -->
+    <!-- 해당 영상의 코드는 작동하지 않으니 참고하세요. -->
+
+    <h1>1부터 32까지 숫자를 중복 없이 쓰는데 이웃한 두 숫자를 합치면 제곱수...</h1>
+
+
+    <div class="container">
+
+        <div class="scene">
+            <div class="planet">
+                <div class="wrap">
+                    <div class="background"></div>
+                    <div class="clouds"></div>
+                </div>
+                <div class="mask"></div>
+            </div>
+
+
+            <div class="circle" data-splitting>
+                4--32--17--19--30--6--3--13--12--24--25--11--5--31--18--7--29--20--16--9--27--22--14--2--23--26--10--15--1--8--28--21--
+                <!-- 안녕히계세요 여러분~~~ 저는 저의 행복을 찾아서 떠납니다~~~~ -->
+
+            </div>
+        </div>
+    </div>
+    <script src="./splitting.js"></script>
+    <script>Splitting();</script>
+</body>
+
+</html>

@@ -295,7 +295,7 @@ body {
     .main {
         flex-direction: column;
         justify-content: flex-start;
-        padding: 0; 
+        padding: 0 0 17px; 
     }
     .my-info {
         margin-left: 0;

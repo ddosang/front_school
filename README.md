@@ -85,6 +85,10 @@ https://ddosang.github.io/front_school/
 
 - 002.grid : 1116 수업 grid, transition, 넓이 자동 계산 [velog #13](https://velog.io/@ddosang/Front-end-13)
 
+- 003.animation : 1118 수업 animation [velog #15](https://velog.io/@ddosang/Front-end-15)
+
+- 004.실전 : 1119 수업 CSS 실전 팁 [velog #16](https://velog.io/@ddosang/Front-end-16)
+
 <br>
 
 ## 4. JS 실습
@@ -118,4 +122,8 @@ https://ddosang.github.io/front_school/
 
 - 12.10000hours : 1109 과제~1112 실습 [velog #10](https://velog.io/@ddosang/Front-end-10)
 
-- 13.Login_Modal : 1112 과제~1116 실습 [velog #12](https://velog.io/@ddosang/Front-end-12)
+- 13.Login_Modal : 1112 과제~1119 실습 [velog #12](https://velog.io/@ddosang/Front-end-12), [#16](https://velog.io/@ddosang/Front-end-16)
+
+- 14.cool-jjin-test : 1117 특강 [velog #14](https://velog.io/@ddosang/Front-end-14)
+
+- 15.Vending_Machine : 1118~1119 실습 [velog #15](https://velog.io/@ddosang/Front-end-15), [#16](https://velog.io/@ddosang/Front-end-16)

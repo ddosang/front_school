@@ -283,14 +283,14 @@ body {
 }
 
 
-@media screen and (max-width :360px) {
+@media screen and (min-device-width: 320px) 
+and (max-device-width: 480px) {
     body {
         background-color: white;
     }
 
     .tit-app {
         left: calc(50% - 83px);
-        background-image: url('../img/logo.png');
         width: 166px;
         height: 72px;
         background-size: 166px 72px;

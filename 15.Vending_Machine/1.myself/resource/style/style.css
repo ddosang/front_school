@@ -192,6 +192,10 @@ body {
     margin-top: 6px;
 }
 
+.item-staged:last-child {
+    margin-bottom: 11px;
+}
+
 .list-item-staged .img-item {
     float: left;
     width: 18px;

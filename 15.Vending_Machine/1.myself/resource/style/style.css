@@ -1,12 +1,22 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #EAE8FE;
 }
 
+#app {
+    min-height: 100vh;
+    padding-bottom: 10px;
+}
+
 .tit-app {
-    position: relative;
+    /* position: relative;
     top: 0;
-    left: calc(50% - 193px);
+    left: calc(50% - 193px); */
+    margin: 0 auto;
+
     background-image: url('../img/logo.png');
     width: 386px;
     height: 180px;
@@ -16,14 +26,14 @@ body {
 .main {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 83px 0 171px;
-    min-height: 545px;
+    /* padding: 83px 0 171px; */
+    margin-top: 83px;
 }
 
 .main .vending-machine {
     background-color: white;
     padding: 30px 28px;
+    width: 360px;
 }
 
 .vending-machine .list-item {
@@ -62,7 +72,6 @@ body {
 }
 
 .vending-machine .back-sold-out img {
-    position: absolute;
     width: 57.51px;
     height: 44.85px;
 }
@@ -82,7 +91,7 @@ body {
 }
 
 .tit-item {
-    display: block;
+    display: inline-block;
     margin-bottom: 7px;
     line-height: 13.03px;
     font-size: 9px;
@@ -90,14 +99,15 @@ body {
 }
 
 .vending-machine .txt-item {
-    display: block;
+    display: inline-block;
     background-color: #6327FE;
-    width: 100%;
-    height: 22px;
     border-radius: 50px;
     color: white;
     font-size: 12px;
-    line-height: 22px;
+    padding: 5px 15px;
+    /* width: 100%;
+    height: 22px;
+    line-height: 22px; */
 }
 
 .my-info {
@@ -121,7 +131,7 @@ body {
 }
 
 .cont-return .info-balance {
-    flex-basis: 180px;
+    width: 180px;
     position: relative;
     background-color: #EAE8FE;
     padding: 0 10px;
@@ -136,7 +146,6 @@ body {
 
 .cont-return .btn-return, .cont-put .btn-put, .cont-get .btn-get {
     width: 94px;
-    text-align: center;
     font-size: 13px;
     font-weight: 500;
     border-radius: 5px;
@@ -228,6 +237,10 @@ body {
 }
 
 .my-info {
+    display: grid;
+    width: 360px;
+    grid-template-rows: 50px 474px;
+    gap: 20px;
     margin-left: 28px;
 }
 
@@ -240,7 +253,6 @@ body {
 .my-info .info-mymoney {
     position: relative;
     padding: 0 10px;
-    width: 296px;
     height: 32px;
     background-color: #EAE8FE;
     border-radius: 5px;
@@ -256,13 +268,11 @@ body {
 }
 
 .my-info .cont-myitems {
-    margin-top: 20px;
-    height: 422px;
     padding: 26px 27px 25px;
     background: white;
 }
 
-.cont-myitems strong {
+.cont-myitems > strong {
     display: block;
     font-weight: 700;
     text-align: center;
@@ -275,6 +285,7 @@ body {
 }
 
 .my-info .txt-total {
+    width: 100%;
     margin-top: 5px;
     text-align: right;
     font-size: 12px;
@@ -283,22 +294,25 @@ body {
 }
 
 
-@media screen and (min-device-width: 320px) 
-and (max-device-width: 480px) {
+@media screen and (max-width: 360px) {
     body {
         background-color: white;
     }
 
+    #app {
+        min-width: 360px;
+      }
+
     .tit-app {
-        left: calc(50% - 83px);
         width: 166px;
         height: 72px;
         background-size: 166px 72px;
     }
 
     .main {
-        flex-direction: column;
-        justify-content: flex-start;
+        /* flex-direction: column;
+        justify-content: flex-start; */
+        display: block;
         padding: 0 0 17px; 
     }
     .my-info {

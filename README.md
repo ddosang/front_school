@@ -112,9 +112,9 @@ https://ddosang.github.io/front_school/
 
 < 폴더 구조 >
 
-- myself : 직접 구현해본 것
+- myself : 직접 구현해본 것 + 수업 후에 발전 시킨 것.
 - in-class : 수업 하면서 학습한 것
-- develop : 수업 후에 myself나 in-class를 발전시킨 것
+
 
 ==============================================================
 

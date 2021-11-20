@@ -161,7 +161,7 @@
     height: 13px;
     margin-right: 4px;
     vertical-align: top;
-    background-image: url(../../01.in-class/images/별점이미지.png);
+    background-image: url(../../1.in-class/images/별점이미지.png);
 }
 
 .list-movieInfo .list-info .multi-ellipsis {
@@ -197,7 +197,7 @@
     content: '';
     width: 16px;
     height: 16px;
-    background: url(../../01.in-class/images/btn_play.png);
+    background: url(../../1.in-class/images/btn_play.png);
     vertical-align: top;
     margin: 11px 2px 0 0;
 }
@@ -270,13 +270,13 @@
 }
 
 .cont-company .list-sns .link-twitter {
-    background: url("../../01.in-class/images/SNS/twitter.png");
+    background: url("../../1.in-class/images/SNS/twitter.png");
 }
 .cont-company .list-sns .link-instagram {
-    background: url("../../01.in-class/images/SNS/instagram.png");
+    background: url("../../1.in-class/images/SNS/instagram.png");
 }
 .cont-company .list-sns .link-facebook {
-    background: url("../../01.in-class/images/SNS/facebook.png");
+    background: url("../../1.in-class/images/SNS/facebook.png");
 }
 
 .cont-company .txt-copy {

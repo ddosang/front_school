@@ -44,7 +44,7 @@
     margin: -112.5px 0 0 -112.5px;
     display: block;
     content: '';
-    background-image: url(../../in-class/images-law/title_bg.png);
+    background-image: url(../../2.in-class/images-law/title_bg.png);
     width: 225px;
     height: 225px;
     background-size: 215px;
@@ -80,12 +80,12 @@
 
 .txt-desc::before {
     left: 0;
-    background-image: url(../../in-class/images-law/txt-left.png);
+    background-image: url(../../2.in-class/images-law/txt-left.png);
 }
 
 .txt-desc::after {
     right: 0;
-    background-image: url(../../in-class/images-law/txt-right.png);
+    background-image: url(../../2.in-class/images-law/txt-right.png);
 }
 
 
@@ -148,7 +148,7 @@
     display: block;
     content: '';
     background-size: 64px 72px;
-    background-image: url(../../in-class/images-law/hand.png);
+    background-image: url(../../2.in-class/images-law/hand.png);
 }
 
 .cont-output {

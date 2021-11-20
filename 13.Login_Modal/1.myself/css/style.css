@@ -2,15 +2,95 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 * {
-	font-family: 'Spoqa Han Sans Neo';
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+/* layout */
+/* login */
+body {
+    background-color: #F2F2F2;
+    height: 100vh;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    padding: 30px;
+    width: 500px;
+    text-align: center;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.login-box__logo {
+    width: 138px;
+    margin: 0 auto;
+}
+
+.login-box__txt {
+    margin: 30px 0;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.login-box__btn-login {
+    display: block;
+    padding: 14px 0;
+    width: 100%;
+    line-height: 22px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #2F80ED;
+    color: white;
 }
  
-/* layout */
-body {
+/* modal */
+
+.login-modal {
+    display: none;
+    height: 100vh;
+}
+
+.login-modal.on {
+    display: block;
+}
+
+.login-modal::after{
+    /* dim 처리. */
+    display: block;
+    content:"";
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color: black;
+    opacity: .3;
+    z-index: 10;
+}
+
+.login-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 520px;
+    background-color: white;
     margin: 0 auto;
-    padding-bottom: 25px;
     border: 1px solid lightblue;
+    padding: 0 24px 25px;
+    z-index: 20;
 }
 
 /* skip navigation */
@@ -59,10 +139,6 @@ header::after {
     height: 1px
 }
 
-/* main */
-.main {
-    padding: 0 24px;
-}
 
 
 /* 로그인 창 */
@@ -81,13 +157,13 @@ header::after {
 }
 
 .sign-in__form .sign-in__input {
-    width: 472px;
-    height: 50px;
+    width: 100%;
     padding: 15px 16px;
     box-sizing: border-box;
     border: 1px solid #C4C4C4;
     border-radius: 5px;
     color: #767676;
+    font-size: 16px;
     line-height: 20px;
 }
 
@@ -126,7 +202,6 @@ header::after {
 .sign-in__form .sign-in__stay {
     margin-top: 16px;
     margin-left: 4px;
-    height: 22px;
 }
 
 .sign-in__form .stay__checkbox {
@@ -155,7 +230,7 @@ header::after {
 .button {
     display: block;
     width: 100%;
-    height: 50px;
+    padding: 14px 0;
     border-radius: 5px;
     font-size: 18px;
 }
@@ -224,7 +299,7 @@ header::after {
 
 .sign-in__sns {
     margin-top: 10px;
-    text-align: center;  
+    text-align: center; 
 }
 
 

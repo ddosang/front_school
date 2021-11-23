@@ -28,6 +28,14 @@ https://ddosang.github.io/front_school/
 - tutorial17.html : 27강 반응형 웹 [velog #7.5](https://velog.io/@ddosang/Front-end-7.5)
 
 
+00.inflearn/refactoring
+
+- refactoring8.html, refactoring8.css : 14강 야후 클론코딩 발전
+- refactoring9.html : 15강 웹 실전 리팩토링
+- refactoring10.html : 16강 웹 폰트 적용 리팩토링
+- refactoring11~12.html : 17-19강 스마트폰 레이아웃 리팩토링
+- refactoring13~14.html : 20-23강 태블릿 레이아웃 리패곹링
+- refactoring17.html : 27강 반응형 웹 리팩토링
 
 <br>
 
@@ -87,7 +95,9 @@ https://ddosang.github.io/front_school/
 
 - 003.animation : 1118 수업 animation [velog #15](https://velog.io/@ddosang/Front-end-15)
 
-- 004.실전 : 1119 수업 CSS 실전 팁 [velog #16](https://velog.io/@ddosang/Front-end-16)
+- 004.실전 : 1119~1120 수업 CSS 실전 팁 [velog #16](https://velog.io/@ddosang/Front-end-16)
+
+- 005.bootstrap : 1122~1123 수업 bootstrap 사용 [velog #17](https://velog.io/@ddosang/Front-end-17)
 
 <br>
 

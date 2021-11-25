@@ -1,0 +1,9 @@
+@mixin my-font($x, $y) {
+    font-size: $x * $y + px;
+    @content
+}
+div {
+    @include my-font(10, 10) {
+        color: red;
+    }
+}

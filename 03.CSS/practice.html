@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <style>
+        ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+
+            width: 500px;
+            margin: 0 auto;
+            transform: rotateX(50deg) rotate(30deg) rotateZ(0deg);
+        }
+
+        .item {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 110px;
+            height: 170px;
+            background-color: pink;
+            border-radius: 10px;
+            /* overflow: hidden; */
+        }
+
+        .item:nth-child(3n+1) {
+            background-color: cornflowerblue;
+        }
+
+        .item:nth-child(3n+2) {
+            background-color: lightseagreen;
+        }
+
+        .item:hover {
+            top: -15px;
+            left: -15px;
+        }
+
+        .item::after {
+            z-index: -1;
+
+            position: absolute;
+
+            top: 15px;
+            left: 15px;
+
+            display: block;
+            content: '';
+            border-radius: 15px;
+            width: 110px;
+            height: 170px;
+            background-color: lightgray;
+            
+        }
+
+        img {
+            width: 110px;
+            height: 170px;
+            border-radius: 10px;
+        }
+
+        .item:hover::after {
+            top: 30px;
+            left: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="container-color container">
+        <li class="item"><a href="image/taeyeon1.png"><img src="image/taeyeon1.png" alt=""></a></li>
+        <li class="item"><a href="image/taeyeon2.png"><img src="image/taeyeon2.png" alt=""></a></li>
+        <li class="item"><a href="image/taeyeon3.png"><img src="image/taeyeon3.png" alt=""></a></li>
+        <li class="item"><a href="image/taeyeon4.png"><img src="image/taeyeon4.png" alt=""></a></li>
+        <li class="item"><a href="image/taeyeon5.png"><img src="image/taeyeon5.png" alt=""></a></li>
+        <li class="item"><a href="image/taeyeon6.png"><img src="image/taeyeon6.png" alt=""></a></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ul>
+</body>
+</html>

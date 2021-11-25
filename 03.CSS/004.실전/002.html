@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>002</title>
+
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        * {
+            padding: 0; margin : 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        h2 {
+            margin: 30px;
+        }
+
+        .btn-select {
+            width: 200px;
+            height: 30px;
+            
+        }
+
+        .list-member {
+            display: none;
+            width: 200px;
+            height: 30px;
+            border: 1px solid #C4C4C4;
+            box-shadow: 4px 4px 14px rgba(0,0,0, 0.15);
+            border-radius: 10px;
+        }
+
+        .list-member.on {
+            display: block;
+        }
+
+        .btn-select:active+.list-member {
+            display: block;
+        }
+
+        .list-member li {
+            height: 30px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+
+        .list-member li button {
+            display: block;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            border: none;
+        }
+
+        .list-member li button:hover {
+            background-color: #F8E4FF;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>셀렉트 박스 만들기</h2>
+    <button class="btn-select">당신의 에스파 최애 맴버는??</button>
+    <ul class="list-member">
+        <li><button type="button">카리나</button></li>
+        <li><button type="button">지젤</button></li>
+        <li><button type="button">윈터</button></li>
+        <li><button type="button">닝닝</button></li>
+    </ul>
+
+    <script>
+        const btn = document.querySelector('.btn-select');
+        const list = document.querySelector('.list-member');
+        btn.addEventListener('click', () => {
+            list.classList.toggle('on');
+        });
+        list.addEventListener('click', (event) => {
+            if (event.target.nodeName === "BUTTON") {
+                btn.innerText = event.target.innerText;
+                list.classList.remove('on');
+            }
+        });
+    </script>
+</body>
+
+</html>

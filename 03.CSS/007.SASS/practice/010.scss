@@ -1,0 +1,13 @@
+//Scss
+$font-p : 15px; // 전역변수
+
+.main-box{
+	p {
+		font-size : $font-p;
+	}
+	a {
+		font-size : $font-p;
+        color : blue;
+		text-decoration : none;
+	}
+}

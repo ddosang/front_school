@@ -1,0 +1,66 @@
+@mixin fontSize($size, $row:null, $w:inherit) {
+    // $size: $size * 0.9;
+    font-size: $size + px;
+    font-weight:$w;
+
+    @if ($size >=38) {
+        letter-spacing: -2.4px;
+    }
+
+    @else if ($size >=28) {
+        letter-spacing: -1px;
+    }
+
+    @else if ($size >=18) {
+        letter-spacing: -0.5px;
+    }
+
+    // line-height 설정
+    @if ($row !=null) {
+        line-height: $row;
+    }
+
+    @include media(600) {
+        $size: $size * 0.15;
+        font-size: $size + vw;
+    }
+
+    @include media(480) {
+        $size: $size * 1.3;
+        font-size: $size + vw;
+    }
+
+    @include media(375) {
+        $size: $size * 1.05;
+        font-size: $size + vw;
+    }
+
+    /*
+    @else {
+        $lineHeight: $size + 10 + px;
+        line-height: $lineHeight;
+    }
+    */
+}
+
+@mixin item($space, $column) {
+    $space : unitCheck($space);
+    width:calc( (100% - #{$space}) / #{$column});
+}
+
+@mixin thumb($total, $img, $type) {
+    @for $i from 1 through $total {
+        li:nth-child(#{$i}) .thumb {
+            background-image:url(#{$url} + #{$img} + #{$i} + '.' + #{$type});
+        }
+    }
+}
+
+
+
+@mixin circleBase {
+    display: block;
+    border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}

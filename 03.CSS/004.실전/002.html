@@ -17,23 +17,67 @@
             list-style: none;
         }
 
-        h2 {
-            margin: 30px;
+        .select-box {
+            margin: 40px auto;
+            width: 200px;
         }
 
         .btn-select {
-            width: 200px;
-            height: 30px;
-            
+            position: relative;
+            width: 100%;
+            height: 40px;
+            border: 1px solid #C4C4C4;
+            border-radius: 10px;
+            background: white;
+        }
+
+        .btn-select::before {
+            position: absolute;
+            top: -4px;
+            left: -3px;
+
+            display: none;
+            content: '';
+            width: calc(100% + 6px);
+            height: calc(100% + 6px);
+            background: #F8E4FF;
+            border-radius: 10px;
+            z-index: -10;
+        }
+
+        .btn-select::after {
+            position: absolute;
+            top: 16px;
+            right: 13px;
+            display: inline-block;
+            content: '';
+            width: 12px;
+            height: 8px;
+            background-size: 12px 8px;
+            background-image: url('Polygon 1.png');
+        }
+
+        .btn-select:focus {
+            border: 1px solid #9B51E0;
+        }
+
+        .btn-select:focus::before {
+            display: block;
+        }
+
+        .btn-select:focus::after {
+            transform: rotateZ(180deg);
         }
 
         .list-member {
+            margin-top: 6px;
+            padding: 4px 0;
             display: none;
-            width: 200px;
-            height: 30px;
+            width: 100%;
             border: 1px solid #C4C4C4;
-            box-shadow: 4px 4px 14px rgba(0,0,0, 0.15);
             border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 4px 4px 14px rgba(0,0,0, 0.15);
         }
 
         .list-member.on {
@@ -45,36 +89,37 @@
         }
 
         .list-member li {
-            height: 30px;
-            width: 200px;
+            padding: 5px 8px;
             box-sizing: border-box;
         }
 
         .list-member li button {
             display: block;
-            height: 100%;
             width: 100%;
-            background-color: #fff;
+            height: 30px;
+            background-color: white;
             border: none;
+            border-radius: 8px;
         }
 
         .list-member li button:hover {
             background-color: #F8E4FF;
-            box-sizing: border-box;
-            border-radius: 8px;
         }
+        
+
     </style>
 </head>
 
 <body>
-    <h2>셀렉트 박스 만들기</h2>
-    <button class="btn-select">당신의 에스파 최애 맴버는??</button>
-    <ul class="list-member">
-        <li><button type="button">카리나</button></li>
-        <li><button type="button">지젤</button></li>
-        <li><button type="button">윈터</button></li>
-        <li><button type="button">닝닝</button></li>
-    </ul>
+    <div class="select-box">
+        <button class="btn-select">에스파 최애 맴버는??</button>
+        <ul class="list-member">
+            <li><button type="button">카리나</button></li>
+            <li><button type="button">지젤</button></li>
+            <li><button type="button">윈터</button></li>
+            <li><button type="button">닝닝</button></li>
+        </ul>
+    </div>
 
     <script>
         const btn = document.querySelector('.btn-select');

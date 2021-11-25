@@ -1,0 +1,327 @@
+$purple: #6327FE;
+$lightpurple: #EAE8FE;
+$white: #FFF;
+$gray: #BDBDBD;
+// $gray-border: #C4C4C4;
+
+
+$radius-5: 5px;
+$radius-10: 10px;
+$font-9: 9px;
+$font-10: 10px;
+$font-12: 12px;
+$font-13: 13px;
+$font-14: 15px;
+$weight-500: 500;
+$weight-700: 700;
+$shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+
+@mixin full-box {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin bg-img($width, $height, $url) {
+    width: $width;
+    height: $height;
+    background-size: $width $height;
+    background-image: $url;
+}
+
+@mixin flex($horizontal: center, $vertical: center) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+@mixin grid($col, $gap) {
+    display: grid;
+    grid-template-columns: repeat($col, 1fr);
+    gap: $gap; 
+}
+
+@mixin virtual-child {
+    display: block;
+    content: '';
+}
+
+@mixin cola-button {
+
+}
+
+@mixin info-content {
+    width: 200px;
+    padding: 6px 10px;
+    border-radius: $radius-5;
+    line-height: 20px;
+    font-size: $font-13;
+    font-weight: $weight-500;
+}
+
+@mixin info-button {
+    width: 94px;
+    border-radius: $radius-5;
+    line-height: 19px;
+    font-size: $font-14;
+    font-weight: $weight-500;
+    box-shadow:$shadow;
+    height: 100%;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $lightpurple;
+}
+
+#app {
+    min-height: 100vh;
+    padding-bottom: 10px;
+
+    .tit-app {
+        margin: 0 auto;
+        @include bg-img(386px, 180px, url("../img/logo.png"));
+    }
+
+    @at-root .main {
+        @include flex;
+        margin-top: 83px;
+
+        @at-root .vending-machine {
+            padding: 30px 28px;
+            width: 360px;
+            background-color: $white;
+
+            .list-item {
+                @include grid($col: 3, $gap: 12px);
+
+                li {
+                    position: relative;
+
+                    &:active::before {
+                        @include virtual-child();
+                        @include full-box();
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        border: 3px solid $purple;
+                        border-radius: $radius-10;
+                    }
+                }
+            }
+
+            .back-sold-out {
+                @include flex;
+                @include full-box;
+                position: absolute;
+                border-radius: $radius-10;
+                background: rgba(0, 0, 0, 0.8);
+
+                img {
+                    width: 57.51px;
+                    height: 44.85px;
+                }
+            }
+
+            .btn-item {
+                padding: 9px 12px 11px;
+                width: 94px;
+                border-radius: $radius-10;
+                box-shadow: $shadow;
+            }
+
+            .img-item {
+                display: block;
+                margin: 0 auto 6px;
+                width: 35.86px;
+                height: 64.86px;
+            }
+
+            @at-root .tit-item {
+                display: inline-block;
+                margin-bottom: 7px;
+                line-height: 13.03px;
+                font-size: $font-9;
+                font-weight: $weight-500;
+            }
+
+            .txt-item {
+                display: inline-block;
+                padding: 5px 15px;
+                border-radius: 50px;
+                font-size: $font-12;
+                color: $white;
+                background-color: $purple;
+            }
+
+            .cont-return {
+                @include flex($horizontal: space-between);
+                height: 33px;
+                margin-top: 20px;
+
+                .info-balance {
+                    @include info-content;
+                    position: relative;
+                    background-color: $lightpurple;
+
+                    .txt-balance {
+                        position: absolute;
+                        top: 6px;
+                        right: 10px;
+                    }
+                }
+
+                .btn-return {
+                    @include info-button;
+                }
+            }
+
+            .cont-put {
+                @include flex($horizontal: space-between);
+                height: 33px;
+                margin-top: 10px;
+
+                .inp-put {
+                    @include info-content;
+                    border: 1px solid $gray;
+                }
+
+                .inp-put::placeholder {
+                    font-size: $font-13;
+                    color: $gray;
+                }
+
+                .btn-put {
+                    @include info-button;
+                }
+            }
+
+            .cont-get {
+                @include flex($horizontal: space-between);
+                margin-top: 10px;
+                height: 106px;
+
+                @at-root .list-item-staged {
+                    overflow-y: scroll;
+                    padding: 0 12px;
+                    width: 200px;
+                    border: 1px solid $gray;
+                    border-radius: $radius-5;
+                    background-color: #EAE8FE;
+                }
+                
+                @at-root .list-item-staged {
+                    height: 100%;
+
+                    .item-staged {
+                        overflow: hidden;
+                        margin-top: 11px;
+                        padding: 8px;
+                        border-radius: $radius-5;
+                        background-color: white;
+
+                        & + li {
+                            margin-top: 6px;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 11px;
+                        }
+                    }
+
+                    .img-item {
+                        float: left;
+                        width: 18px;
+                        height: 33px;
+                        margin: 0 10px;
+                        box-sizing: content-box;
+                    }
+
+                    .tit-item {
+                        float: left;
+                        margin-top: 10px;
+                    }
+
+                    .num-counter {
+                        float: right;
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid $gray;
+                        border-radius: $radius-5;
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: $font-14;
+                    }
+                }
+                
+                .btn-get {
+                    @include info-button;
+                    background-color: $purple;
+                    color: white;
+                }
+
+            }
+        }
+
+        @at-root .my-info {
+            display: grid;
+            width: 360px;
+            grid-template-rows: 50px 474px;
+            gap: 21px;
+            margin-left: 28px;
+
+            .cont-mymoney {
+                padding: 9px 27px;
+                background-color: $white;
+            }
+    
+            .info-mymoney {
+                position: relative;
+                padding: 0 10px;
+                height: 32px;
+                background-color: $lightpurple;
+                border-radius: $radius-5;
+                line-height: 32px;
+            }
+    
+            .txt-mymoney {
+                position: absolute;
+                top: 0;
+                right: 10px;
+                font-size: $font-14;
+                font-weight: 700;
+            }
+    
+            .cont-myitems {
+                padding: 26px 27px 25px;
+                background: $white;
+    
+                .tit-myitems {
+                    display: block;
+                    font-weight: $weight-700;
+                    text-align: center;
+                    line-height: 20px;
+                    margin-bottom: 12px;
+                }
+            }
+    
+            .list-item-staged {
+                width: 100%;
+                height: 362px;
+            }
+
+            .txt-total {
+                width: 100%;
+                margin-top: 5px;
+                display: block;
+                text-align: right;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 17.38px;
+            }
+        }
+    }
+}

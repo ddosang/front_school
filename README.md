@@ -1,6 +1,6 @@
 
 # 멋쟁이사자처럼 Front-end School
-### 2021-10-29 ~ 2022-01-27
+### 2021-10-29 - 2022-01-27
 
 https://ddosang.github.io/front_school/
 
@@ -20,11 +20,11 @@ https://ddosang.github.io/front_school/
 [인프런 강의](https://www.inflearn.com/course/html-css-강좌)
 
 
-- tutorial1~7.html : 1-13강 HTML, CSS 강의 실습 [velog #1.5](https://velog.io/@ddosang/Front-end-1.5), [#1.5-2](https://velog.io/@ddosang/Front-end-1.5-2), [#2.5](https://velog.io/@ddosang/Front-end-2.5)
+- tutorial1-7.html : 1-13강 HTML, CSS 강의 실습 [velog #1.5](https://velog.io/@ddosang/Front-end-1.5), [#1.5-2](https://velog.io/@ddosang/Front-end-1.5-2), [#2.5](https://velog.io/@ddosang/Front-end-2.5)
 - tutorial8.html, tutorial8_class.html : 14강 야후 클론코딩 [velog #5.5](https://velog.io/@ddosang/Front-end-5.5)
-- tutorial9~12.html : 15강 쇼핑몰(9), 16강 웹폰트 적용(10), 17-19강 스마트폰 레이아웃(11-12) 클론코딩 [velog #6.5](https://velog.io/@ddosang/Front-end-6.5)
-- tutorial13~14.html : 20-23강 태블릿 레이아웃 클론코딩 [velog #7.5](https://velog.io/@ddosang/Front-end-7.5)
-- tutorial15~16.html : 24-26강 transition, transform, animation 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-1)
+- tutorial9-12.html : 15강 쇼핑몰(9), 16강 웹폰트 적용(10), 17-19강 스마트폰 레이아웃(11-12) 클론코딩 [velog #6.5](https://velog.io/@ddosang/Front-end-6.5)
+- tutorial13-14.html : 20-23강 태블릿 레이아웃 클론코딩 [velog #7.5](https://velog.io/@ddosang/Front-end-7.5)
+- tutorial15-16.html : 24-26강 transition, transform, animation 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-1)
 - tutorial17.html : 27강 반응형 웹 [velog #7.5](https://velog.io/@ddosang/Front-end-7.5)
 
 
@@ -33,8 +33,8 @@ https://ddosang.github.io/front_school/
 - refactoring8.html, refactoring8.css : 14강 야후 클론코딩 발전
 - refactoring9.html : 15강 웹 실전 리팩토링
 - refactoring10.html : 16강 웹 폰트 적용 리팩토링
-- refactoring11~12.html : 17-19강 스마트폰 레이아웃 리팩토링
-- refactoring13~14.html : 20-23강 태블릿 레이아웃 리패곹링
+- refactoring11-12.html : 17-19강 스마트폰 레이아웃 리팩토링
+- refactoring13-14.html : 20-23강 태블릿 레이아웃 리패곹링
 - refactoring17.html : 27강 반응형 웹 리팩토링
 
 <br>
@@ -53,7 +53,7 @@ https://ddosang.github.io/front_school/
 
 02.HTML
 
-- 001~006.html : 1101 수업 시간 실습 [velog #2](https://velog.io/@ddosang/Front-end-2)
+- 001-006.html : 1101 수업 시간 실습 [velog #2](https://velog.io/@ddosang/Front-end-2)
 
 - 007.html, HW01.html : 1101 수업 과제 - [paullab](http://www.paullab.co.kr/about.html) HTML 클론 코딩
 
@@ -71,33 +71,37 @@ https://ddosang.github.io/front_school/
 
 03.CSS
 
-- 010~021.html, css : 1103 수업  CSS 기초 실습 [velog #4-2](https://velog.io/@ddosang/Front-end-4-2)
+- 010-021.html, css : 1103 수업  CSS 기초 실습 [velog #4-2](https://velog.io/@ddosang/Front-end-4-2)
 
-- 022~024.html : 1104 selector 복습
+- 022-024.html : 1104 selector 복습
 
-- 025~035.html : 1104 수업 시간 CSS 실습  [velog #5](https://velog.io/@ddosang/Front-end-5)
+- 025-035.html : 1104 수업 시간 CSS 실습  [velog #5](https://velog.io/@ddosang/Front-end-5)
 
 - 1104_character.html : 1104 캐릭터 그리기 과제  [velog #5](https://velog.io/@ddosang/Front-end-5)
 
-- 036~042.html : 1105 수업 시간 실습 + float 복습 [velog #6-1](https://velog.io/@ddosang/Front-end-6-1)
+- 036-042.html : 1105 수업 시간 실습 + float 복습 [velog #6-1](https://velog.io/@ddosang/Front-end-6-1)
 
 - 1105_n2ver.html : 1105 네이버 로그인 창 클론 코딩 [velog #6-1](https://velog.io/@ddosang/Front-end-6-1)
 
-- 043~049.html, 1105_n2ver_flex.html : 1108 수업 (flex, grid) 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-2#1-2-flex)
+- 043-049.html, 1105_n2ver_flex.html : 1108 수업 (flex, grid) 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-2#1-2-flex)
 
-- 051~061.html : 1108 수업 transition, transform, animation (keyframes) 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-2#2-move)
+- 051-061.html : 1108 수업 transition, transform, animation (keyframes) 실습 [velog #6-2](https://velog.io/@ddosang/Front-end-6-2#2-move)
 
-- 062~068.html : 1109-1110 수업 transition, transform, animation 실습 [velog #9](https://velog.io/@ddosang/Front-end-9)
+- 062-068.html : 1109-1110 수업 transition, transform, animation 실습 [velog #9](https://velog.io/@ddosang/Front-end-9)
 
 - 000.font, 001.flex : 1115 수업 [velog #12](https://velog.io/@ddosang/Front-end-12)
 
-- 002.grid : 1116 수업 grid, transition, 넓이 자동 계산 [velog #13](https://velog.io/@ddosang/Front-end-13)
+- 002.grid : 1116 수업 grid, transition, 넓이 자동 계산 [velog #13](https://velog.io/@ddosang/Front-end-13), [#20](https://velog.io/@ddosang/Front-end-20)
 
 - 003.animation : 1118 수업 animation [velog #15](https://velog.io/@ddosang/Front-end-15)
 
-- 004.실전 : 1119~1120 수업 CSS 실전 팁 [velog #16](https://velog.io/@ddosang/Front-end-16)
+- 004.실전 : 1119-1120, 1124-1125 수업 CSS 실전 팁 [velog #16](https://velog.io/@ddosang/Front-end-16)
 
-- 005.bootstrap : 1122~1123 수업 bootstrap 사용 [velog #17](https://velog.io/@ddosang/Front-end-17)
+- 005.bootstrap : 1122-1123 수업 bootstrap 실습 [velog #17](https://velog.io/@ddosang/Front-end-17)
+
+- 006.tailwind : 1123 수업 tailwind 실습 [velog #18](https://velog.io/@ddosang/Front-end-18)
+
+- 007.SASS : 1124-1125 수업 SASS 실습 [velog #19](https://velog.io/@ddosang/Front-end-19), [#20](https://velog.io/@ddosang/Front-end-20)
 
 <br>
 
@@ -128,12 +132,12 @@ https://ddosang.github.io/front_school/
 
 ==============================================================
 
-- 11.Jungle_Cinema : 1108~1109 실습 [velog #8](https://velog.io/@ddosang/Front-end-8)
+- 11.Jungle_Cinema : 1108-1109 실습 [velog #8](https://velog.io/@ddosang/Front-end-8)
 
-- 12.10000hours : 1109 과제~1112 실습 [velog #10](https://velog.io/@ddosang/Front-end-10)
+- 12.10000hours : 1109 과제-1112 실습 [velog #10](https://velog.io/@ddosang/Front-end-10)
 
-- 13.Login_Modal : 1112 과제~1119 실습 [velog #12](https://velog.io/@ddosang/Front-end-12), [#16](https://velog.io/@ddosang/Front-end-16)
+- 13.Login_Modal : 1112 과제-1119 실습 [velog #12](https://velog.io/@ddosang/Front-end-12), [#16](https://velog.io/@ddosang/Front-end-16)
 
 - 14.cool-jjin-test : 1117 특강 [velog #14](https://velog.io/@ddosang/Front-end-14)
 
-- 15.Vending_Machine : 1118~1119 실습 [velog #15](https://velog.io/@ddosang/Front-end-15), [#16](https://velog.io/@ddosang/Front-end-16)
+- 15.Vending_Machine : 1118-1119 실습 [velog #15](https://velog.io/@ddosang/Front-end-15), [#16](https://velog.io/@ddosang/Front-end-16), 1124- SASS 실습 [velog #24](https://velog.io/@ddosang/Front-end-19)

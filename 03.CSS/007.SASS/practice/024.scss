@@ -1,0 +1,18 @@
+// Scss - for문
+// for문을 이용해 nth-선택자에게 각각의 image를 배경에 넣어준다.
+@for $i from 1 through 5 {
+    .photo-box:nth-child(#{$i}) {
+        background-image: url("../assets/phoster#{$i}.png");
+    }
+} 
+  // 범위 1이상 5이하
+  // for문에서 1부터 5까지 반복하라는 의미입니다. 총 5번 반복되면서 코드가 실행된다.
+  // 만약 from 3 throught 8 이라면 3에서 8까지 6번 실행된다.
+
+$multiple: 1;
+
+@for $index from 1 through 10 {
+    .content-#{$index} {
+        font-size: #{$index * 10} px;
+    }
+} 

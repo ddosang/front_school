@@ -1,0 +1,60 @@
+.photo-box:nth-child(1) {
+  background-image: url("../assets/phoster1.png");
+}
+
+.photo-box:nth-child(2) {
+  background-image: url("../assets/phoster2.png");
+}
+
+.photo-box:nth-child(3) {
+  background-image: url("../assets/phoster3.png");
+}
+
+.photo-box:nth-child(4) {
+  background-image: url("../assets/phoster4.png");
+}
+
+.photo-box:nth-child(5) {
+  background-image: url("../assets/phoster5.png");
+}
+
+.content-1 {
+  font-size: 10 px;
+}
+
+.content-2 {
+  font-size: 20 px;
+}
+
+.content-3 {
+  font-size: 30 px;
+}
+
+.content-4 {
+  font-size: 40 px;
+}
+
+.content-5 {
+  font-size: 50 px;
+}
+
+.content-6 {
+  font-size: 60 px;
+}
+
+.content-7 {
+  font-size: 70 px;
+}
+
+.content-8 {
+  font-size: 80 px;
+}
+
+.content-9 {
+  font-size: 90 px;
+}
+
+.content-10 {
+  font-size: 100 px;
+}
+/*# sourceMappingURL=024.css.map */

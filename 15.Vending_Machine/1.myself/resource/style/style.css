@@ -110,11 +110,6 @@ body {
     line-height: 22px; */
 }
 
-.my-info {
-    display: grid;
-    grid-template: 32px 32px 106px;
-}
-
 .cont-return, .cont-put, .cont-get {
     display: flex;
     justify-content: space-between;
@@ -124,14 +119,18 @@ body {
     height: 33px;
 }
 
+.cont-put, .cont-get {
+    margin-top: 10px;
+}
+
 .cont-return .info-balance, .cont-put .inp-put {
+    width: 200px;
     line-height: 33px;
     border-radius: 5px;
     font-weight: 500;
 }
 
 .cont-return .info-balance {
-    width: 180px;
     position: relative;
     background-color: #EAE8FE;
     padding: 0 10px;
@@ -156,12 +155,9 @@ body {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
-.cont-put, .cont-get {
-    margin-top: 10px;
-}
+
 
 .cont-put .inp-put {
-    width: 186px;
     padding: 0 6px;
     border: 1px solid #BDBDBD;
 }
@@ -184,7 +180,7 @@ body {
 }
 
 .cont-get .list-item-staged {
-    width: 174px;
+    width: 200px;
     height: 100%;   
 }
 
@@ -208,8 +204,9 @@ body {
 .list-item-staged .img-item {
     float: left;
     width: 18px;
-    padding: 6px 10px 7px;
     height: 33px;
+    padding: 6px 10px 7px;
+    box-sizing: content-box;
 }
 
 .list-item-staged .tit-item {
@@ -301,7 +298,7 @@ body {
 
     #app {
         min-width: 360px;
-      }
+    }
 
     .tit-app {
         width: 166px;

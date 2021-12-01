@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        .box {
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            transition: all 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- javascript 소개 -->
+    <h1>1. 자바스크립트로는 어떤 것을 할 수 있나요?</h1>
+    <button type="button" onclick="document.getElementById('demoOne').innerHTML = Date()">
+        Click me (One)</button>
+
+    <button type="button" onclick="document.getElementById('demoTwo').innerHTML = 'hello world'">
+        Click me (Two)</button>
+
+    <button type="button" onclick="document.getElementById('demoThree').style.backgroundColor = 'red'">
+        Click me (Three)</button>
+
+    <p id="demoOne"></p>
+    <p id="demoTwo"></p>
+    <p class="box" id="demoThree"></p>
+
+    <br>
+
+    <h1 id='title'>2. Hello World</h1>
+    <!-- <script>
+        // https://ko.javascript.info/ 소개
+        // https://www.w3schools.com/ 소개
+
+        // 자바스크립트로 출력하는 방법
+        // let age = 10; //지금은 다루지 않습니다.
+        // const pi = 3.141592; // 지금은 다루지 않습니다.
+        var name = '사용자';
+        var age = 20;
+
+        document.getElementById('title').innerHTML = 'Welcome to JS100제';
+        document.write(20 + 20);
+        window.alert(name);
+        console.log(age);
+      // 한 줄 주석
+        /* 주석
+        입니다. */
+    </script> -->
+    <script src="001.js"></script>
+</body>
+
+</html>

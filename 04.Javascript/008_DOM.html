@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .mint {
+            background-color: mintcream;
+        }
+        
+        .cornflowerblue {
+            background-color: cornflowerblue;
+        }
+
+        .gold {
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+    <div class="buttons">
+        <button>mint</button>
+        <button>cornflowerblue</button>
+        <button>gold</button>
+    </div>
+
+    <script>
+        const colors = ['mint', 'cornflowerblue', 'gold'];
+        const box = document.querySelector(".box");
+        const buttons = document.querySelectorAll('.buttons button');
+
+        function changeColor(index) {
+            for (x of colors) {
+                if (box.classList.contains(x)) {
+                    box.classList.remove(x);
+                }
+            }
+            box.classList.add(colors[index]);
+        }
+
+        // HTML element 를 배열로 가져와서 event listener를 붙이려면 마지막 인자로 false를 줘야한다.
+        buttons.forEach((x, i) => x.addEventListener("click", (function(index) {
+            // closure
+            return function() {
+                changeColor(index);
+            }
+        })(i), false));
+        
+
+
+    </script>
+</body>
+</html>

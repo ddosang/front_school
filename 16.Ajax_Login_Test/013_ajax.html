@@ -4,21 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    
-    <style>
-        
-    </style>
+    <title>ajax 통신 연습</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form class="">
-        <input type="text">
-        <input type="password">
-        <button>로그인</button>
+    <!-- <button type="button" class="dataLoadButton">데이터 불러오기</button> -->
+
+    <form action="">
+        <label for="id">아이디</label>
+        <input id="id" type="text" class="input-id">
+        <label for="id">비밀번호</label>
+        <input id="pw" type="password" class="input-pw">
+        <button class="btn-login">로그인!</button>
     </form>
 
+    <div class="dataField">data</div>
     <script>
-        
+        function checkUser(user, pw) {
+            let succesStr;
+            if (user && pw === user.pw) {
+                successStr = `${user.name}님 환영합니다.\n멋사코인 ${user.phone.slice(13)}억원.\n등급 다이아몬드`;
+            } else {
+                successStr = "로그인 실패";
+            }
+            return successStr;
+        }
+
+        function paintResult(str) {
+            const div = document.querySelector('.dataField');
+            div.innerText = str;
+        }
+
+        $('.btn-login').click(function(event) {
+            event.preventDefault();
+            $.ajax({
+                url:'https://raw.githubusercontent.com/ddosang/front_school/main/16.Ajax_Login_Test/userdata.json', 
+                async: true, 
+                success: function(result){
+                    // $(".dataField").html(result);
+                    const data = JSON.parse(result);
+                    const inputID = document.querySelector(".input-id").value;
+                    const inputPW = document.querySelector(".input-pw").value;
+
+                    const user = data.filter(x => x.id === inputID)[0];
+                    
+                    const str = checkUser(user, inputPW);
+                    paintResult(str);
+                }
+            });
+        });
     </script>
 </body>
 </html>

@@ -109,6 +109,13 @@ https://ddosang.github.io/front_school/
 
 04.javascript
 
+- 001-004.js  : 1126~1201 수업 실습 (문법 위주라 파일이 적음) [velog #21](https://velog.io/@ddosang/Front-end-21), [#22](https://velog.io/@ddosang/Front-end-22-JavaScript)
+- 005_lotto.js : 1202 수업 실습 (반복문) [velog #23](https://velog.io/@ddosang/Front-end-23), [#24](https://velog.io/@ddosang/Front-end-24), [#25](https://velog.io/@ddosang/Front-end-25)
+- 006~008_DOM.html : 1202 수업 실습 DOM [velog #26](https://velog.io/@ddosang/Front-end-26)
+- 009_JSON.html, data.js : 1203 수업 실습 JSON [velog #27](https://velog.io/@ddosang/Front-end-27)
+- prototype, class : 1207 개념 수업 [#28](https://velog.io/@ddosang/Front-end-28)
+- 010_callbackhell.html, 011_promise.html : 1208 수업 실습 Promise, callback [velog #29](https://velog.io/@ddosang/Front-end-29)
+
 
 <br>
 

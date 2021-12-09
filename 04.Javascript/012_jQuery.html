@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <!-- 3.x minified version -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        // 문서가 다 준비되면 실행.
+        // 여기를 주석처리하면 html이 다 로드되지 않은 상태라서 실행이 안됨.
+        $(function() {
+            $('.box').fadeOut(3000).fadeIn(3000);
+        })
+    </script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            opacity: 0.3;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="one">jQuery 실습</h1>
+    <p>hello</p>
+    <button class="btn1">click!!</button>
+    <p class="실습">jQuery 실습을 하고 있습니다.</p>
+    <img src="" alt="">
+
+    <textarea name="메모장" id="메모장" cols="30" rows="10"></textarea>
+    <button class="btn2">메모장 내용 경고창으로 출력</button>
+
+    <p id="p3">hello world</p>
+    <div class="wrapper">
+        <h1 class="title">TITLE</h1>
+        <ul>
+            <li class="items">item 1</li>
+            <li class="items">item 2</li>
+            <li class="items">item 3</li>
+        </ul>
+    </div>
+
+    <ul class="ul2">
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+
+    <div id="div1">a</div>
+    <div id="div1 blue">aa</div>
+    <div id="div1">aaa</div>
+
+    <div class="box"></div>
+    <div class="box2">hello world</div>
+    <button class="btn3">눌러봐요!</button>
+    
+    <script>
+        // document.getElementById('one').innerText = 'hello jQuery';
+        $('#one').text ('hello jQuery');
+        // $('p').hide();
+        $('.btn1').click(function() {
+            alert('clicked!');
+        });
+        // html을 바꿀 수 있다.
+        $('.실습').html('<strong>실습</strong> 중 이에요!');
+        $('.실습').css('color', 'red');
+        $('.실습').css('backgroundColor', 'blue');
+
+        $('img').attr('src', 'a.jpg');
+        $('img').attr('data-name', '프로필').attr('data-hello', 'world');
+
+        $('.btn2').click(function () {
+            let note = $('#메모장').val();
+            alert(note);
+        });
+
+        $('.items').parent().css('backgroundColor', 'blue');
+        $('.items').eq(2).css('color', 'red');
+        $('.ul2 > li:lt(3)').css('color', 'green');
+        $('.ul2 > li:gt(5)').css('backgroundColor', 'red');
+
+        $('.ul2').append('<li>hello world end</li>');
+        // $('#div1').remove();
+        $('#div1').addClass('important');
+
+        $('.box').click(function() {
+            $(this).stop();
+        })
+        $(function() {
+            $('.box').click(function() {
+                $(this).hide();
+                $(this).stop();
+            })
+        })
+
+        $('.btn3').click(function() {
+            $('.box2').animate({
+                width: '300px',
+                height: '300px',
+                opacity: 1
+            }, 'slow')
+        });
+    </script>
+
+
+    
+</body>
+</html>

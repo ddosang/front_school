@@ -1,0 +1,215 @@
+
+/* reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.ir {
+    display: block; 
+	overflow: hidden; 
+	font-size: 0;
+	line-height: 0; 
+	text-indent: -9999px;
+}
+
+.txt-hide {
+    position: absolute;
+	top: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+	margin: -1px;
+}
+
+/* style */
+
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.tit-image {
+    font-size: 2em;
+    font-weight: bold;
+    padding-right: 10px;
+    float: left;
+}
+
+.search-form__input {
+    float: left;
+    width: 350px;
+}
+
+.search-form__btn {
+    float: left;
+    
+}
+
+.user-service {
+    padding-left: 10px;
+    float: left;
+}
+
+.user-service > a {
+    padding-right: 10px;
+}
+
+.gnb {
+    overflow: hidden;
+}
+
+.gnb__item {
+    padding: 3px;
+    float: left;
+}
+
+.content {
+    overflow: hidden;
+}
+
+
+.timeline {
+    float: left;
+    width: 550px;
+}
+
+.content__side-info {
+    float: right;
+    width: 250px;
+}
+
+.main-timeline article {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.first-article {
+    padding : 100px;
+}
+
+.main-timeline ul {
+    overflow: hidden;
+}
+
+.main-timeline li:not(.first-article) {
+    float: left;
+}
+
+.trend-subject {
+    width: 80%
+}
+
+.timeline li {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.timeline img {
+    float: left;
+}
+
+.timeline-text {
+    float: left
+}
+
+
+h3 {
+    font-size: 20px;
+}
+
+.trend {
+    overflow: hidden;
+    margin: 20px;
+}
+
+/* 안타깝게도 ol을 두 갈래로 나눌 방법을 못 찾아서 ol 2개로 만들었는데 이거 어떻게 나눌 수 있을지 */
+.trend ol {
+    float: left;
+}
+
+.weather, .sports {
+    
+    margin: 20px;
+}
+
+.weather ol {
+    overflow: hidden;
+}
+.weather li {
+    float: left;
+}
+
+
+
+.daily article {
+    overflow: hidden;
+}
+
+.daily article img {
+    float: left;
+}
+
+.daily article p {
+    float: left;
+}
+
+footer {
+    margin: 5px;
+}
+
+footer ul {
+    overflow: hidden;
+}
+
+footer li {
+    float: left;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}

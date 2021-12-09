@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahoo Clone</title>
+
+    <link rel="stylesheet" href="refactoring08.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- 원래 로고를 눌러도 메인 페이지로 이동하니까 a태그로 수정. -->
+        <section class="header__main-area">
+            <h1 class="tit-image"><a href=""><img src="https://s.yimg.com/rz/p/yahoo_homepage_en-US_s_f_p_bestfit_homepage.png" alt="yahoo"></a></h1>
+    
+            <!-- input은 form tag 안에 넣는걸로 수정. -->
+            <form action="#none" class="search-form">
+                <input type="text" class="search-form__input">
+                <button type="submit" class="search-form__btn">검색</button>
+            </form>
+    
+    
+            <div class="user-service">
+                <a href="" class="user-service__sign-in">Sign in</a>
+                <a href="" class="user-service__notification ir">Notification</a>
+                <a href="" class="user-service__mail">Mail</a>
+            </div>
+        </section>
+
+        <nav class="gnb">
+            <ul class="gnb__list">
+                <li class="gnb__item">
+                    <a href="#" class="gnb__link">Mail</a>
+                </li>
+                <li class="gnb__item">
+                    <a href="#" class="gnb__link">News</a>
+                </li>
+                <li class="gnb__item">
+                    <a href="#" class="gnb__link">Finance</a>
+                </li>
+                <li class="gnb__item">
+                    <a href="#" class="gnb__link">Sports</a>
+                </li>
+                <li class="gnb__item">
+                    <a href="#" class="gnb__link">Entertainment</a>
+                </li>
+                <li> class="gnb__item"
+                    <a href="#" class="gnb__link">Life</a>
+                </li>
+                <li class="gnb__item">
+                    <a href="#" class="gnb__link">COVID-19</a>
+                </li>
+                <li class="gnb__item">
+                    <a href="#" class="gnb__link">Shopping</a>
+                </li>
+                <li class="gnb__item">
+                    <a href="#" class="gnb__link">Tech Tips</a>
+                </li>
+                <li class="gnb__item">
+                    <a href="#" class="gnb__link">Yahoo Plus</a>
+                </li>
+                <li class="gnb__item">
+                    <a href="#" class="gnb__link">More...</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="content">
+        <section class="timeline-wrap">
+            <section class="timeline timeline--popular">
+                <ul class="timeline__list timeline--popular__list">
+                    <li class="timeline__item timeline--popular__item">
+                        <article class="post post--popular">
+                            <img src="https://s.yimg.com/uu/api/res/1.2/GvIqNrGl8y6FdGVW4va3nA--~B/Zmk9c3RyaW07aD0yNzI7cT05NTt3PTU2MDthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-11/3f592c50-4a3a-11ec-aff6-edd48cee2c30.cf.webp" alt="img" class="post__image post--popular__image">
+                            <h4><a href="" class="post__title post--popular__title">'They're losing all of their belongings again'</a></h4>
+                            <p class="post__content post--popular__content">People in one corner of Washington are weary after enduring a deadly heat wave, a brutal drought and historic rain that further devastated their hard-hit communities.</p>
+                            <a href="">'It could happen every year' »</a>
+                        </article>
+                    </li>
+                    <li class="timeline__item timeline--popular_item">
+                        <article class="post post--popular">
+                            <img src="https://s.yimg.com/uu/api/res/1.2/4gchqjS5YgvwBI4Sp0cWxw--~B/Zmk9c3RyaW07aD0xODA7cT04MDt3PTM1NjthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-11/f8c2d3a0-4ab0-11ec-a4bb-fafba548e113.cf.webp" alt="img" class="post__image post--popular__image">
+                            <h4><a href="" class="post__title post--popular__title">'They're losing all of their belongings again'</a></h4>
+                            <p class="post__content post--popular__content">People in one corner of Washington are weary after enduring a deadly heat wave, a brutal drought and historic rain that further devastated their hard-hit communities.</p>
+                        </article>
+                    </li>
+                    
+                </ul>
+            </section>
+
+            <section class="timeline timeline--for-you">
+
+                <form class="timeline__timeline-filter">
+                    <input type="checkbox" id="politics" name="politics" checked class="content__check-box">
+                    <label for="politics" class="content__label">politics</label>
+                    <input type="checkbox" id="US News" name="US News" checked class="content__check-box">
+                    <label for="US News" class="content__label">US News</label>
+                    <input type="checkbox" id="Celebrity" name="Celebrity" checked class="content__check-box">
+                    <label for="Celebrity" class="content__label">Celebrity</label>
+                    <input type="checkbox" id="LifeStyle" name="LifeStyle" checked class="content__check-box">
+                    <label for="LifeStyle" class="content__label">LifeStyle</label>
+                    <input type="checkbox" id="Sports" name="Sports" checked class="content__check-box">
+                    <label for="Sports" class="content__label">Sports</label>
+                    <input type="checkbox" id="Business" name="Business" checked class="content__check-box">
+                    <label for="Business" class="content__label">Business</label>
+                    <input type="checkbox" id="Entertainment" name="Entertainment" checked class="content__check-box">
+                    <label for="Entertainment" class="content__label">Entertainment</label>
+                    <input type="checkbox" id="World News" name="World News" checked class="content__check-box">
+                    <label for="World News" class="content__label">World News</label>
+                    <input type="checkbox" id="Style" name="Style" checked class="content__check-box">
+                    <label for="Style" class="content__label">Style</label>
+                    <input type="checkbox" id="Health" name="Health" checked class="content__check-box">
+                    <label for="Health" class="content__label">Health</label>
+                    <input type="checkbox" id="Science" name="Science" checked class="content__check-box">
+                    <label for="Science" class="content__label">Science</label>
+                    <input type="checkbox" id="Technology" name="Technology" checked class="content__check-box">
+                    <label for="Technology" class="content__label">Technology</label>
+                    <input type="checkbox" id="Ads" name="Ads" checked class="content__check-box">
+                    <label for="Ads" class="content__label">Ads</label>
+                </form>
+
+                <ul class="timeline__list timeline--for-you__list">
+                    <!-- post 가 4종류 
+                    1. 글만 있음
+                    2. 이미지 있음
+                    3. 비디오 있음 (이미지보다 큰)
+                    4. 이미지가 있고 하위 post가 2개 들어가는 -->
+                    <li class="timeline__item timeline--for-you__item">
+                        <article class="post post--for-you post--image">
+                            <img src="https://www.yahoo.com/entertainment/netflix-insane-sci-fi-action-014532001.html" alt="img">
+                            <p class="post__field">Celebrity</p>
+                            <p class="post__source">BGM</p>
+                            <h4 class="post__title">Netflix’s insane new sci-fi action series is stirring up serious controversy</h4>
+                            <p class="post__content">For as much as this live-action adaptation of a beloved anime was anticipated by fans, Cowboy Bebop looks at this point more like Cowboy womp-womp for Netflix. Based on the early reaction from fans, that is, as well as reviews such as one from our sister publication Variety that laments the series is just the … The post Netflix’s insane new sci-fi action series is stirring up serious controversy appeared first on BGR.</p>
+                            <button class="more-button">더보기</button>
+                        </article>
+                    </li>
+                    <li class="timeline__item timeline--for-you__item">
+                        <ul class="timeline__post-group post-group">
+                            <li class="post-group__item">
+                                <article class="post post--first">
+                                    <img src="https://www.yahoo.com/entertainment/netflix-insane-sci-fi-action-014532001.html" alt="img" class="post__image post--first__image">
+                                    <p class="post__field">Celebrity</p>
+                                    <p class="post__source">BGM</p>
+                                    <h4 class="post__title">Netflix’s insane new sci-fi action series is stirring up serious controversy</h4>
+                                    <button class="more-button">더보기</button>
+                                </article>
+                            </li>
+                            <li class="timeline__group-item">
+                                <article class="post post--group">
+                                    <img src="https://www.yahoo.com/entertainment/netflix-insane-sci-fi-action-014532001.html" alt="img" class="post__image post--group__image">
+                                    <p class="post__source post--group__source">BGM</p>
+                                    <h4 class="post__title post--group__title">Netflix’s insane new sci-fi action series is stirring up serious controversy</h4>
+                                </article>
+                            </li>
+                            <li class="timeline__group-item">
+                                <article class="post post--group">
+                                    <img src="https://www.yahoo.com/entertainment/netflix-insane-sci-fi-action-014532001.html" alt="img" class="post__image post--group__image">
+                                    <p class="post__source post--group__source">BGM</p>
+                                    <h4 class="post__title post--group__title">Netflix’s insane new sci-fi action series is stirring up serious controversy</h4>
+                                </article>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+
+        <!-- <aside class="content__side-info">
+            <h2 class="txt-hide">side information</h2>
+            
+            <article class="trend">
+                <h3 class="trend__title">Trend</h3>
+                <nav class="trend__category">
+                    <ul class="category__list">
+                        <li class="category__item"><button href="" class="category__link">Trending Now</button></li>
+                        <li class="category__item"><button href="" class="category__link">Holiday Gifts</button></li>
+                    </ul>
+                </nav>
+                <ol class="trend__list">
+                    <li class="trend__item">
+                        <span class="trend__rank">1.</span>
+                        <a href="#none" class="trend__link">소녀시대</a>                        
+                    </li>
+                    <li class="trend__item">
+                        <span class="trend__rank">2.</span>
+                        <a href="#none" class="trend__link">소녀시대</a>                        
+                    </li>
+                    <li class="trend__item">
+                        <span class="trend__rank">3.</span>
+                        <a href="#none" class="trend__link">소녀시대</a>                        
+                    </li>
+                    <li class="trend__item">
+                        <span class="trend__rank">4.</span>
+                        <a href="#none" class="trend__link">소녀시대</a>                        
+                    </li>
+                    <li class="trend__item">
+                        <span class="trend__rank">5.</span>
+                        <a href="#none" class="trend__link">소녀시대</a>                        
+                    </li>
+                    <li class="trend__item">
+                        <span class="trend__rank">6.</span>
+                        <a href="#none" class="trend__link">소녀시대</a>                        
+                    </li>
+                    <li class="trend__item">
+                        <span class="trend__rank">7.</span>
+                        <a href="#none" class="trend__link">소녀시대</a>                        
+                    </li>
+                    <li class="trend__item">
+                        <span class="trend__rank">8.</span>
+                        <a href="#none" class="trend__link">소녀시대</a>                        
+                    </li>
+                    <li class="trend__item">
+                        <span class="trend__rank">9.</span>
+                        <a href="#none" class="trend__link">소녀시대</a>                        
+                    </li>
+                    <li class="trend__item">
+                        <span class="trend__rank">10.</span>
+                        <a href="#none" class="trend__link">소녀시대</a>                        
+                    </li>
+                </ol>
+            </article>
+
+            <article class="weather">
+                <h3 class="weather__title">Weather</h3>
+                <ol class="weather__list">
+                    <li class="weather__daily">
+                        <p class="weather__day">Today</p>
+                        <img src="#" alt="cloudy" class="weather__info">
+                    </li>
+                    <li class="weather__daily">
+                        <p class="weather__day">Thu</p>
+                        <img src="#" alt="cloudy" class="weather__info">
+                    </li>
+                    <li class="weather__daily">
+                        <p class="weather__day">Fri</p>
+                        <img src="#" alt="cloudy" class="weather__info">
+                    </li>
+                    <li class="weather__daily">
+                        <p class="weather__day">Sat</p>
+                        <img src="#" alt="cloudy" class="weather__info">
+                    </li>
+                </ol>
+
+                <a href="#" class="btn-more btn-more--weather">See More</a>
+            </article>
+
+            <article class="scoreboard">
+                <h3 class="scoreboard__title">Scoreboard</h3>
+                <select name="야구리그" class="scoreboard__league-select">
+                    <option value="MLB" class="scoreboard__league">MLB</option>
+                    <option value="NBA" class="scoreboard__league">NBA</option>
+                    <option value="NCAAB" class="scoreboard__league">NCAAB</option>
+                    <option value="NCAAF" class="scoreboard__league">NCAAF</option>
+                    <option value="NFL" class="scoreboard__league">NHL</option>
+                    <option value="NHL" class="scoreboard__league">NHL</option>
+                    <option value="Trending" selected class="scoreboard__league">Trending</option>
+                </select>
+
+                <nav class="scoreboard__date">
+                    <button class="scoreboard__btn-date scoreboard__btn-date--yesterday">Yesterday</button>
+                    <button class="scoreboard__btn-date scoreboard__btn-date--today">Today</button>
+                    <button class="scoreboard__btn-date scoreboard__btn-date--tomorrow">Tomorrow</button>
+                </nav>
+
+                <section class="scoreboard__result">
+                    <ul class="scoreboard__game-list">
+                        <li class="scoreboard__game">
+                            <div class="scoreboard__score">
+                                <p class="scoreboard__team">Charlotte</p>
+                                <p class="scoreboard__score scoreboard__score--lose">105</p>
+                            </div>
+                            <div class="scoreboard__score">
+                                <p class="scoreboard__team">Atalanta</p>
+                                <p class="scoreboard__score scoreboard__score--win">115</p>
+                            </div>
+                            <p class="sconreboard__set">Final</p>
+                        </li>
+                        <li class="scoreboard__game">
+                            <div class="scoreboard__score">
+                                <p class="scoreboard__team">Charlotte</p>
+                                <p class="scoreboard__score scoreboard__score--lose">105</p>
+                            </div>
+                            <div class="scoreboard__score">
+                                <p class="scoreboard__team">Atalanta</p>
+                                <p class="scoreboard__score scoreboard__score--win">115</p>
+                            </div>
+                            <p class="sconreboard__set">Final</p>
+                        </li>
+                        <li class="scoreboard__game">
+                            <div class="scoreboard__score">
+                                <p class="scoreboard__team">Charlotte</p>
+                                <p class="scoreboard__score scoreboard__score--lose">105</p>
+                            </div>
+                            <div class="scoreboard__score">
+                                <p class="scoreboard__team">Atalanta</p>
+                                <p class="scoreboard__score scoreboard__score--win">115</p>
+                            </div>
+                            <p class="sconreboard__set">Final</p>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn-more btn-more--scoreboard">See More</a>
+                </article>
+
+
+            </section>
+
+            <section class="horoscope">
+                <h3 class="horoscope__title">Daily Horoscope</h3>
+                <select name="Daily Horoscope" class="horoscope__select">
+                    <option value="Aquarius" class="horoscope__option">Aquarius</option>
+                    <option value="Aries" class="horoscope__option">Aries</option>
+                    <option value="Cancer" class="horoscope__option">Cancer</option>
+                    <option value="Capricorn" class="horoscope__option">Capricorn</option>
+                    <option value="Gemini" class="horoscope__option">Gemini</option>
+                    <option value="Leo" class="horoscope__option">Leo</option>
+                    <option value="Libra" class="horoscope__option">Libra</option>
+                    <option value="Pisces" class="horoscope__option">Pisces</option>
+                    <option value="Sagittarius" class="horoscope__option">Sagittarius</option>
+                    <option selected="" value="Scorpio" class="horoscope__option">Scorpio</option>
+                    <option value="Taurus" class="horoscope__option">Taurus</option>
+                    <option value="Virgo" class="horoscope__option">Virgo</option>
+                </select>
+
+
+                <article>
+                    <!-- 이미지 가상요소로 넣기. -->
+                    <p><strong>November 21 -Scorpio -</strong> That big brain of yours is seeing some serious competition today, but you've got what it takes to shut them down. As long as you're</p>
+                </article>
+
+
+                <a href="#" class=".more">See More</a>
+            </section>
+
+            <footer class="footer">
+                <ul class="sns">
+                    <li class="sns__item"><a href="#" class="sns__link">twit</a></li>
+                    <li class="sns__item"><a href="#" class="sns__link">face</a></li>
+                    <li class="sns__item"><a href="#" class="sns__link">insta</a></li>
+                    <li class="sns__item"><a href="#" class="sns__link">youtube</a></li>
+                    <li class="sns__item"><a href="#" class="sns__link">spotify</a></li>
+                </ul>
+
+                <ul class="information">
+                    <li class="information__item"><a href="" class="information__link">Terms</a></li>
+                    <li class="information__item"><a href="" class="information__link">Privacy</a></li>
+                    <li class="information__item"><a href="" class="information__link">Advertise</a></li>
+                    <li class="information__item"><a href="" class="information__link">About Our Ads</a></li>
+                    <li class="information__item"><a href="" class="information__link">Careers</a></li>
+                    <li class="information__item"><a href="" class="information__link">Help</a></li>
+                    <li class="information__item"><a href="" class="information__link">More Info</a></li>
+                </ul>
+            </footer>
+
+            <small class="copyright">© 2021 Yahoo. All rights reserved.</small>
+
+        </aside> -->
+
+    </main>
+</body>
+
+</html>

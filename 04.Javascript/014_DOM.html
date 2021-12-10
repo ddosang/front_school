@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <strong class="sayHi">
+        반갑습니다.
+    </strong>
+
+    <article class="cont">
+        <h1>안녕하세요 저는 이런 사람입니다.</h1>
+        <p>지금부터 자기소개 올리겠습니다</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt voluptates laudantium fugit, omnis
+        dolore itaque esse exercitationem quam culpa praesentium, quisquam repudiandae aut. Molestias qui quas ea iure
+        officiis.
+        <strong>감사합니다!</strong>
+    </article>
+
+    <script>
+        const sayHi = document.querySelector('.sayHi');
+        sayHi.insertAdjacentHTML('beforebegin', '<span>안녕하세요 저는</span>');
+        sayHi.insertAdjacentHTML('afterbegin', '<span>재현입니다</span>');
+        sayHi.insertAdjacentHTML('beforeend', '<span>면접오시면</span>');
+        sayHi.insertAdjacentHTML('afterend', '<span>치킨사드릴게요</span>');
+
+
+        const cont = document.querySelector(".cont");
+        console.log(cont.firstElementChild);  // 첫번째 자식
+        console.log(cont.lastElementChild);   // 마지막 자식
+        console.log(cont.nextElementSibling); // 다음 형제요소
+        console.log(cont.previousSibling);    // 이전 형제노드 - Element가 없으면.
+        console.log(cont.children);           // 모든 직계자식
+        console.log(cont.parentElement);      // 부모 요소
+    </script>
+</body>
+
+</html>

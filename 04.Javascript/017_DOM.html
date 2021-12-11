@@ -114,7 +114,6 @@
             button.type = "button";
             button.innerText = x;
             li.appendChild(button);
-            console.log(li);
             memberList.appendChild(li);
         }
 
@@ -125,10 +124,53 @@
         selectButton.addEventListener('click', (event) => {
             selectButton.classList.toggle('on');
         });
+
+        // forEach 는 배열을 순환하는 것인데.. 
+        // querySelectorAll 로 뽑아온건 nodeList(유사 배열 객체)
+        // Array.prototype.forEach, NodeList.prototype.forEach() 가 둘 다 있어서 작동이 되는 것.
+        // IE 지원이 안됨..............
         memberButtons.forEach(x => x.addEventListener('click', (event) => {
             selectButton.textContent = event.target.innerText;
             selectButton.classList.remove('on');
         }));
+
+
+        const listAll = ul.querySelectorAll('button'); // option list
+        const firstOption = ul.querySelector('button'); //option first button
+        const lastOption = listAll[listAll.length - 1]; //option last button
+        //focus 이동
+        const handleTabFoucus = function (e) {
+            if (!e.shiftKey && e.keyCode === 9) {
+                e.preventDefault();
+                window.setTimeout(function () {
+                    firstOption.focus();
+                }, 100);
+            }
+        };
+        //shift+tab
+        const handlShiftTabFoucus = function (e) {
+            if (e.shiftKey && e.keyCode === 9) {
+                e.preventDefault();
+                window.setTimeout(function () {
+                    lastOption.focus();
+                }, 100);
+            }
+        };
+        //ESC키 
+        const hadleEsc = function (e) {
+            if (e.keyCode === 27) {
+                btn.classList.remove('on');
+                ul.classList.remove('on');
+                window.setTimeout(function () {
+                    btn.focus();
+                }, 100);
+            }
+        }
+
+        selectButton.addEventListener('keydown', hadleEsc);
+        memberList.addEventListener('keydown', hadleEsc);
+        lastOption.addEventListener('keydown', handleTabFoucus);
+        firstOption.addEventListener('keydown', handlShiftTabFoucus);
     </script>
 </body>
 

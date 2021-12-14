@@ -115,13 +115,22 @@ https://ddosang.github.io/front_school/
 - 009_JSON.html, data.js : 1203 수업 실습 JSON [velog #27](https://velog.io/@ddosang/Front-end-27)
 - prototype, class : 1207 개념 수업 [#28](https://velog.io/@ddosang/Front-end-28)
 - 010_callbackhell.html, 011_promise.html : 1208 수업 실습 Promise, callback [velog #29](https://velog.io/@ddosang/Front-end-29)
-
+- 012_jQuery.js : 1210 수업 실습 [velog #30](https://velog.io/@ddosang/Front-end-30)
+- 013-017_DOM.js : 1211 수업 실습 [velog #31](https://velog.io/@ddosang/Front-end-31)
 
 <br>
 
-## 5. 과제 (Clone Coding)
+## 5. TDD
 
-05.Clone
+05.TDD
+
+- 1210~1213 jasmine TDD 실습 [velog #31](https://velog.io/@ddosang/Front-end-31)
+
+<br>
+
+## 6. 과제 (Clone Coding)
+
+06.Clone
 
 - HW01.html : 1101 수업 과제 - [paullab](http://www.paullab.co.kr/about.html) HTML 클론 코딩
 

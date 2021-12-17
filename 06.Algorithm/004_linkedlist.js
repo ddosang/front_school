@@ -13,6 +13,15 @@ class LinkedList {
         this.현재노드 = undefined;
         this.데이터수 = 0;
     }
+    get fullData() {
+        let currentNode = this.head;
+        currentNode = currentNode.next;
+        let s = ''
+        for (let i = 0; i < this.데이터수; i++) {
+            s += `${currentNode.data}, `;
+            currentNode = currentNode.next;
+        }
+    }
     length() {
         return this.데이터수;
     }
@@ -27,7 +36,6 @@ class LinkedList {
     toString() {
         let currentNode = this.head;
         currentNode = currentNode.next;
-
         let s = [];
         while (currentNode) {
             s.push(currentNode.data);
@@ -35,11 +43,26 @@ class LinkedList {
         }
         return `${s.join(' -> ')}`
     }
+    insert(index, data) {
+        let currentNode = this.head;
+        currentNode = currentNode.next;
+        for(let i = 0; i < index; i++) {
+            currentNode = currentNode.next;
+        }
+        let newNode = newNode(data);
+        newNode.next = currentNode.next;
+        currentNode.next = newNode;
+        this.데이터수 += 1;
+    }
 }
 
+// console
 l = new LinkedList();
 l.append(1);
 l.append(2);
 l.append(3);
-l.append(4);
-l.toString();
+l.append(10);
+l.append(20);
+l.append(30);
+l.length();
+console.log(l.fullData);

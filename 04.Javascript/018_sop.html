@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>SOP</h1>
+    <iframe src="https://naver.com" frameborder="0"></iframe>
+    <iframe width="1121" height="629" src="https://www.youtube.com/embed/UZwbb-V1ESw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube"></iframe>
+    <iframe src="019_sameOrigin.html" frameborder="0"></iframe>
+
+    <script>
+        const pageOther = document.querySelector('.youtube');
+        const pageSame = document.querySelector('.sameOrigin');
+
+        // pageDocument : same origin 이면 document 를 반환함.
+        // 근데 왜 sameOrigin 도 반환이 안돼?
+        // iframe 로딩이 끝나지 않은 상태에서 접근해서.
+        console.log("pageOther : " + pageOther.contentDocument);
+        console.log("pageSame : " + pageSame.contentDocument);
+
+        pageOther.onload = function () {
+            console.log("pageOther : " + pageOther.contentDocument);
+        }
+
+        pageSame.onload = function () {
+            console.log("pageSame : " + pageSame.contentDocument);
+        }
+
+    </script>
+</body>
+</html>

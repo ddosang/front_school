@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 100px;
+        }
+
+        .target {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            transition: 0.1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="target"></div>
+    <script>
+        const target = document.querySelector(".target");
+        let pos = 0;
+        let keys = {};
+
+        // 키를 누르면 타겟이 움직이게 하는 프로그램.
+        document.addEventListener('keydown', move);
+        document.addEventListener('keyup', stop);
+
+        function move(event) {
+            // 어떤 키를 눌렀는지를 true, false 값과 함께 저장.
+            keys[event.key] = true;
+        }
+
+        function stop() {
+            keys[event.key] = false;
+        }
+
+        function play() {
+            if(keys.ArrowRight) {
+                pos += 5;
+                target.style.transform = `translateX(${pos}px)`;
+            }
+            if (keys.ArrowLeft) {
+                pos -= 5;
+                target.style.transform = `translateX(${pos}px)`;
+            }
+            window.requestAnimationFrame(play);
+        }
+
+        // play 라는 애니메이션 함수를 미리 호출해서 repaint 전에 브라우저에게 알려줌.
+        window.requestAnimationFrame(play);
+
+        // 계속 돌아간다. for, while 무한루프처럼 셧다운 되지 않음.
+        // 게임에는 이런 함수가 항상 사용자를 지켜보고 있다.
+        function test() {
+            
+            test();
+        }
+    </script>
+</body>
+
+</html>

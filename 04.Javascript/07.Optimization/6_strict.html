@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+    </style>
+</head>
+<body>
+    <script>
+        'use strict'; // 아래의 돌아가는 말도 안되는 문법들에 에러를 띄워줌.
+
+        str = "hello strict";
+        var undefined = "undefined";
+        console.log(undefined);
+        var Infinity = 100;
+        console.log(Infinity);
+        Math.PI = 0;
+
+        const Employee = {
+            firstname: "jaehyun",
+            lastname: 'han'
+        }
+
+        console.log(Employee.firstname);
+        delete Employee.firstname;
+        console.log(Employee.firstname);
+
+        delete Object.prototype;
+
+        function myFunc(a, a, b) {
+            console.log(a + a + b);
+        }
+
+        myFunc(1, 2, 3); // 7
+
+    </script>
+</body>
+</html>

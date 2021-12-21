@@ -117,6 +117,8 @@ https://ddosang.github.io/front_school/
 - 010_callbackhell.html, 011_promise.html : 1208 수업 실습 Promise, callback [velog #29](https://velog.io/@ddosang/Front-end-29)
 - 012_jQuery.js : 1210 수업 실습 [velog #30](https://velog.io/@ddosang/Front-end-30)
 - 013-017_DOM.js : 1211 수업 실습 [velog #31](https://velog.io/@ddosang/Front-end-31)
+- 07.Optimization : 1220 수업 실습 (JavaScript 최적화) [velog #37](https://velog.io/@ddosang/Front-end-37)
+
 
 <br>
 
@@ -124,13 +126,22 @@ https://ddosang.github.io/front_school/
 
 05.TDD
 
-- 1210~1213 jasmine TDD 실습 [velog #31](https://velog.io/@ddosang/Front-end-31)
+- 1210-1213 jasmine TDD 실습 [velog #31](https://velog.io/@ddosang/Front-end-31), [#32](https://velog.io/@ddosang/Front-end-32)
 
 <br>
 
-## 6. 과제 (Clone Coding)
+## 6. Algorithm
 
-06.Clone
+- 001-004.js 1214-1215 자료구조 (stack, linkedlist) [velog #33](https://velog.io/@ddosang/Front-end-33)
+- 005.js 1215 정렬 알고리즘 [velog #34](https://velog.io/@ddosang/Front-end-34)
+- 005-006.js 1216 알고리즘 + 자료구조 (이진트리) [velog #35](https://velog.io/@ddosang/Front-end-35)
+
+\+ 모의면접 1217 [velog #36](https://velog.io/@ddosang/Front-end-36), [#37]()
+<br>
+
+## 7. 과제 (Clone Coding)
+
+07.Clone
 
 - HW01.html : 1101 수업 과제 - [paullab](http://www.paullab.co.kr/about.html) HTML 클론 코딩
 
@@ -138,7 +149,7 @@ https://ddosang.github.io/front_school/
 
 <br>
 
-## 6. Project
+## 11-15. Project
 
 < 폴더 구조 >
 

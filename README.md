@@ -118,6 +118,7 @@ https://ddosang.github.io/front_school/
 - 012_jQuery.js : 1210 수업 실습 [velog #30](https://velog.io/@ddosang/Front-end-30)
 - 013-017_DOM.js : 1211 수업 실습 [velog #31](https://velog.io/@ddosang/Front-end-31)
 - 07.Optimization : 1220 수업 실습 (JavaScript 최적화) [velog #37](https://velog.io/@ddosang/Front-end-37)
+- 08.시각화 : 1221 수업 실습 (chart.js D3) [velog #39](https://velog.io/@ddosang/Front-end-39)
 
 
 <br>
@@ -134,9 +135,9 @@ https://ddosang.github.io/front_school/
 
 - 001-004.js 1214-1215 자료구조 (stack, linkedlist) [velog #33](https://velog.io/@ddosang/Front-end-33)
 - 005.js 1215 정렬 알고리즘 [velog #34](https://velog.io/@ddosang/Front-end-34)
-- 005-006.js 1216 알고리즘 + 자료구조 (이진트리) [velog #35](https://velog.io/@ddosang/Front-end-35)
+- 005-006.js 1216 알고리즘 + 자료구조 (이진트리) [velog #35](https://velog.io/@ddosang/Front-end-35), 1221 정규표현식 [velog #38](https://velog.io/@ddosang/Front-end-38)
 
-\+ 모의면접 1217 [velog #36](https://velog.io/@ddosang/Front-end-36), [#37]()
+\+ 모의면접 1217 [velog #36](https://velog.io/@ddosang/Front-end-36), [#37](https://velog.io/@ddosang/Front-end-37)
 <br>
 
 ## 7. 과제 (Clone Coding)
@@ -168,3 +169,9 @@ https://ddosang.github.io/front_school/
 - 14.cool-jjin-test : 1117 특강 [velog #14](https://velog.io/@ddosang/Front-end-14)
 
 - 15.Vending_Machine : 1118-1119 실습 [velog #15](https://velog.io/@ddosang/Front-end-15), [#16](https://velog.io/@ddosang/Front-end-16), 1124- SASS 실습 [velog #24](https://velog.io/@ddosang/Front-end-19)
+
+<br>
+
+## threejs
+
+three.js 특강

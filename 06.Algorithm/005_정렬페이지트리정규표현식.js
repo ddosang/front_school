@@ -41,7 +41,7 @@ let 정렬된배열 = [];
 let 길이 = 입력값.length;
 
 
-while(!!입력값.toString()){
+while (!!입력값.toString()) {
     let 최솟값 = Math.min(...입력값);
     정렬된배열.push(최솟값);
     입력값.splice(입력값.indexOf(최솟값), 1)
@@ -93,7 +93,7 @@ let 입력값 = [199, 22, 33, 12, 32, 64, 72, 222, 233];
 let 정렬된배열 = [];
 let 배열의길이 = 입력값.length;
 
-function 삽입값이들어갈인덱스(정렬된배열, 삽입값){
+function 삽입값이들어갈인덱스(정렬된배열, 삽입값) {
     for (const i in 정렬된배열) {
         if (삽입값 < 정렬된배열[i]) {
             return i
@@ -113,8 +113,8 @@ for (let i = 0; i < 배열의길이; i++) {
 // 좀 더 어렵게
 function insertIndex(sorted_arr, value) {
     //삽입될 위치를 찾는 함수
-    for(let i in sorted_arr){
-        if(value < sorted_arr[i]){
+    for (let i in sorted_arr) {
+        if (value < sorted_arr[i]) {
             return i;
         }
     }
@@ -124,7 +124,7 @@ function insertIndex(sorted_arr, value) {
 function insertSort(arr) {
     let sorted_arr = [];
 
-    while (arr.length != 0){
+    while (arr.length != 0) {
         let value = arr.shift();
         //삽입될 위치를 반환함
         let index = insertIndex(sorted_arr, value);
@@ -144,21 +144,21 @@ console.log(insertSort(arr));
 // 분할(이해를 돕기 위해 8개로 조정)
 [5, 10, 66, 77], [54, 32, 11, 15]
 [5, 10], [66, 77], [54, 32], [11, 15]
-[5], [10], [66], [77], [54], [32], [11], [15]
+    [5], [10], [66], [77], [54], [32], [11], [15]
 
-//정복(0번째끼리 비교!)
-[5, 10], [66, 77], [32, 54], [11, 15]
-[5, 10, 66, 77], [11, 15, 32, 54]
-[5, 10, 11, 15, 32, 54, 66, 77]
+    //정복(0번째끼리 비교!)
+    [5, 10], [66, 77], [32, 54], [11, 15]
+    [5, 10, 66, 77], [11, 15, 32, 54]
+    [5, 10, 11, 15, 32, 54, 66, 77]
 
 // step 1
 let 입력값 = [5, 10, 66, 77, 54, 32, 11, 15];
 
-function 병합정렬(입력배열){
+function 병합정렬(입력배열) {
     let 입력배열의길이 = 입력배열.length;
     let 결과값 = [];
 
-    if (입력배열의길이 <= 1){
+    if (입력배열의길이 <= 1) {
         return 입력배열
     }
     let 중간값 = parseInt(입력배열의길이 / 2);
@@ -166,7 +166,7 @@ function 병합정렬(입력배열){
     let 그룹둘 = 병합정렬(입력배열.slice(중간값))
 
     while (그룹하나.length != 0 && 그룹둘.length != 0) {
-        if(그룹하나[0] < 그룹둘[0]) {
+        if (그룹하나[0] < 그룹둘[0]) {
             결과값.push(그룹하나.shift());
         } else {
             결과값.push(그룹둘.shift());
@@ -205,7 +205,7 @@ let 입력값 = [66, 77, 54, 32, 10, 5, 11, 15];
 
 
 let 입력값 = [66, 77, 54, 32, 10, 5, 11, 15];
-function 퀵정렬(입력배열){
+function 퀵정렬(입력배열) {
     let 입력배열의길이 = 입력배열.length;
 
     if (입력배열의길이 <= 1) {
@@ -247,12 +247,12 @@ const tree = {
             value: 3,
             left: {
                 value: 1,
-                left : null,
+                left: null,
                 right: null
             },
-            right : {
+            right: {
                 value: 4,
-                left : null,
+                left: null,
                 right: null
             }
         },
@@ -260,12 +260,12 @@ const tree = {
             value: 8,
             left: {
                 value: 6,
-                left : null,
+                left: null,
                 right: null
             },
-            right : {
+            right: {
                 value: 9,
-                left : null,
+                left: null,
                 right: null
             }
         }
@@ -281,7 +281,7 @@ tree.root.right.right.value //9
 // 6. 트리의 순회
 
 class Node {
-    constructor(data){
+    constructor(data) {
         this.data = data;
         // this.child = []; // 2진트리가 아닌 트리가 됨
         this.left = null;
@@ -296,51 +296,51 @@ class Tree {
         this.데이터수 = 0;
     }
 
-    length(){
+    length() {
         return this.데이터수;
     }
 
-    insert(data){
+    insert(data) {
         let 새로운노드 = new Node(data);
         let 순회용현재노드 = this.root;
 
-        while(순회용현재노드){
-            if (data === 순회용현재노드.data){
+        while (순회용현재노드) {
+            if (data === 순회용현재노드.data) {
                 // 중복된 값은 탈락!
                 return;
             }
-            if (data < 순회용현재노드.data){
+            if (data < 순회용현재노드.data) {
                 // 들어온 데이터가 작으면 왼쪽에
                 // 비어있으면 데이터를 넣고, 비어있지 않으면 타고 또 내려가야합니다.
-                if (!순회용현재노드.left){
+                if (!순회용현재노드.left) {
                     순회용현재노드.left = 새로운노드;
                     return;
                 }
                 순회용현재노드 = 순회용현재노드.left;
             }
-            if (data > 순회용현재노드.data){
+            if (data > 순회용현재노드.data) {
                 // 들어온 데이터가 크면 오른쪽에
                 // 비어있으면 데이터를 넣고, 비어있지 않으면 타고 또 내려가야합니다.
-                if (!순회용현재노드.right){
+                if (!순회용현재노드.right) {
                     순회용현재노드.right = 새로운노드;
                     return;
                 }
                 순회용현재노드 = 순회용현재노드.right;
             }
         }
-        
+
         this.데이터수 += 1;
     }
 
     // BFS는 스택을 큐로만 바꾸어주면 된다.
     // .pop() 대신 .shift()
-    DFS(){
+    DFS() {
         // 깊이우선탐색, DFS(Depth First Search)
         // Stack 이용!
         let 결과값 = [];
         let 스택 = [this.root];
-        
-        while(스택.length !== 0){
+
+        while (스택.length !== 0) {
             let current = 스택.pop();
             if (current.right) {
                 스택.push(current.right);
@@ -353,7 +353,7 @@ class Tree {
         return 결과값;
     }
 
-    BFS(){
+    BFS() {
         // 너비우선탐색, DFS(Breadth First Search)
         // Queue 이용!
     }
@@ -370,7 +370,7 @@ t.insert(9);
 
 // 6. 트리의 순회
 class Node {
-    constructor(data){
+    constructor(data) {
         this.data = data;
         // this.child = []; // 2진트리가 아닌 트리가 됨
         this.left = null;
@@ -385,51 +385,51 @@ class Tree {
         this.데이터수 = 0;
     }
 
-    length(){
+    length() {
         return this.데이터수;
     }
 
-    insert(data){
+    insert(data) {
         let 새로운노드 = new Node(data);
         let 순회용현재노드 = this.root;
 
-        while(순회용현재노드){
-            if (data === 순회용현재노드.data){
+        while (순회용현재노드) {
+            if (data === 순회용현재노드.data) {
                 // 중복된 값은 탈락!
                 return;
             }
-            if (data < 순회용현재노드.data){
+            if (data < 순회용현재노드.data) {
                 // 들어온 데이터가 작으면 왼쪽에
                 // 비어있으면 데이터를 넣고, 비어있지 않으면 타고 또 내려가야합니다.
-                if (!순회용현재노드.left){
+                if (!순회용현재노드.left) {
                     순회용현재노드.left = 새로운노드;
                     return;
                 }
                 순회용현재노드 = 순회용현재노드.left;
             }
-            if (data > 순회용현재노드.data){
+            if (data > 순회용현재노드.data) {
                 // 들어온 데이터가 크면 오른쪽에
                 // 비어있으면 데이터를 넣고, 비어있지 않으면 타고 또 내려가야합니다.
-                if (!순회용현재노드.right){
+                if (!순회용현재노드.right) {
                     순회용현재노드.right = 새로운노드;
                     return;
                 }
                 순회용현재노드 = 순회용현재노드.right;
             }
         }
-        
+
         this.데이터수 += 1;
     }
 
     // 깊스너큐, 파선아실
     // 갈메기털빼
-    DFS(){
+    DFS() {
         // 깊이우선탐색, DFS(Depth First Search)
         // Stack 이용!
         let 결과값 = [];
         let 스택 = [this.root];
-        
-        while(스택.length !== 0){
+
+        while (스택.length !== 0) {
             let current = 스택.pop();
             if (current.right) {
                 스택.push(current.right);
@@ -442,7 +442,7 @@ class Tree {
         return 결과값;
     }
 
-    BFS(){
+    BFS() {
         // 너비우선탐색, DFS(Breadth First Search)
         // Queue 이용!
         let 결과값 = [];
@@ -452,7 +452,7 @@ class Tree {
             let current = 큐.shift();
             if (current.left) {
                 큐.push(current.left)
-            } 
+            }
             if (current.right) {
                 큐.push(current.right)
             }
@@ -479,3 +479,28 @@ t.root.right.right.data
 9
 t.root.right.left.data
 6
+
+
+// 정규표현식
+
+1. / 일반문자열 /
+2. /^ 일반문자열 /, /일반문자열$/ : 처음과 끝
+3. / h.llo world / : 모든 문자(dot, '.')
+4. h[eay]llo world: 택1
+5. / [a - zA - Z0 - 9] / : 범위
+6. / [^ a - zA - Z0 - 9] / : 부정(not)
+7. /.(a | e | o)ll./ : group
+8. 수량자
+    8.1[eay]{ 3 } : e, a, y 중 택 1이 3개({ 3, } : 3개 이상, { 1, 3} : 1개 ~3개)
+    8.2 * : 앞에 있는 문자가 0개 ~N개, 예를 들어[eay] * 면 e, a, y 중 택 1이 0개~N개
+    8.3 + : 앞에 있는 문자가 1개 ~N개
+    8.4 _ ? : 앞에 있는 문자가 0개 ~1개
+9. 캐릭터 클래스
+    9.1 /\w / gm : 워드
+    9.2 /\w{ 5 } /gm : 5개의 글자와 스페이스 하나
+    9.3 /\W / gm : not 워드
+    9.4 /\d / gm : 숫자
+    9.5 /\D / gm : not 숫자
+    9.6 /\s / gm : 스페이스
+    9.7 /\S / gm : not 스페이스
+10. 이스케이프 문자(역슬러쉬,) : /(.*)/g

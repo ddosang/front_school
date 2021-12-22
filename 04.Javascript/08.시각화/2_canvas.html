@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Tutorial</title>
+    
+    <style>
+        
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        // 캔버스에서 어떻게 그릴지 렌더링 컨텍스트를 받아온다.
+        const ctx = canvas.getContext('2d'); 
+
+        // 실제로 그리는 함수
+        function drawRect(ctx) {
+            let x = 10,
+            y = 10,
+            w = 150,
+            h = 100;
+            ctx.fillStyle = 'green';
+            ctx.fillRect(x, y, w, h);
+        }
+
+        function 삼각형(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(75, 70);
+            ctx.lineTo(100, 75);
+            ctx.lineTo(100, 25);
+            ctx.fillStyle = 'red';
+            ctx.fill();
+        }
+
+        drawRect(ctx);
+    </script>
+</body>
+</html>

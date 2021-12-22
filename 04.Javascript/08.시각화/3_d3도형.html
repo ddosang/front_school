@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="canvas"></div>
+    <script>
+        const canvas = d3.select('.canvas');
+
+        const svg = canvas.append('svg')
+                .attr('height', 1000)
+                .attr('width', 1000);
+
+        // x y 는 좌측 상단 기준 좌표.
+        svg.append('text')
+            .attr('x', 200)
+            .attr('y', 200)
+            .attr('fill', 'black')
+            .text('hello world')
+            .style('font-weight', 'bold')
+            .style('font-style', '34px')
+
+        svg.append('rect')
+            // .attr('x', 10)
+            // .attr('y', 10)
+            .attr('width', 200)
+            .attr('height', 200)
+            .attr('fill', 'hotpink')
+
+        svg.append('circle')
+            .attr('r', 50)
+            // cx, cy 는 원의 중심
+            .attr('cx', 200)
+            .attr('cy', 200)
+            .attr('fill', 'pink')
+        
+        svg.append('line')
+            .attr()
+    </script>
+</body>
+</html>

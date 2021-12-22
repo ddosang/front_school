@@ -118,7 +118,7 @@ https://ddosang.github.io/front_school/
 - 012_jQuery.js : 1210 수업 실습 [velog #30](https://velog.io/@ddosang/Front-end-30)
 - 013-017_DOM.js : 1211 수업 실습 [velog #31](https://velog.io/@ddosang/Front-end-31)
 - 07.Optimization : 1220 수업 실습 (JavaScript 최적화) [velog #37](https://velog.io/@ddosang/Front-end-37)
-- 08.시각화 : 1221 수업 실습 (chart.js D3) [velog #39](https://velog.io/@ddosang/Front-end-39)
+- 08.시각화 : 1221 수업 실습 (chart.js, canvas, d3.js) [velog #39](https://velog.io/@ddosang/Front-end-39)
 
 
 <br>
